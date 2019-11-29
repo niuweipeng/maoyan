@@ -1,24 +1,16 @@
 import React from 'react';
 import './App.css';
-import {
-    Route,
-    NavLink,
-    Switch
+import  {
+    Route
 } from "react-router-dom"
-import Login from "./views/Login"
-import Home from "./views/Home"
-import Position from "./views/Position"
-import Search from "./views/Search"
+import  Home from "./view/Home"
+import  Detail from "./view/detail"
 function App() {
   return (
-
     <div className="App">
-        <Switch>
-            <Route path={"/position"} component={Position}></Route>
-            <Route path={"/search"} component={Search}></Route>
-            <Route path={"/login"} component={Login}></Route>
-            <Route path={"/"} component={Home}></Route>
-        </Switch>
+
+        <Route path={"/"} component={Home}></Route>
+        <Route path={"/detail"} component={Detail}></Route>
     </div>
   );
 }

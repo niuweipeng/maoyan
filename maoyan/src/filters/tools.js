@@ -22,7 +22,7 @@ class Tools {
         }else 
         return str;
     }
-    static detailMoviesPicTwo(str){
+    static detailMoviesPictwo(str){
         if(str){
             const n =str.replace("w.h", "128.180");
             return n;
@@ -36,5 +36,23 @@ class Tools {
         }else 
         return str;
     }
+
+    static wanntlookMoviesPic(str){
+        if(str){
+            const n =str.replace("w.h", "170.230");
+            return n;
+        }else
+            return str;
+    }
+
+    // 将一维转为二维
+    static changeArr (arr,len=10) {
+        const newArr = [];
+        for (var i = 0; i < arr.length; i += len) {
+            newArr.push(arr.slice(i, i + len))
+        }
+        return newArr;
+    }
 }
 export default Tools;
+

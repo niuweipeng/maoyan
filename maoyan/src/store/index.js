@@ -1,6 +1,7 @@
-import React from "react"
-import {
-    createStore
+import  {
+    createStore,
+    applyMiddleware
 } from "redux"
-import rootReducer from "./reducer"
-export default createStore(rootReducer);
+import reducer from "./reducer"
+import thunk from "redux-thunk"
+export  default createStore(reducer,applyMiddleware(thunk))

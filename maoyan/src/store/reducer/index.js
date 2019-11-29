@@ -1,7 +1,7 @@
-import {
+import  {
     combineReducers
 } from "redux"
-import search from "./search"
-export default combineReducers({
-    search
+import  movies from "./movies"
+export  default  combineReducers({
+    movies
 })

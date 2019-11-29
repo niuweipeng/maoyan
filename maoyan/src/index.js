@@ -23,3 +23,5 @@ React.Component.prototype.$axios = axios;
 ReactDOM.render(<Router><Provider store={store}><App /></Provider></Router>, document.getElementById('root'));
 
 serviceWorker.unregister();
+
+

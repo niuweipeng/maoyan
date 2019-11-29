@@ -1,0 +1,344 @@
+
+.movieshappen{
+    margin-bottom: 60px;
+}
+.Firsttitle{
+    height: 50.5px;
+    color: #fff;
+    background: #e54847;
+    border-bottom: 1px solid #e54847;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 50px;
+
+}
+.download-app-bar {
+    position: relative;
+    height: 63px;
+    background-color: #fff;
+    border-bottom: 1px solid #e6e6e6;
+}
+.download-app-bar img.logo {
+    position: absolute;
+    left: 15px;
+    top: 11px;
+    width: 44px;
+    height: 44px;
+}
+.download-app-bar .app-name-desc {
+    position: absolute;
+    left: 66px;
+    top: 13px;
+}
+.download-app-bar .app-name-desc .app-name {
+    font-size: 17px;
+    color: #222;
+    line-height: 23px;
+}
+.download-app-bar .app-name-desc .app-desc {
+    font-size: 12px;
+    color: #999;
+}
+.download-app-bar .btn-open-app {
+    position: absolute;
+    right: 15px;
+    top: 17px;
+    width: 68px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #ef4238;
+    border-radius: 3px;
+    font-size: 13px;
+    color: #fff;
+}
+.white-bg {
+    background-color: #fff;
+    border-bottom: 1px solid #e6e6e6;
+}
+.topbar-bg {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 44px;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.city-entry {
+    padding-left: 15px;
+    font-size: 15px;
+    color: #666;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.city-entry .city-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.switch-hot {
+    display: -webkit-box;
+    display: flex;
+    height: 44px;
+    line-height: 44px;
+    position: relative;
+}
+.switch-hot .hot-item.active {
+    color: #ef4238;
+    border-bottom: 2px solid red;
+}
+
+.switch-hot .hot-item {
+    font-size: 15px;
+    color: #666;
+    text-align: center;
+    margin: 0 12px;
+    font-weight: 700;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
+    padding: 10px 15px 10px 10px;
+    background-position: 10px;
+}
+.list-wrap {
+    background-color: #f5f5f5;
+}
+.list-wrap .item {
+    padding-left: 15px;
+    background-color: #fff;
+}
+.list-wrap .item .main-block {
+    position: relative;
+    width: 100%;
+}
+.list-wrap .item .avatar {
+    width: 64px;
+    height: 90px;
+    position: relative;
+    margin-top: 12px;
+    float: left;
+}
+.default-img-bg {
+    background-color: #e1e1e1;
+    background-size: 100% 100%;
+}
+.tab-content .list-wrap .item .avatar img {
+    background-color: transparent;
+    height: 90px;
+}
+img {
+    width: 100%;
+    margin-top: 0px;
+}
+.list-wrap .item .content-wrapper {
+    padding: 12px 14px 12px 0;
+    margin-left: 74px;
+    height: 90px;
+    max-height: 90px;
+    position: relative;
+}
+.list-wrap .item .content {
+    padding-right: 5px;
+    margin-right: 48px;
+    overflow: hidden;
+}
+.list-wrap .item .movie-title {
+    max-height: 24px;
+    margin-bottom: 7px;
+    line-height: 24px;
+    overflow: hidden;
+}
+.box-flex {
+    display: -webkit-box;
+    display: flex;
+}
+.list-wrap .item .title {
+    font-size: 17px;
+    color: #333;
+    font-weight: 700;
+    padding-right: 5px;
+    flex-shrink: 1;
+}
+.line-ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.version.v3d.imax {
+    width: 43px;
+    /*background-image: url("img/3d.png");*/
+}
+.version {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 14px;
+    width: 17px;
+    display: inline-block;
+    margin-top: 5px;
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    margin-right: 3px;
+}
+.list-wrap .item .detail {
+    box-sizing: border-box;
+    line-height: 1;
+    overflow: hidden;
+}
+.list-wrap .item .detail .score {
+    font-size: 13px;
+    color: #666;
+}
+.line-ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.list-wrap .item .detail .score .grade {
+    font-weight: 700;
+    color: #faaf00;
+    font-size: 15px;
+}
+.list-wrap .item .detail .actor{
+    font-size: 13px;
+    color: #666;
+}
+.list-wrap .item .detail .show-info {
+    font-size: 13px;
+    color: #666;
+}
+.list-wrap .item .detail>div+div {
+    margin-top: 6px;
+    line-height: 15px;
+}
+.list-wrap .item .button-block {
+    font-size: 12px;
+    position: absolute;
+    right: 14px;
+    top: 0;
+    bottom: 0;
+    height: 27px;
+    margin: auto;
+}
+.list-wrap .item .button-block .btn {
+    width: 47px;
+    height: 27px;
+    line-height: 28px;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #f03d37;
+    color: #fff;
+    border-radius: 4px;
+    white-space: nowrap;
+    font-size: 12px;
+    cursor: pointer;
+}
+.list-wrap .item .button-block .btn.pre {
+    background-color: #3c9fe6;
+}
+.list-wrap .item .detail .wantsee .person {
+    color: #faaf00;
+    font-size: 15px;
+    font-weight: 600;
+}
+.nounderline{
+    text-decoration: none;
+}
+/*即将上映*/
+
+
+.most-expected {
+    padding: 12px 0 12px 15px;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.most-expected .wantshow{
+    margin-right: 5px;
+    position: relative;
+}
+
+.most-expected-list {
+    display: flex;
+    overflow: scroll;
+    white-space: nowrap;
+
+
+}
+.expected-item {
+    display: inline-block;
+    width: 85px;
+    overflow: hidden;
+    margin-right: -20px;
+}
+.expected-item img {
+    height: 115px;
+    width: 85px;
+}
+
+.expected-item .poster .wish  .wish-num{
+    position: absolute;
+    left: 4px;
+    bottom: 57px;
+    color: #faaf00;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.tab-content .list-wrap .expected-item .name {
+    margin: 0;
+    color: #222;
+    margin-bottom: 3px;
+}
+.line-ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 13px;
+    line-height: 1;
+    margin-top: 2px;
+    /*margin-left: 5px;*/
+    position: relative;
+}
+
+.wantshow .date{
+    font-size: 12px;
+    margin-top: -18px;
+    color: #999;
+}
+
+
+.swiper-container {
+    width: 1200px;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.want{
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 12px;
+}
