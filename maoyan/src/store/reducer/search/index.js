@@ -15,6 +15,5 @@ export default function(state = initState,{type,payload}){
     }
 
     // localStorage.setItem('keyWord',JSON.stringify(state.keyWord));
-
     return state
 }

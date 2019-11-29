@@ -11,6 +11,10 @@
     font-weight: 400;
     text-align: center;
     line-height: 50px;
+    /*position: fixed;*/
+    position: sticky;
+    top: 0;
+    z-index: 888;
 
 }
 .download-app-bar {
@@ -54,8 +58,10 @@
     color: #fff;
 }
 .white-bg {
-    background-color: #fff;
+    background: #fff;
+    z-index: 200;
     border-bottom: 1px solid #e6e6e6;
+
 }
 .topbar-bg {
     display: flex;
@@ -341,4 +347,16 @@ img {
     font-size: 14px;
     color: #333;
     margin-bottom: 12px;
+}
+
+.download-tip {
+    display: none;
+    position: fixed;
+    right: 16px;
+    bottom: 100px;
+    width: 64px;
+    height: 90px;
+    background: url(//p0.meituan.net/moviemachine/aecdf2ec9d155e6e35a9d8110dca3df229803.png) no-repeat ;
+    background-size: contain;
+    z-index: 10;
 }

@@ -16,7 +16,14 @@ export const wantlookList = (wantlookList,type)=>{
         }
     }
 }
-
+export const MoremoviesList = (MoremoviesList,type)=>{
+    return{
+        type:"GET_MOREMOVIES",
+        payload:{
+            MoremoviesList
+        }
+    }
+}
 
 export const willplaymoviesList = (willplaymoviesList,type)=>{
     return{
@@ -28,15 +35,15 @@ export const willplaymoviesList = (willplaymoviesList,type)=>{
 }
 
 export default {
-    getmoviesList(movieIds=""){
+    getmoviesList(){
         return async (dispatch)=>{
             const  data= await this.$axios.get("/ajax/movieOnInfoList",{
                 params:{
                     token:"",
-                    movieIds
+
                 }
             })
-            console.log(data)
+            // console.log(data)
             dispatch(movieList(data.movieList,data.movieIds))
         }
     },
@@ -66,6 +73,18 @@ export default {
             })
             // console.log(data)
             dispatch(willplaymoviesList(data.coming))
+        }
+    },
+    getMoremovielist(movieIds=""){
+        return async (dispatch)=>{
+            const  data = await this.$axios.get("/ajax/moreComingList",{
+                params:{
+                    token:"",
+                    movieIds
+                }
+            })
+            console.log(data,555555555555555555)
+            dispatch(MoremoviesList(data.coming))
         }
     }
 }
