@@ -44,15 +44,15 @@ componentDidMount(){
     window.onscroll=function(){
         var t=document.documentElement.scrollTop;
         // console.log(t);
-        if(t>=50){
-            document.querySelector(".white-bg").style.position="sticky";
-            document.querySelector(".white-bg").style.top="50px";
-        }
-        if(t>=120){
-            document.querySelector(".download-tip").style.display="block";
-        }else{
-            document.querySelector(".download-tip").style.display="none";
-        }
+        // if(t>=50){
+        //     document.querySelector(".white-bg").style.position="sticky";
+        //     document.querySelector(".white-bg").style.top="50px";
+        // }
+        // if(t>=120){
+        //     document.querySelector(".download-tip").style.display="block";
+        // }else{
+        //     document.querySelector(".download-tip").style.display="none";
+        // }
     }
 }
 

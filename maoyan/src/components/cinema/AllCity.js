@@ -5,11 +5,11 @@ import {
 import {
     connect
 } from "react-redux"
-import "../../assets/iconFont/font/iconfont.css"
+import "../../assets/iconfont/iconfont.css"
 import "../../assets/css/cinema/allCity.css"
 import CityDetail from "./cityDetail"
-import {getSubItemsId} from "../../store/actionCreatore/cinema"
-import cinemaActionCreatore,{changeDetailName} from "../../store/actionCreatore/cinema"
+import {getSubItemsId} from "../../store/action/cinema"
+import cinemaActionCreatore,{changeDetailName} from "../../store/action/cinema"
 class AllCity extends React.Component{
 render(){
     return (

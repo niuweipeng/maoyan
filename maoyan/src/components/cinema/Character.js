@@ -5,9 +5,9 @@ import {
 import {
     connect
 } from "react-redux"
-import "../../assets/iconFont/font/iconfont.css"
+import "../../assets/iconfont/iconfont.css"
 import "../../assets/css/cinema/character.css"
-import cinemaActionCreatore, {allCharacterShow,changeCharacterColor} from "../../store/actionCreatore/cinema"
+import cinemaActionCreatore, {allCharacterShow,changeCharacterColor} from "../../store/action/cinema"
 class Character extends React.Component{
     render(){
         return (

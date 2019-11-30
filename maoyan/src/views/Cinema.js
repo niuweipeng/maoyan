@@ -6,14 +6,14 @@ import {
     connect
 } from "react-redux"
 import "../assets/css/cinema/cinema.css"
-import "../assets/iconFont/font/iconfont.css"
+import "../assets/iconfont/iconfont.css"
 import AllCity from "../components/cinema/AllCity"
 import Brand from "../components/cinema/Brand"
 import Character from "../components/cinema/Character"
-import cinemaActionCreatore,{changeCharacterColor} from "../store/actionCreatore/cinema"
-import {allCityShow} from "../store/actionCreatore/cinema"
-import {allBrandShow} from "../store/actionCreatore/cinema"
-import {allCharacterShow} from "../store/actionCreatore/cinema"
+import cinemaActionCreatore,{changeCharacterColor} from "../store/action/cinema"
+import {allCityShow} from "../store/action/cinema"
+import {allBrandShow} from "../store/action/cinema"
+import {allCharacterShow} from "../store/action/cinema"
 import Tools from "../filters/tools"
 class Cinema extends React.Component{
     constructor(){

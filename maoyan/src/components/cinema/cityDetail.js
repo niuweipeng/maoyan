@@ -5,11 +5,11 @@ import {
 import {
     connect
 } from "react-redux"
-import "../../assets/iconFont/font/iconfont.css"
+import "../../assets/iconfont/iconfont.css"
 import "../../assets/css/cinema/allCity.css"
-import cinemaActionCreatore from "../../store/actionCreatore/cinema"
-import {allCityShow} from "../../store/actionCreatore/cinema"
-import {changeDetailName} from "../../store/actionCreatore/cinema"
+import cinemaActionCreatore from "../../store/action/cinema"
+import {allCityShow} from "../../store/action/cinema"
+import {changeDetailName} from "../../store/action/cinema"
 import Tools from "../../filters/tools";
 class cityDetail extends React.Component{
     render(){

@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    list-style: none;
+}
+.character{
+    width: 100%;
+    background: #fff;
+    z-index: 100;
+    overflow: scroll;
+    font-size: 14px;
+    color: #777;
+    position: fixed;
+    background: white;
+    top:133px;
+}
+.character .charOut{
+    height: 345.2px;
+    min-height: 150px;
+    max-height: 270px;
+    overflow: scroll;
+    font-size: 15px;
+}
+.character .charOut .charTitle{
+    margin-left: 12px;
+    margin-top: 11px;
+    font-size: 15px;
+    text-align: left;
+}
+.character .charOut .charTitleList{
+    display: flex;
+    margin: 0 12px 12px;
+}
+.character .charOut .charTitleList .charTitleList1{
+    width: 21.3%;
+    height: 30px;
+    padding: 3px 0;
+    margin-right: 3%;
+    margin-top: 10px;
+    line-height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 11.2px;
+}
+.character .charOut .charTitleList .charTitleList1:nth-of-type(1){
+    background:#fcf0f0;
+    color:#f03d37;
+    border: 1px solid #f03d37;
+}
+.character .charOut .charSpecial{
+    margin-left: 12px;
+    margin-top: 11px;
+    font-size: 15px;
+    text-align: left;
+
+}
+.character .charOut .charSpeList{
+    display: flex;
+    flex-wrap:wrap;
+    margin: 0 12px 12px;
+}
+.character .charOut .charSpeList .charSpeList1{
+    width: 21.3%;
+    height: 30px;
+    padding: 3px 0;
+    margin-right: 3%;
+    margin-top: 10px;
+    line-height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 11.2px;
+}
+.character .charOut .charSpeList .charSpeList1:nth-of-type(1){
+    background:#fcf0f0;
+    color:#f03d37;
+    border: 1px solid #f03d37;
+}
+.character .charBtn{
+    height: 60px;
+    width: 100%;
+    border-top: 1px solid #e5e5e5;
+    margin-top: 10px;
+    background: #fafafa;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.character .charBtn .charBtn1{
+    height: 34px;
+    width: 21.3%;
+    margin: 13px 11px;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    text-align: center;
+    line-height: 34px;
+    font-size: 14px;
+}
+
+
+

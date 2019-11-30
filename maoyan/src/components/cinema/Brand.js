@@ -5,9 +5,9 @@ import {
 import {
     connect
 } from "react-redux"
-import "../../assets/iconFont/font/iconfont.css"
+import "../../assets/iconfont/iconfont.css"
 import "../../assets/css/cinema/brand.css"
-import cinemaActionCreatore, {allBrandShow, changeBrandName} from "../../store/actionCreatore/cinema"
+import cinemaActionCreatore, {allBrandShow, changeBrandName} from "../../store/action/cinema"
 import Tools from "../../filters/tools";
 class Brand extends React.Component{
     render(){
