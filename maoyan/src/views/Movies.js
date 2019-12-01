@@ -22,7 +22,7 @@ class  Movies extends  React.Component{
                 </div>
 
                 <div className={"white-bg topbar-bg "} >
-                    <div className={"city-entry"}>
+                    <div className={"city-entry"} onClick={()=>this.props.history.push("/position")}>
                         <span className={"city-name"}>北京</span>
                     </div>
                     <nav className={"switch-hot"} data-active=".n-hot">
@@ -30,7 +30,7 @@ class  Movies extends  React.Component{
                         <NavLink to={"/movie/willplay"} className={"hot-item"} activeClassName={"hot-item active"} style={{"textDecoration": "none"}}>即将热映</NavLink>
 
                     </nav>
-                    <div className={"search-entry search-icon"} data-type="movie"><span className="iconfont" style={{"fontSize":"26px","color":"red"}}>&#xe612;</span></div>
+                    <div className={"search-entry search-icon"} data-type="movie" onClick={()=>this.props.history.push("/search")}><span className="iconfont" style={{"fontSize":"26px","color":"red"}}>&#xe612;</span></div>
                 </div>
                 <Route path={"/movie/willplay"} component={Willplay}></Route>
                 <Route path={"/movie"} component={Nowplay} exact></Route>

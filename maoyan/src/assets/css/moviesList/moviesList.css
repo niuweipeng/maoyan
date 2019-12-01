@@ -1,0 +1,120 @@
+*{
+    margin:0;
+    padding:0;
+    font-size:14px;
+}
+.moviesList-all{
+    width:100%;
+    min-height:700px;
+    background:#F5F5F5 !important;
+    position: relative;
+    box-sizing: border-box;
+    padding-top:50px;
+}
+.movies-bar{
+    height: 50px;
+    color: #fff;
+    background: #e54847;
+    border-bottom: 1px solid #e54847;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    position: fixed;
+    width:100%;
+    top:0;
+    left:0;
+    padding:0 15px;
+    z-index: 1000;
+}
+.movies-nav-header{
+    display: block;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 50px;
+    margin: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-right: 52px;
+}
+.movies-wrap-left{
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    float:left;
+}
+.iconfont{
+    font-size: 24px;
+}
+
+/*渲染页面*/
+.positionHeight{
+    /*flex: 1;*/
+    /*overflow: hidden;*/
+}
+.position-list{
+    /*display:block;*/
+}
+.position-detail-list{
+    display: flex;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding:10px 15px;
+    border-bottom:1px solid #EFEFEF;
+    background:#fff;
+}
+.position-img{
+    width:60px;
+    height:90px;
+    margin-right:10px;
+}
+.position-detail-list-mid{
+    /*background:red;*/
+    width:100%;
+}
+.name{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.one-title{
+    font-size:17px;
+    color:#000;
+    font-weight:bold;
+    width:170px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.two-title{
+    float:right;
+    color:#FAAF00;
+    margin-right:10px;
+    font-size: 15px;
+}
+.name-detail{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.name-detail-left{
+    font-size:13px;
+    /*width:150px;*/
+    /*white-space: nowrap;*/
+    /*overflow: hidden;*/
+    /*text-overflow: ellipsis;*/
+}
+.want-look{
+    display: flex;
+    padding:5px 10px;
+    /*background:#FAAF00;*/
+    border-radius: 5px;
+    color:#fff;
+    margin-right:10px;
+}

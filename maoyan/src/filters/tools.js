@@ -1,4 +1,4 @@
-class Tools {
+﻿class Tools {
     static date(v){
         const date = new Date(v);
         return date.getFullYear()+"-"
@@ -23,6 +23,13 @@ class Tools {
         return str;
     }
     static detailMoviesPictwo(str){
+        if(str){
+            const n =str.replace("w.h", "128.180");
+            return n;
+        }else
+            return str;
+    }
+ static detailMoviesPicTwo(str){
         if(str){
             const n =str.replace("w.h", "128.180");
             return n;

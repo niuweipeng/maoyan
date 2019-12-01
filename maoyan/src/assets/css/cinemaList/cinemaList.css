@@ -1,24 +1,27 @@
 *{
     margin:0;
     padding:0;
+    font-size:14px;
 }
-.search-all{
+.moviesList-all{
     width:100%;
     min-height:700px;
     background:#F5F5F5 !important;
 }
-.navbar-one{
+.navbar{
     height: 50px;
     color: #fff;
     background: #e54847;
     border-bottom: 1px solid #e54847;
     display: -webkit-box;
     display: -ms-flexbox;
-    position: relative;
+    position: sticky;
+    top:0;
+    left:0;
     padding:0 15px;
     z-index: 1000;
 }
-.nav-header-one{
+.nav-header{
     display: block;
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -32,84 +35,19 @@
     overflow: hidden;
     margin-right: 52px;
 }
-.nav-wrap-left-one{
+.nav-wrap-left{
     height: 50px;
     width: 50px;
     line-height: 50px;
     float:left;
 }
-.iconfont-first{
+.iconfont{
     font-size: 24px;
 }
-.search-body{
-    font-size: 14px;
-    color: #777;
-    background: #F5F5F5;
-    height:100%;
+/*渲染页面*/
+.cinemas-body{
 }
-.search-header{
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    padding: 8px 0 8px 15px;
-    background-color: #f5f5f5;
-    border-bottom: 2px solid #EDEDED;
-    position: relative;
-    z-index: 1;
-}
-.input-wrapper{
-    /*padding: 0 10px;*/
-    border: 1px solid #e6e6e6;
-    border-radius: 5px;
-    background-color: #fff;
-    float:left;
-    width:83%;
-}
-.search-icon{
-    width: 15px;
-    height: 15px;
-    /*margin-right: 6px;*/
-    float: left;
-    position: absolute;
-    left: 7%;
-}
-.search-input{
-    box-sizing: border-box;
-    border: none;
-    font-size: 13px;
-    color: #333;
-    line-height: 20px;
-    padding: 4px 14%;
-    width: 100%;
-    outline: none;
-}
-.search-icon-cuowu{
-    float:right;
-    position:absolute;
-    top:20%;
-    right:20%;
-    color:#A0A1A7;
-    font-size:18px;
-}
-.cancel{
-    height: 30px;
-    line-height: 30px;
-    padding: 0 10px;
-    font-size: 16px;
-    color: #f03d37;
-}
-.search-info{
-    box-sizing: border-box;
-}
-.search-detail-header{
-    box-sizing: border-box;
-    padding:8px 15px;
-    background:#fff;
-    border-bottom:1px solid #EFEFEF;
-    font-size:15px;
-    color:#999999;
-}
-.search-detail-list{
+.cinemas-detail-list{
     display: flex;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -118,12 +56,12 @@
     border-bottom:1px solid #EFEFEF;
     background:#fff;
 }
-.search-img{
+.cinemas-img{
     width:60px;
     height:90px;
     margin-right:10px;
 }
-.search-detail-list-mid{
+.cinemas-detail-list-mid{
     /*background:red;*/
     width:100%;
 }
@@ -147,15 +85,15 @@
     float:right;
     color:#FAAF00;
 }
-.name-detail{
+.cinemas-detail{
     width:100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.name-detail-left{
+.cinemas-detail-left{
     font-size:13px;
-    width:70%;
+    width:85%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -187,7 +125,7 @@
     background:#fff;
     border-top: 1px solid #e5e5e5;
 }
-.search-icon-one{
+.cinemas-icon-one{
     float: left;
     position: absolute;
     left: 5%;
@@ -196,7 +134,7 @@
 .context-text{
     margin-left:7%;
 }
-.search-icon-two{
+.cinemas-icon-two{
     float: right;
     position: absolute;
     right: 5%;
@@ -216,15 +154,15 @@
 .four-title{
     color:red;
 }
-.address{
+.address-three{
     font-size:13px;
-    width:100%;
+    width:75%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     margin-bottom:5px;
 }
-.search-div{
+.choose{
     padding: 1px 3px;
     margin-left:5px;
     margin-bottom:5px;
@@ -237,7 +175,7 @@
     border-radius: 5px;
     float: left;
 }
-.search-first{
+.choose-two{
     float: left;
     padding: 1px 3px;
     margin-left:5px;
