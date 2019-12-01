@@ -10,11 +10,18 @@ const  reducer = function (state=obj,{type,payload}) {
     }
     if(type==="GET_WANPLAYLIST"){
         state.willplaymoviesList=payload.willplaymoviesList
+        state.willmovieIds=payload.willmovieIds
     }
     if(type==="GET_MOREMOVIES"){
         state.movieList= [
             ...state.movieList,
             ...payload.MoremoviesList
+        ]
+    }
+        if(type==="GET_MOREWANPLAYLIST"){
+        state.willplaymoviesList= [
+            ...state.willplaymoviesList,
+            ...payload.morewillplaymoviesList
         ]
     }
     // console.log(state,"kkkkkkkkkkkkkkkk")
