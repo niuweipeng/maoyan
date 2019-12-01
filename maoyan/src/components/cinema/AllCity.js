@@ -8,8 +8,7 @@ import {
 import "../../assets/iconfont/iconfont.css"
 import "../../assets/css/cinema/allCity.css"
 import CityDetail from "./cityDetail"
-import {getSubItemsId} from "../../store/action/cinema"
-import cinemaActionCreatore,{changeDetailName} from "../../store/action/cinema"
+import cinemaActionCreatore,{changeDetailName,allCityShow,getSubItemsId} from "../../store/action/cinema"
 class AllCity extends React.Component{
 render(){
     return (
@@ -50,14 +49,24 @@ function mapDispatchToProps(dispatch){
         },
         getSubItemsId(id,e){//根据左边的区，得到Id，用来得到区下面的地名
             dispatch(getSubItemsId(id))
-            if(id===-1){//如果点击的是全部，则直接刷新页面
-                localStorage.districtId = -1;
-                localStorage.areaId = -1;
-                localStorage.lineId = -1;
-                localStorage.stationId = -1;
-             dispatch(cinemaActionCreatore.getCinema.call(this))
-             dispatch(changeDetailName("全城"))//重新命名箭头左侧名称
+            if(id===-1) {//如果点击的是全部，则直接刷新页面
+                if(!(localStorage.districtId/1===-1 && localStorage.areaId/1===-1 && localStorage.lineId/1===-1 && localStorage.stationId/1===-1)){
+                    localStorage.districtId = -1;
+                    localStorage.areaId = -1;
+                    localStorage.lineId = -1;
+                    localStorage.stationId = -1;
+                     dispatch(cinemaActionCreatore.getCinema.call(this))
+                     dispatch(changeDetailName("全城"))//重新命名箭头左侧名称
+                     dispatch(allCityShow());
+                }
             }
+            //     localStorage.districtId = -1;
+            //     localStorage.areaId = -1;
+            //     localStorage.lineId = -1;
+            //     localStorage.stationId = -1;
+            //  dispatch(cinemaActionCreatore.getCinema.call(this))
+            //  dispatch(changeDetailName("全城"))//重新命名箭头左侧名称
+            // }
             let cityBodyLeftLi = document.querySelectorAll(".cityBodyLeftLi");
             cityBodyLeftLi[0].style.color = "#777777";//点击将第一个li颜色变为原来的
         },

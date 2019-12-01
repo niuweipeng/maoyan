@@ -7,9 +7,7 @@ import {
 } from "react-redux"
 import "../../assets/iconfont/iconfont.css"
 import "../../assets/css/cinema/allCity.css"
-import cinemaActionCreatore from "../../store/action/cinema"
-import {allCityShow} from "../../store/action/cinema"
-import {changeDetailName} from "../../store/action/cinema"
+import cinemaActionCreatore,{allCityShow,changeDetailName}from "../../store/action/cinema"
 import Tools from "../../filters/tools";
 class cityDetail extends React.Component{
     render(){
@@ -51,7 +49,6 @@ function mapDispatchToProps(dispatch) {
                 localStorage.areaId = Id
                 localStorage.lineId = -1;
                 localStorage.stationId = -1;
-                localStorage.brandId = -1;
                 dispatch(cinemaActionCreatore.getCinema.call(this,
                     {
                         districtId:this.props.subItemsId,
@@ -62,14 +59,12 @@ function mapDispatchToProps(dispatch) {
                 localStorage.areaId = -1;
                 localStorage.lineId = this.props.subItemsId;
                 localStorage.stationId = Id;
-                localStorage.brandId = -1;
                 dispatch(cinemaActionCreatore.getCinema.call(this,
                     {
                         lineId:this.props.subItemsId,
                         stationId:Id
                     }))
             }
-
         }
     }
 }

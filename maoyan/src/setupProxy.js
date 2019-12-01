@@ -7,4 +7,11 @@ module.exports = function (app) {
             "^/maoyan":""
         }
     }))
+    app.use("/login",proxy({
+        target:"http://127.0.0.1",
+        changeOrigin:true,
+        pathRewrite:{
+            "^/login":""
+        }
+    }))
 }

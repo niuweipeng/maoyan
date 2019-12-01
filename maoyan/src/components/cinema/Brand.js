@@ -8,7 +8,6 @@ import {
 import "../../assets/iconfont/iconfont.css"
 import "../../assets/css/cinema/brand.css"
 import cinemaActionCreatore, {allBrandShow, changeBrandName} from "../../store/action/cinema"
-import Tools from "../../filters/tools";
 class Brand extends React.Component{
     render(){
         return (
