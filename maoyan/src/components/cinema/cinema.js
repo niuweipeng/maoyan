@@ -21,7 +21,7 @@ class Cinema extends React.Component{
             <div>
                 <div style={{
                     height:"94px"
-                }}>saaaaaaaaaaaaaa</div>
+                }}>qqqqqqqqqqqqqqqqqqqqqqqqqqq</div>
 
                 <div className={"cinema"}>
                 <div className={"cinemaNav"}>
