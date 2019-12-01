@@ -7,10 +7,12 @@ import  {
 import  Home from "./views/Home"
 import  DetailMovie from "./views/DetailMovie"
 import  DetailCinema from "./views/DetailCinema"
+import  InformationMovie from "./views/InformationMovie"
 function App() {
   return (
     <div className="App">
         <Switch>
+          <Route path={"/informationMovie"} component={InformationMovie}></Route>
           <Route path={"/detailCinema"} component={DetailCinema}></Route>
           <Route path={"/detailMovie"} component={DetailMovie}></Route>
           <Route path={"/"} component={Home}></Route>

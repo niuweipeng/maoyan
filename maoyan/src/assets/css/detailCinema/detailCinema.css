@@ -115,12 +115,12 @@
     margin-top: 5px;
 }
 /**************************************************************************************/
-.movie-info{
+.movie-information{
     padding: 11px 15px;
     text-align: center;
     background: #fff;
 }
-.movie-info .movie-title-line-ellipsis{
+.movie-information .movie-title-line-ellipsis{
     height: 24px;
     line-height: 24px;
     font-size: 17px;
@@ -130,14 +130,14 @@
     overflow: hidden;
     white-space: nowrap;
 }
-.movie-info .title-title{
+.movie-information .title-title{
     line-height: 24px;
     font-size: 17px;
     color: #333;
     font-weight: 700;
     white-space: nowrap;
 }
-.movie-info .grade{
+.movie-information .grade{
     color: #ffb400;
     font-size: 16px;
     font-weight: 700;
@@ -146,10 +146,10 @@
     text-align: center;
     margin-left: 5px;
 }
-.movie-info .small{
+.movie-information .small{
     font-size: 10px;
 }
-.movie-info .movie-desc-line-ellipsis{
+.movie-information .movie-desc-line-ellipsis{
     margin-top: 2px;
     height: 18.5px;
     line-height: 18.5px;

@@ -5,7 +5,7 @@ class MovieInfo extends React.Component{
     render(){
         return(
             <>
-            <div className="movie-info">
+            <div className="movie-information">
             <div className="movie-title-line-ellipsis">
                 <span className="title-title">{this.props.sendInfo.nm}</span>
                 <span className="grade">
