@@ -13,7 +13,7 @@ class  Nowplay extends  React.Component{
             <div className={"nnnnnnn"}>
                 {
                     this.props.movieList.map(v=>(
-                        <Link to={"/detail"} key={v.id} className={"nounderline"}>
+                        <Link to={{pathname:"/detailMovie",state:{id:v.id}}} key={v.id} className={"nounderline"}>
                             <div className="list-wrap" >
                                 <div className="item" >
                                     <div className="main-block">

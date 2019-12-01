@@ -1,16 +1,22 @@
 import React from 'react';
 import './App.css';
 import  {
-    Route
+    Route,
+    Switch
 } from "react-router-dom"
 import  Home from "./views/Home"
-import  Detail from "./views/detail"
+import  DetailMovie from "./views/DetailMovie"
+import  DetailCinema from "./views/DetailCinema"
 function App() {
   return (
     <div className="App">
-
-        <Route path={"/"} component={Home}></Route>
-        <Route path={"/detail"} component={Detail}></Route>
+        <Switch>
+          <Route path={"/detailCinema"} component={DetailCinema}></Route>
+          <Route path={"/detailMovie"} component={DetailMovie}></Route>
+          <Route path={"/"} component={Home}></Route>
+        </Switch>
+        
+        
     </div>
   );
 }

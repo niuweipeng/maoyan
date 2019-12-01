@@ -1,0 +1,235 @@
+*{
+    margin:0;
+    padding:0;
+}
+.navbar{
+    height: 50.5px;
+    color: #fff;
+    background: #e54847;
+    border-bottom: 1px solid #e54847;
+    position: relative;
+}
+.navbar .nav-wrap-left{
+    height: 50.5px;
+    width: 22.5px;
+    line-height: 50px;
+    padding: 0 15px;
+    float: left;
+}
+.navbar .nav-wrap-left .icon-fanhui{
+    font-size:20px;
+}
+.navbar .nav-header{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 50px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-right: 52.5px;
+}
+#download-header{
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+}
+#download-header .download-app-bar{
+    position: relative;
+    height: 63px;
+    background-color: #fff;
+    border-bottom: 1px solid #e6e6e6;
+}
+#download-header .download-app-bar .img-noneBg-logo{
+    position: absolute;
+    left: 15px;
+    top: 11px;
+    width: 44px;
+    height: 44px;
+    display: block;
+}
+#download-header .download-app-bar .app-name-desc{
+    position: absolute;
+    left: 66px;
+    top: 13px;
+}
+#download-header .download-app-bar .app-name-desc .app-name{
+    font-size: 17px;
+    color: #222;
+    line-height: 23px;
+}
+#download-header .download-app-bar .app-name-desc .app-desc{
+    font-size: 12px;
+    color: #999;
+}
+#download-header .download-app-bar .btn-open-app{
+    position: absolute;
+    right: 15px;
+    top: 17px;
+    width: 68px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #ef4238;
+    border-radius: 3px;
+    font-size: 13px;
+    color: #fff;
+}
+.movie-detail{
+    height: 188px;
+    position: relative;
+    cursor: pointer;
+}
+.movie-detail .movie-filter{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+}
+.movie-detail .poster-bg{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    position: absolute;
+    filter: blur(1.2rem);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .55;
+}
+.movie-detail .detail-box-flex{
+    height: 150px;
+    padding: 19px 30px 19px 15px;
+    display: flex;
+}
+.detail-box-flex .poster img{
+    display: block;
+    width: 110px;
+    height: 150px;
+    box-sizing: border-box;
+}
+.detail-box-flex .content-flex{
+    flex: 1;
+    overflow-x: hidden;
+    margin-left: 12.5px;
+    line-height: 1;
+    color: #fff;
+}
+.content-flex .content-title{
+    font-size: 20px;
+    margin-top: 2px;
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1;
+    color: #fff;
+}
+.content-flex .title-en-name{
+    margin-top: 10px;
+    font-size: 12px;
+    color: #fff;
+    opacity: .8;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 1;
+}
+.content-flex .score-line-ellipsis{
+    font-size: 18px;
+    font-weight: 700;
+    color: #fc0;
+    margin-top: 11px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 1;
+}
+.content-flex .snum{
+    margin-top: 10px;
+    font-size: 12px;
+    color: #fff;
+    opacity: .8;
+    font-weight: 700;
+    white-space: nowrap;
+    line-height: 1;
+    margin-left: 5px;
+}
+.content-flex .type-line-ellipsis{
+    margin-top: 10px;
+    font-size: 12px;
+    color: #fff;
+    opacity: .8;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 1;
+}
+.content-flex .type-line-ellipsis span {
+    vertical-align: top;
+}
+.content-flex .type-group{
+    display: inline-block;
+    width: 42px;
+    opacity: .85;
+    font-size: 12px;
+    color: #fff;
+    white-space: nowrap;
+    line-height: 1;
+    margin-left: 5px;
+}
+.content-flex .sd-imax{
+    display: block;
+}
+.content-flex .src-line-ellipsis{
+    margin-top: 10px;
+    font-size: 12px;
+    color: #fff;
+    opacity: .8;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 1;
+}
+.content-flex .pubDesc-line-ellipsis{
+    margin-top: 10px;
+    font-size: 12px;
+    color: #fff;
+    opacity: .8;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 1;
+}
+.movie-detail .arrow-g{
+    font-size: 10px;
+    color: #fff;
+    opacity: .8;
+    position: absolute;
+    width: 10px;
+    right: 15px;
+    top: 50%;
+    margin-top:-5px;
+}
+
+/********************************************************/
+.swiper-bax .swiper-container{
+    background: #fff;
+    width: 100%;
+    height: 45px;
+}
+.swiper-bax .swiper-slide{
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-bax .swiper-slide-active{
+    color: red;
+    font-size: 16px;
+    border-bottom: 2px solid red;
+}
