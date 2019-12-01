@@ -53,7 +53,7 @@ class Willplay extends  React.Component {
                                             <div>{v.comingTitle}</div>
                                             <div className="avatar" sort-flag="">
                                                 <div className="default-img-bg">
-                                                    <img src={Tools.detailMoviesPictwo(v.img)} alt={""}/>
+                                                    <img src={Tools.detailMoviesPictwo(v.img)} alt={""} style={{width: "100%",margintop: "0px"}}/>
                                                 </div>
                                             </div>
                                             <div className="mb-outline-b content-wrapper">

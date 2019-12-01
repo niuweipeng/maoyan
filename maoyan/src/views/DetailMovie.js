@@ -5,11 +5,14 @@ import 'swiper/css/swiper.min.css'
 import tools from "../filters/tools"
 import detailMovieActionCreator from "../store/action/detailMovie";
 import {
-    connect
+    connect,
 } from "react-redux";
 import {
     bindActionCreators
-} from "redux"
+} from "redux";
+import {
+    Link
+} from "react-router-dom";
 
 class DetailMovie extends React.Component{
     render(){
@@ -30,6 +33,7 @@ class DetailMovie extends React.Component{
                         <div className="btn-open-app">立即打开</div>
                     </div>
                 </a>
+                <Link to={{pathname:"/informationMovie",state:{id:this.props.location.state.id}}}>
                 <div className="movie-detail">
                     <div className="movie-filter"></div>
                     <div className="poster-bg" style={{backgroundImage:"url("+tools.detailMoviesBgPic(this.props.detailMovie.img)+")"}}></div>
@@ -60,6 +64,7 @@ class DetailMovie extends React.Component{
                         <i className={"iconfont icon-icon1"}></i>
                     </div>
                 </div>
+                </Link>
             </div>
             <div className="swiper-bax">
                 <div className="swiper-container">

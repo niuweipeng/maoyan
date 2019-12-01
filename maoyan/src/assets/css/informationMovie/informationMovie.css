@@ -1,0 +1,428 @@
+#download-header{
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+}
+#download-header .download-app-bar{
+    position: relative;
+    height: 63px;
+    background-color: #fff;
+    border-bottom: 1px solid #e6e6e6;
+}
+#download-header .download-app-bar .img-noneBg-logo{
+    position: absolute;
+    left: 15px;
+    top: 11px;
+    width: 44px;
+    height: 44px;
+    display: block;
+}
+#download-header .download-app-bar .app-name-desc{
+    position: absolute;
+    left: 66px;
+    top: 13px;
+}
+#download-header .download-app-bar .app-name-desc .app-name{
+    font-size: 17px;
+    color: #222;
+    line-height: 23px;
+}
+#download-header .download-app-bar .app-name-desc .app-desc{
+    font-size: 12px;
+    color: #999;
+}
+#download-header .download-app-bar .btn-open-app{
+    position: absolute;
+    right: 15px;
+    top: 17px;
+    width: 68px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #ef4238;
+    border-radius: 3px;
+    font-size: 13px;
+    color: #fff;
+}
+.movie-page .movie-info{
+    padding: 20px 16px;
+    color: #fff;
+    position: relative;
+    background-color: rgb(41, 56, 102);
+}
+.movie-info .movie-info-top{
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    color:#fff;
+}
+.movie-info-top .movie-cover{
+    float: left;
+    position: relative;
+    flex-shrink: 0;
+}
+.movie-cover a{
+    text-decoration: none;
+    color: inherit;
+}
+.movie-cover .img-noneBg-poster{
+    width: 100%;
+    border: 0;
+    display: inline-block;
+}
+.movie-cover .img-noneBg-poster-play{
+    height: 30px; 
+    width: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border: 0;
+    display: inline-block;
+    background: none;
+}
+.movie-info .movie-desc{
+    flex-grow: 1;
+    margin-left: 12px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    overflow: hidden;
+    float: left;
+}
+.movie-desc .movie-desc-top{
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    flex-grow: 1;
+}
+.movie-desc .movie-cn-name{
+    font-size: 20px;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 700;
+}
+.movie-desc .movie-en-name{
+    font-size: 12px;
+    opacity: .6;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.movie-desc .movie-other-info{
+    display: flex;
+    flex-grow: 1;
+    flex-flow: column;
+    justify-content: center;
+}
+.movie-other-info .movie-type{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+.movie-other-info .movie-cat{
+    opacity: .6;
+}
+.movie-other-info .movie-tag{
+    border-radius: 4px;
+    margin-left: 4px;
+    vertical-align: text-bottom;
+    display: flex;
+    align-items: center;
+}
+.movie-other-info .img-noneBg-3dmax{
+    border: 0;
+    display: inline-block;
+    background: none;
+    height: 14px;
+}
+.movie-other-info .actors{
+    opacity: .6;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0;
+}
+.movie-show-time span{
+    opacity: .6;
+    font-size: 12px;
+}
+.movie-show-time .img-noneBg-youjiantou{
+    width:5px;
+    height: 10px;
+    border: 0;
+    display: inline-block;
+    background: none;
+    margin-left: 4px;
+}
+.movie-desc .btns{
+    display: flex;
+    justify-content: space-between;
+}
+.button-want-to-watch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsla(0,0%,100%,.35);
+    border-radius: 4px;
+    font-size: 14px;
+    width: 47.61904762%;
+    height: 30px;
+    color: #fff;
+    border: none;
+}
+.img-noneBg-xiangkan{
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
+    background: none;
+    border: 0;
+    display: inline-block;
+}
+.link-button-btn-right-watched{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsla(0,0%,100%,.35);
+    border-radius: 4px;
+    font-size: 14px;
+    width: 47.61904762%;
+    height: 30px;
+    color: #fff;
+    text-decoration: none;
+}
+.img-noneBg-kanguo{
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
+    background: none;
+    border: 0;
+    display: inline-block;
+}
+.real-time-word-of-mouth{
+    background-color: rgba(0,0,0,.2);
+    box-shadow: 0 0 3px 0 hsla(0,0%,100%,.03);
+    border-radius: 4px;
+    margin-top: 15px;
+    padding: 10px;
+}
+.real-time-word-of-mouth .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.real-time-word-of-mouth .top .left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.real-time-word-of-mouth .top .left .img-noneBg-loglog{
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
+    border: 0;
+    display: inline-block;
+    background: none;
+}
+.real-time-word-of-mouth .top .left span{
+    font-size: 12px;
+}
+.real-time-word-of-mouth .top .right{
+    display: flex;
+    align-items: center;
+}
+.real-time-word-of-mouth .top .right .num{
+    font-size: 11px;
+    margin-right: 2px;
+    opacity: .6;
+}
+.real-time-word-of-mouth .top .right .num-watched{
+    font-size: 11px;
+    margin-right: 2px;
+    margin-left: 6px;
+    opacity: .6;
+}
+.real-time-word-of-mouth .top .right span{
+    font-size: 11px;
+    opacity: .6;
+}
+.real-time-word-of-mouth .middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px 0;
+}
+.real-time-word-of-mouth .middle .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.real-time-word-of-mouth .middle .left .score{
+    font-size: 35px;
+    color: #ffb400;
+    line-height: 28px;
+}
+.real-time-word-of-mouth .middle .left .people-grade{
+    opacity: .4;
+}
+.real-time-word-of-mouth .middle .left .people-grade span{
+    font-size: 10px;
+}
+.movie-page .separator-line{
+    position: relative;
+    border-bottom: none;
+}
+.movie-page .separator-line:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #e8e8e8;
+    width: 100%;
+    height: 1px;
+    transform: scaleY(.5);
+    transform-origin: 0 0;
+    opacity: .4;
+}
+.real-time-word-of-mouth .bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:10px;
+}
+.real-time-word-of-mouth .bottom .left{
+    font-size: 12px;
+    color: #ffe4a2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.movie-info .activity-bar{
+    margin:25px 0 15px; 
+}
+.movie-info .activity-bar .link-btn-open-app{
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.movie-info .activity-bar .link-btn-open-app .left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+.movie-info .activity-bar .link-btn-open-app .left .img-noneBg-juzi{
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    vertical-align: text-top;
+    border-style: none;
+}
+.movie-info .activity-bar .link-btn-open-app .left span{
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 15px;
+}
+.movie-info .activity-bar .link-btn-open-app .right{
+    flex-shrink: 0;
+}
+.movie-info .activity-bar .link-btn-open-app .right span{
+    opacity: .6;
+    font-size: 12px;
+}
+.movie-info .activity-bar .link-btn-open-app .right .img-noneBg-gyjiantou{
+    width: 5px;
+    height: 9px;
+    margin-left: 6px;
+    border-style: none;
+}
+.movie-info .movie-watching-tips{
+    position: relative;
+    padding: 10px 0;
+}
+.movie-info .movie-watching-tips .tip{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px 0;
+}
+.movie-info .movie-watching-tips .tip .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+}
+.movie-info .movie-watching-tips .tip .icon img{
+    max-width: 100%;
+    height: 100%;
+    border-style: none
+}
+.movie-info .movie-watching-tips .tip span{
+    font-size: 15px;
+}
+.movie-info .brief-introduction{
+    position: relative;
+    padding: 16px 0 0;
+}
+.movie-info .brief-introduction .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.movie-info .brief-introduction .title .span{
+    font-size: 15px;
+}
+.movie-info .brief-introduction .title .open{
+    opacity: .6;
+    color: #fff;
+    width: 46px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    background-color: transparent;
+    text-transform: none;
+    overflow: visible;
+    font-family: inherit;
+}
+.movie-info .brief-introduction .title .open span{
+    font-size: 12px;
+
+}
+.movie-info .brief-introduction .title .open .img-noneBg-xiajian{
+    transform: rotate(90deg);
+    width: 5px;
+    height: 9px;
+    margin-left: 6px;
+    background: none;
+    border: 0;
+    display: inline-block;
+}
+.movie-info .brief-introduction .content{
+    font-size: 15px;
+    line-height: 24px;
+    overflow: hidden;
+}
+.movie-info .brief-introduction .content .line-clamp{
+    margin: .14rem 0;
+    text-align: justify;
+}
+.movie-info .brief-introduction .content #brief-introduction-content{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+}
