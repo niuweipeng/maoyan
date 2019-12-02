@@ -1,3 +1,4 @@
+import Tools from "../../../filters/tools";
 //修改全城组件是否显示
 export const allCityShow = ()=>{
     return{
@@ -54,11 +55,13 @@ export const getSubItemsId = (id)=>{
     }
 }
 //获取所有的影院
-export const cinemas = (cinemas)=>{
+export const cinemas = (cinemas=[],offset=0,type=-1)=>{
     return{
         type:"GET_CINEMAS",
         payload:{
-            cinemas
+            cinemas,
+            offset,
+            type
         }
     }
 }
@@ -93,8 +96,31 @@ export const character = (hallType,service)=>{
 }
 
 const cinema = {
+    getCinemaSmall(params){
+        let {day=Tools.filDate(),offset=0,limit=20,districtId=localStorage.districtId,lineId=localStorage.lineId,hallType=localStorage.hallType,brandId=localStorage.brandId,serviceId=localStorage.serviceId,areaId=localStorage.areaId,stationId=localStorage.stationId,item=-1,updateShowDay=true,reqId=Date.now(),cityId=1,movieId=-1} = params || ""
+        return async (dispatch)=>{
+            const data = await this.$axios.post("/ajax/movie?"+"forceUpdate="+new Date(),{
+                    day,
+                    offset,
+                    limit,
+                    districtId,
+                    lineId,
+                    hallType,
+                    brandId,
+                    serviceId,
+                    areaId,
+                    stationId,
+                    item,
+                    updateShowDay,
+                    reqId,
+                    cityId,
+                    movieId
+            })
+            dispatch(cinemas(data.cinemas,offset))
+        }
+    },
     getCinema(params){//获得所有的影院，渲染当前页面
-        let {day=2019-11-28,offset=0,limit=20,districtId=localStorage.districtId,lineId=localStorage.lineId,hallType=localStorage.hallType,brandId=localStorage.brandId,serviceId=localStorage.serviceId,areaId=localStorage.areaId,stationId=localStorage.stationId,item=-1,updateShowDay=true,reqId=Date.now(),cityId=1} = params || ""
+        let {day=Tools.filDate(),offset=0,limit=20,districtId=localStorage.districtId,lineId=localStorage.lineId,hallType=localStorage.hallType,brandId=localStorage.brandId,serviceId=localStorage.serviceId,areaId=localStorage.areaId,stationId=localStorage.stationId,item=-1,updateShowDay=true,reqId=Date.now(),cityId=1,type=-1} = params || ""
         return async (dispatch)=>{
             const data = await this.$axios.get("/ajax/cinemaList",{
                 params:{
@@ -112,9 +138,11 @@ const cinema = {
                     updateShowDay,
                     reqId,
                     cityId,
+                    type
                 }
             })
-            dispatch(cinemas(data.cinemas))
+            console.log(offset);
+            dispatch(cinemas(data.cinemas,offset,type))
         }
     },
     getAllCity(typeNum=1){//根据类型获取商区或者地铁站

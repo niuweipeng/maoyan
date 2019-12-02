@@ -1,5 +1,5 @@
 import  Movies from "./Movies"
-import  Cinema from "./Cinema"
+import  Cinema from "../components/cinema/cinema"
 import  My from "./My"
 import  React from "react"
 import  {

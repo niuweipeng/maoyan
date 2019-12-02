@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    list-style: none;
+}
+.allCity2{
+    width: 100%;
+    position: fixed;
+    background: white;
+    top:133px;
+}
+.allCityHead2{
+    width: 100%;
+    display: flex;
+}
+.cityHead12{
+    width: 50%;
+    text-align: center;
+    padding: 0 10px;
+    line-height: 44px;
+    font-size: 14px;
+    color: #777;
+}
+.cityBody2{
+    width: 100%;
+    display: flex;
+    background: #777;
+}
+.cityBodyLeft2{
+    width: 35%;
+    height: 402px;
+    text-align: left;
+    padding-left: 0;
+    background: white;
+    overflow: scroll;
+}
+.cityBodyLeftLi2{
+    height: 44px;
+    color: #777777;
+    padding-left: 10px;
+    line-height: 44px;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    list-style: none;
+}
+.cityBodyLeftLi2:nth-of-type(1){
+  color:#F03D37;
+}
+.cityBodyLeftLi2:hover{
+    color: #f03d37;
+    background: #f5f5f5;
+}
+.cityBodyRight2{
+    width: 65%;
+    background: rgb(245,245,245);
+    height: 402px;
+    overflow: scroll;
+    padding-right: 15px;
+}
+.cityRightLI2{
+    height: 45px;
+    line-height: 45px;
+    padding: 0 0 0 25px;
+    font-size: 15px;
+    color: #333333;
+    display: flex;
+    justify-content: space-between;
+}
+.cityRightLI2:nth-of-type(1){
+    color:#F03D37;
+}
+.cityRightLI2 .LIRight2{
+    width: 40px;
+}
+.cityRightLI2 .LILeft2 .duiHao{
+    width: 11.5px;
+    height: 8px;
+    opacity: 0;
+}
+.cityRightLI2 .LILeft2 .LILeftRight2{
+    margin-left: 8px;
+}
+

@@ -5,40 +5,32 @@ import {
 import {
     connect
 } from "react-redux"
-import "../assets/css/cinema/cinema.css"
-import "../assets/iconfont/iconfont.css"
-import AllCity from "../components/cinema/AllCity"
-import Brand from "../components/cinema/Brand"
-import Character from "../components/cinema/Character"
-import cinemaActionCreatore,{changeCharacterColor} from "../store/action/cinema"
-import {allCityShow} from "../store/action/cinema"
-import {allBrandShow} from "../store/action/cinema"
-import {allCharacterShow} from "../store/action/cinema"
-import Tools from "../filters/tools"
+import "../../assets/css/cinemaSmall/cinema.css"
+import "../../assets/iconfont/iconfont.css"
+import AllCity from "../cinema/AllCity"
+import Brand from "../cinema/Brand"
+import Character from "../cinema/Character"
+import cinemaActionCreatore,{allCityShow,allBrandShow,allCharacterShow,changeCharacterColor} from "../../store/action/cinema"
+import Tools from "../../filters/tools"
 class Cinema extends React.Component{
     constructor(){
-        super()
+        super();
     }
     render(){
         return (
-            <div>
-                <div style={{
-                    height:"94px"
-                }}>saaaaaaaaaaaaaa</div>
-
-            <div className={"cinema"}>
-                <div className={"cinemaNav"}>
-                    <ul className={"cinemaNavUl"}>
-                        <li onClick={()=>{this.props.changeAllCityShow()}} className={"cinemaNavLi"} style={{color:this.props.allCityShow?"#E54847":"#777777"}}>
-                            <span className={"cinemaNavLiName"}>全城</span>
+                <div className={"cinema2"}>
+                <div className={"cinemaNav2"}>
+                    <ul className={"cinemaNavUl2"}>
+                        <li onClick={()=>{this.props.changeAllCityShow()}} className={"cinemaNavLi2"} style={{color:this.props.allCityShow?"#E54847":"#777777"}}>
+                            <span className={"cinemaNavLiName2"}>全城</span>
                             <span className={this.props.allCityShow?"iconfont icon-shangjiantou":"iconfont icon-shangjiantou1"}></span>
                         </li>
-                        <li onClick={()=>{this.props.changeAllBrandShow()}} className={"cinemaNavLi"} style={{color:this.props.allBrandShow?"#E54847":"#777777"}}>
-                            <span className={"cinemaNavLiName"}>品牌</span>
+                        <li onClick={()=>{this.props.changeAllBrandShow()}} className={"cinemaNavLi2"} style={{color:this.props.allBrandShow?"#E54847":"#777777"}}>
+                            <span className={"cinemaNavLiName2"}>品牌</span>
                             <span className={this.props.allBrandShow?"iconfont icon-shangjiantou":"iconfont icon-shangjiantou1"}></span>
                         </li>
-                        <li onClick={()=>{this.props.changeAllCharacterShow.call(this)}} className={"cinemaNavLi"} style={{color:this.props.allCharacterShow?"#E54847":"#777777"}}>
-                            <span className={"cinemaNavLiName"}>特色</span>
+                        <li onClick={()=>{this.props.changeAllCharacterShow.call(this)}} className={"cinemaNavLi2"} style={{color:this.props.allCharacterShow?"#E54847":"#777777"}}>
+                            <span className={"cinemaNavLiName2"}>特色</span>
                             <span className={this.props.allCharacterShow?"iconfont icon-shangjiantou":"iconfont icon-shangjiantou1"}></span>
                         </li>
                     </ul>
@@ -46,68 +38,73 @@ class Cinema extends React.Component{
                 <AllCity></AllCity>
                 <Brand></Brand>
                 <Character></Character>
-                <div className={"cinemaBody"}>
+                <div className={"cinemaBody2"}>
                     {
                         this.props.cinema.map(v=>(
-                            <div key={v.id} className={"cinemaBodyOut"}>
-                                <div className={"cinemaBodyIn"}>
-                                    <div className={"inTitleDiv"}>
-                                        <div className={"inTitle"}>{v.nm}</div>
-                                        <div className={"inMoney"}>{v.sellPrice}
-                                            <span className={"inMoney1"}>元起</span>
+                         <Link key={v.id+1} to={"/"+v._id} style={{textDecoration:"none"}}>
+                            <div key={v.id} className={"cinemaBodyOut2"}>
+                                <div className={"cinemaBodyIn2"}>
+                                    <div className={"inTitleDiv2"}>
+                                        <div className={"inTitle2"}>{v.nm}</div>
+                                        <div className={"inMoney2"}>{v.sellPrice}
+                                            <span className={"inMoney12"}>元起</span>
                                         </div>
                                     </div>
-                                    <div className={"inPositionDiv"}>
-                                        <div className={"inPosition"}>{v.addr}</div>
-                                        <div className={"inDistance"}>{Tools.filDistance(v.distance)}</div>
+                                    <div className={"inPositionDiv2"}>
+                                        <div className={"inPosition2"}>{v.addr}</div>
+                                        <div className={"inDistance2"}>{Tools.filDistance(v.distance)}</div>
                                     </div>
-                                    <div className={"inLabel"}>
-                                        <div className={"endorse"} style={{
+                                    <div className={"inLabel2"}>
+                                        <div className={"endorse2"} style={{
                                             display:v.tag.allowRefund?"block":"none"
                                         }}>退</div>
-                                        <div className={"endorse"} style={{
-                                           display:v.tag.endorse?"block":"none"
+                                        <div className={"endorse2"} style={{
+                                            display:v.tag.endorse?"block":"none"
                                         }}>改签</div>
-                                        <div className={"snack"} style={{
+                                        <div className={"snack2"} style={{
                                             display:v.tag.snack?"block":"none"
                                         }}>小吃</div>
-                                        <div className={"vipTag"} style={{
+                                        <div className={"vipTag2"} style={{
                                             display:v.tag.vipTag?"block":"none"
                                         }}>折扣卡</div>
                                         {
-                                         v.tag.hallType?v.tag.hallType.map((m,i)=>(
-                                             <div key={m+i} className={"hallType"}>{m}</div>
+                                            v.tag.hallType?v.tag.hallType.map((m,i)=>(
+                                                <div key={m+i} className={"hallType2"}>{m}</div>
                                             )):""
                                         }
                                     </div>
                                     {
-                                        v.promotion.cardPromotionTag?<div className={"inCard"}>
-                                            <img className={"cardImg"} src={Tools.cardImg("cardImg")} alt=""/>
-                                            <div className={"cardIntroduction"}>{v.promotion.cardPromotionTag}</div>
+                                        v.promotion.cardPromotionTag?<div className={"inCard2"}>
+                                            <img className={"cardImg2"} src={Tools.cardImg("cardImg")} alt=""/>
+                                            <div className={"cardIntroduction2"}>{v.promotion.cardPromotionTag}</div>
                                         </div>:null
                                     }
                                 </div>
                             </div>
-                        ))
+                         </Link>
+                       ))
                     }
+                    <div className={"download-tip"}></div>
+                    <div className={"white-bg"}></div>
                 </div>
-            </div>
             </div>
         )
     }
     UNSAFE_componentWillReceiveProps(){
-         let cinemaNavLiName = document.querySelectorAll(".cinemaNavLiName");
+        let cinemaNavLiName = document.querySelectorAll(".cinemaNavLiName2");
         if(this.props.detaiBrandName){
             cinemaNavLiName[1].innerText = this.props.detaiBrandName;
         } else cinemaNavLiName[1].innerText = "品牌";
 
-       if(this.props.detaiCitylName){
-           cinemaNavLiName[0].innerText = this.props.detaiCitylName;
-       } else cinemaNavLiName[0].innerText = "全城";
+        if(this.props.detaiCitylName){
+            cinemaNavLiName[0].innerText = this.props.detaiCitylName;
+        } else cinemaNavLiName[0].innerText = "全城";
     }
     componentDidMount(){
+        // window.removeEventListener("scroll",function () {
+        //     alert("assasaas")
+        // },false)
         localStorage.districtId = localStorage.lineId = localStorage.hallType = localStorage.brandId = localStorage.serviceId = localStorage.areaId = localStorage.stationId = -1;//初始化本地存储
-     this.props.getCinema.call(this);
     }
 }
 function mapStateToProps(state) {
@@ -125,8 +122,8 @@ function mapStateToProps(state) {
 function mapDispatchToProps(dispatch) {
     return {
         //获取所有的影院列表
-        getCinema() {
-            dispatch(cinemaActionCreatore.getCinema.call(this))
+        getCinemaSmall() {
+            dispatch(cinemaActionCreatore.getCinemaSmall.call(this))
         },
         //修改全城组件是否显示显示的组件
         changeAllCityShow() {
