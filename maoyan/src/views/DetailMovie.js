@@ -3,7 +3,9 @@ import "../assets/css/detailMovie/detailMovie.css";
 import Swiper from 'swiper/js/swiper.js'
 import 'swiper/css/swiper.min.css'
 import tools from "../filters/tools"
+import CinemaSmall from "../components/cinemaSmall/cinemaSmall"
 import detailMovieActionCreator from "../store/action/detailMovie";
+import cinemaActionCreatore from "../store/action/cinema"
 import {
     connect,
 } from "react-redux";
@@ -15,6 +17,12 @@ import {
 } from "react-router-dom";
 
 class DetailMovie extends React.Component{
+    constructor(){
+        super();
+        this.state = {
+            
+        }
+    }
     render(){
         return(
             <>
@@ -72,17 +80,22 @@ class DetailMovie extends React.Component{
                         {
                             this.props.showDays.dates?
                             this.props.showDays.dates.map(v=>(
-                                <div className="swiper-slide" key={v.date}>{v.date}</div>
+                                <div className="swiper-slide" key={v.date} 
+                                onClick={()=>{this.props.getCinemaSmall.call(this,{day:v.date,movieId:this.props.detailMovie.id})
+                                }}
+                                >{v.date}</div>
                             )):null
                         }
                     </div>
                 </div>
             </div>
+            <CinemaSmall></CinemaSmall>            
             </>
         )
     }
     componentDidMount(){
         this.props.getDetailMovie(this.props.location.state.id);
+        this.props.getCinemaSmall.call(this,{day:this.props.showDays.date?this.props.showDays.dates[0].date:""})
         new Swiper('.swiper-container', {
             slidesPerView: 3,
             observer:true,
@@ -97,7 +110,14 @@ function mapStateToProps(state) {
         showDays:state.detailMovie.showDays,
     }
 }
-function mapDispatchToProps(dispatch) {
-    return bindActionCreators(detailMovieActionCreator,dispatch)
+function mapDispatchToProps(dispatch){
+    return {
+        ...bindActionCreators(detailMovieActionCreator,dispatch),
+        ...bindActionCreators(cinemaActionCreatore,dispatch),
+    }
+    // return bindActionCreators({
+    //     detailMovieActionCreator,dispatch,
+    //     cinemaActionCreatore,dispatch
+    // })
 }
 export default connect(mapStateToProps, mapDispatchToProps)(DetailMovie);
