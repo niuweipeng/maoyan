@@ -94,8 +94,8 @@ export const character = (hallType,service)=>{
 
 const cinema = {
     getCinema(params){//获得所有的影院，渲染当前页面
-        let {day=2019-11-28,offset=0,limit=20,districtId=localStorage.districtId,lineId=localStorage.lineId,hallType=localStorage.hallType,brandId=localStorage.brandId,serviceId=localStorage.serviceId,areaId=localStorage.areaId,stationId=localStorage.stationId,item=-1,updateShowDay=true,reqId=Date.now(),cityId=1} = params || ""
-        return async (dispatch)=>{
+        let {day=2019-12-01,offset=0,limit=20,districtId=localStorage.districtId,lineId=localStorage.lineId,hallType=localStorage.hallType,brandId=localStorage.brandId,serviceId=localStorage.serviceId,areaId=localStorage.areaId,stationId=localStorage.stationId,item=-1,updateShowDay=true,reqId=Date.now(),cityId=1} = params || ""
+        return async (dispatch)=>{ 
             const data = await this.$axios.get("/ajax/cinemaList",{
                 params:{
                     day,
