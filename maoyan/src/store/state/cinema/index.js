@@ -1,5 +1,6 @@
 export  default{
     cinema:[],
+    offset:0,//页数，跳过多少条
     subItems:[],
     allCityShow:false,//判断点击全城等时，组件是否显示
     allBrandShow:false,//判断点击品牌等时，组件是否显示

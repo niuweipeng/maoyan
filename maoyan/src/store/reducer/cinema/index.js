@@ -3,7 +3,13 @@ import cinema from "../../state/cinema"
 const cinemaReducer = (state=cinema,action)=>{
     state = JSON.parse(JSON.stringify(state));
     if(action.type==="GET_CINEMAS"){//影院列表的渲染数据
-        state.cinema = action.payload.cinemas;
+        if(action.payload.type===1){
+            state.cinema = state.cinema.concat(action.payload.cinemas);
+            state.offset = action.payload.offset;//，跳过多少条
+        }else{
+            state.cinema = action.payload.cinemas;
+        }
+
     }
     if(action.type==="GET_SUBITEMS"){//得到商区或地铁列表数据
         state.subItems = null;//每次调用时，重置该数组，防止残留数据污染
