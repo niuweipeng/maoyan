@@ -5,6 +5,7 @@ export default function(state = initState,{type,payload}){
     if (type === "GET_DETAIL"){
         state.movies = payload.movies
         state.total = payload.total
+        state.all = payload.all
         state.keyWord = payload.keyWord
         state.cinemas = payload.cinemas
         if(payload.keyWord!==""){
