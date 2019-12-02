@@ -13,6 +13,9 @@ import {
 } from "react-router-dom"
 //请求地址拦截,设置允许跨域
 axios.interceptors.request.use(config=>{
+    if(config.url.substr(0,6) === "/login")
+        config.url = "/login" + config.url;
+    else
     config.url = "/maoyan"+config.url;
     return config;
 })
