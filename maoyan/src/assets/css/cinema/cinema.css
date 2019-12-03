@@ -64,6 +64,7 @@
     padding-left: 15px;
     margin-bottom: 50px;
     box-sizing: border-box;
+    margin-bottom: 58.8px;
 }
 .cinemaBodyOut{
     width: 100%;
@@ -154,6 +155,14 @@
 .inCard .cardIntroduction{
     font-size: 11px;
     margin-left: 5px;
+}
+.addCinema{
+    color: #666666;
+    width: 100%;
+    display: block;
+    height: 28px;
+    background: #F5F5F9;
+    border-radius: 0 0 30px 30px;
 }
 
 

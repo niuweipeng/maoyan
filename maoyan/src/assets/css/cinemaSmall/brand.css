@@ -1,0 +1,43 @@
+*{
+     margin: 0;
+     padding: 0;
+ }
+ul li{
+    list-style: none;
+}
+.brand2{
+    width: 100%;
+    position: fixed;
+    background: white;
+    overflow: scroll;
+    font-size: 14px;
+    color: #777;
+    z-index: 100;
+    padding-right: 15px;
+    box-sizing: border-box;
+    top:133px;
+}
+.brand2 .brandOut2{
+    background-color: #fff;
+    overflow: auto;
+    font-size: 15px;
+    color: #777;
+    min-height: 150px;
+    max-height: 352px;
+}
+.brand2 .brandOut2 .brandIn2{
+    line-height: 44px;
+    height: 44px;
+    padding: 0 15px 0 8px;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+}
+.brand2 .brandOut2 .brandIn2:nth-of-type(1){
+    color: #dd403b;
+}
+.brandInLeftRight2{
+    margin-left: 5px;
+    color: #333333;
+    font-family: PingFangSC-Regular,Hiragino Sans GB,sans-serif
+}

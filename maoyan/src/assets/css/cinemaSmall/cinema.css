@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.cinema2{
+    width: 100%;
+    position: relative;
+}
+.cinema2 .cinemaNav2{
+    width: 100%;
+    height: 40px;
+    position: sticky;
+    top: 94px;
+    background: #ffffff;
+}
+.cinema2 .cinemaNav2 .cinemaNavUl2{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    list-style: none;
+    box-sizing: border-box;
+    padding: 0;
+}
+.cinema2 .cinemaNav2 .cinemaNavUl2 .cinemaNavLi2{
+    width: 33.33%;
+    text-align: center;
+    color: #777777;
+    font: 13px  PingFangSC-Regular,Hiragino Sans GB,sans-serif;
+    line-height: 40px;
+    position: relative;
+    border-bottom: 1px solid #e8e8e8;
+}
+.cinema2 .cinemaNav2 .cinemaNavUl2 .cinemaNavLi2:before{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 20px;
+    top: 10px;
+    left: 0;
+    border-left: 1px solid #e8e8e8;
+}
+.cinema2 .cinemaNav2 .cinemaNavUl2 .cinemaNavLi2 .icon-shangjiantou1{
+    margin-left: 4px;
+    font-size: 6px;
+    color: #777;
+    position: absolute;
+}
+.icon-shangjiantou{
+    font-size: 6px;
+    margin-left: 2px;
+    position: absolute;
+    color: #E54847;
+    transform: scale(0.5);
+}
+.cinema2 .cinemaNav2 .cinemaNavUl2 .cinemaNavLi2:nth-of-type(1):before{
+    content: "";
+    height: 0px;
+    top: 0px;
+    left: 0;
+    border-left: none;
+}
+.cinemaBody2{
+    width: 100%;
+    padding-left: 15px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    margin-bottom: 58.8px;
+}
+.cinemaBodyOut2{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 0px 13px 0px;
+    border-bottom: 1px solid #E1E1E1;
+}
+.cinemaBodyIn2{
+    width: 100%;
+}
+.inTitleDiv2{
+    display: flex;
+    height:23px ;
+}
+.inTitleDiv2 .inTitle2{
+    height: 23px;
+    line-height: 23px;
+    font-size: 16px;
+    color: #000;
+}
+.inTitleDiv2 .inMoney2{
+    font-size: 18px;
+    color: #000;
+    padding-left: 3px;
+    color: #F03D37;
+    margin-left: 15px;
+}
+.inTitleDiv2 .inMoney2 .inMoney12{
+    font-size: 11px;
+}
+.inPositionDiv2{
+    color: #666666;
+    font-size: 13px;
+    height: 19.33px;
+    line-height: 1;
+    margin-top: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+.inPositionDiv2 .inPosition2{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.inPositionDiv2 .inDistance2{
+    min-width: 60px;
+    margin-right: 15px;
+    margin-right:15px;
+}
+.inLabel2{
+    display: flex;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.inLabel2 .snack2,.vipTag2{
+    color: #f90;
+    border: 1px solid #f90;
+    padding: 0 3px;
+    height: 15px;
+    line-height: 15px;
+    border-radius: 2px;
+    font-size: 9.6px;
+    margin-right: 5px;
+}
+.inLabel2 .hallType2,.endorse2{
+    color: #589daf;
+    border: 1px solid #589daf;
+    margin-right: 5px;
+    padding: 0 3px;
+    height: 15px;
+    line-height: 15px;
+    border-radius: 2px;
+    font-size: 9.6px;
+}
+.inCard2{
+    display: flex;
+    color: #999;
+    margin-bottom: 4px;
+    font-size: 14px;
+    height: 16px;
+    text-align: left;
+    line-height: 1.5;
+}
+.inCard2 .cardImg2{
+    width: 15px;
+    height: 14px;
+}
+.inCard2 .cardIntroduction2{
+    font-size: 11px;
+    margin-left: 5px;
+}
+.addCinema2{
+    color: #666666;
+    width: 100%;
+    display: block;
+    height: 28px;
+    background: #F5F5F9;
+    border-radius: 0 0 30px 30px;
+}
+
+

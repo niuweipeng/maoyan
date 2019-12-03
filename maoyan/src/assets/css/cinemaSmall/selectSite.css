@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.site{
+    width: 100%;
+}
+.navbar{
+    height: 50.5px;
+    color: #fff;
+    background: #e54847;
+    border-bottom: 1px solid #e54847;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    display: flex;
+}
+.navbar .navbarLeft{
+    height: 50.5px;
+    width: 22.5px;
+    line-height: 50.5px;
+    padding: 0 15px;
+}
+.icon-left{
+   font-size: 25.46px;
+}
+.navbar .navbarRight{
+    width: 270px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 50px;
+}
+.seat-block{
+    width: 100%;
+}
+.movie-info{
+    width: 100%;
+    height: 68.67px;
+    color: #777777;
+    box-sizing: border-box;
+    padding: 15px;
+    /*background: #ffffff;*/
+    background: red;
+}
+.movieDetail .seatTitle{
+    height: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 16px;
+    color: #333;
+}
+.movieDetail .seatDate{
+    display: flex;
+    color: #777777;
+    font-size: 13px;
+}
+.movieDetail .seatDate .seatDateRight{
+    margin-left: 5px;
+}
+.select-block{
+    height: 408.734px;
+    background-color:#f2f1f6;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 0 !important;
+    font-size: 14px;
+    color:#777;
+}
+.seat-block-wrap{
+    visibility: visible;
+    width:100%;
+    height:432px;
+}
+.hall-name-wrapper{
+    transform: translate3d(88px, 0px, 0px) scale(1) rotate3d(0, 0, 0, 0deg);
+    position: absolute;
+    width: 2px;
+    text-align: center;
+    z-index: 10;
+}
+.animate{
+    transition: all .3s;
+}
+.hall-name{
+    display: inline-block;
+    width: 200px;
+    height: 18px;
+    background:#e3e3e3;
+    border-radius: 0 0 30px 30px;
+    z-index: 99;
+}
+.row-nav{
+    transform: translate3d(-4.8px, -11.6335px, 0px) scale(0.4) rotate3d(0, 0, 0, 0deg);
+    position: absolute;
+    z-index: 2;
+    width: 16px;
+    font-size: 13px;
+    text-align: center;
+    top: 0;
+    background-color:rgba(0,0,0,.05);
+    pointer-events: none;
+}
+.row-nav1{
+    height: 48px;
+    line-height: 48px;
+    font-size: 13px;
+    text-align: center;
+    pointer-events: none;
+}
+.seats-block{
+    width: 920px;
+    height:172.8px;
+    touch-action: none;
+    user-select: none;
+    transform: translate3d(-272px,65px, 0px) scale(0.4) rotate3d(0, 0, 0, 0deg);
+    position: relative;
+    z-index: 1;
+}
+.m-line{
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    right: 50%;
+    z-index: 1;
+    border-right: 1px dashed
+    #c3c3c3;
+    margin-left: -5px;
+}
+.seats-wrap{
+    width: 920px;
+    font-size: 0;
+}
+.wrap{
+    display: inline-block;
+    padding: 6px 3px;
+}
+.wrap .seat{
+    width: 40px;
+    height: 36px;
+    font-size: 10px;
+    padding: 3px 6px;
+    box-sizing: border-box;
+    line-height: 1.2;
+    text-align: center;
+    background-size: contain;
+    color:#fff;
+    position: relative;
+    background-repeat: no-repeat;
+}
+.wrap1 .seat{
+    width: 40px;
+    height: 36px;
+    font-size: 10px;
+    padding: 3px 6px;
+    box-sizing: border-box;
+    line-height: 1.2;
+    text-align: center;
+    background-size: contain;
+    color:#fff;
+    position: relative;
+    background-repeat: no-repeat;
+    background-image:url("https://p0.meituan.net/movie/29e5bc58f549052c599f79262946ea5b425.png");
+}
+
+.mew-info{
+    transform: translate3d(0px, 0px, 0px) scale(1) rotate3d(0, 0, 0, 0deg);
+    position: absolute;
+    width: 100%;
+    -webkit-box-flex: 1;
+    flex: 1;
+    text-align: center;
+    padding: 15px 0 12px;
+    color: #c1c0c5;
+    font-size: 12px;
+}
+.mew-info img{
+    width: 115px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    color:#c1c0c5;
+    font-size: 12px;
+}

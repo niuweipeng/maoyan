@@ -89,7 +89,11 @@ class Cinema extends React.Component{
                          </Link>
                        ))
                     }
+                    <div className={"download-tip"}></div>
+                    <div className={"white-bg"}></div>
+                    <input className={"addCinema"} type="button" disabled={this.props.offset>260?"disabled":null} value={this.props.offset>260?"已加载所有影院":"加载更多"} onClick={()=>{this.props.addCinema.call(this,this.props.offset,1)}}/>
                 </div>
+
             </div>
           </div>
         )
@@ -109,10 +113,11 @@ class Cinema extends React.Component{
         this.props.getCinema.call(this);
     }
 }
-function mapStateToProps(state) {
-    console.log(typeof state.cinemaReducer.characterColor,"jljkdsjkdsjksdk");
+function mapStateToProps(state){
+    console.log(state.cinemaReducer.offset);
     return{
         cinema:state.cinemaReducer.cinema,
+        offset:state.cinemaReducer.offset,//分页数，跳过多少条
         allCityShow:state.cinemaReducer.allCityShow,
         allBrandShow:state.cinemaReducer.allBrandShow,
         allCharacterShow:state.cinemaReducer.allCharacterShow,
@@ -142,6 +147,11 @@ function mapDispatchToProps(dispatch) {
         //改变标题特色名称的颜色
         changeCharacterColor(status){
             dispatch(allCharacterShow(status));
+        },
+        //点击加载更多
+        addCinema(offset,type){
+           console.log(offset);
+            dispatch(cinemaActionCreatore.getCinema.call(this,{offset:offset+20,type}))
         }
     }
 };
