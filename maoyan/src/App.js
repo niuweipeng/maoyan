@@ -15,11 +15,13 @@ import Search from "./views/Search"
 import MoviesList from "./views/MoviesList"
 import CinemaList from "./views/CinemaList"
 import Preview from "./views/Preview"
+import PositionMap from "./components/position"
 function App() {
   return (
     <div className="App">
         <Switch>
           <Route path={"/preview"} component={Preview}></Route>
+		<Route path={"/positionMap"} component={PositionMap}></Route>
           <Route path={"/cinemaList"} component={CinemaList}></Route>
           <Route path={"/nogin"} component={Login}></Route>
           <Route path={"/reg"} component={Register}></Route>

@@ -2,6 +2,7 @@ import initState from "../../state/position"
 export default function(state = initState,{type,payload}) {
     state = JSON.parse(JSON.stringify(state))
     localStorage.Maoyan_cities = JSON.stringify(state.cities)
+    localStorage.Maoyan_cityList = JSON.stringify(state.cityList)
     localStorage.Maoyan_hotCities = JSON.stringify(state.hotCities)
     let newArr = []
     if(type === "GET_HISTORY_CITY"){

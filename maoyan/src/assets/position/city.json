@@ -1,0 +1,4845 @@
+{
+    "hotCities": [
+        {
+            "id": 1,
+            "spell": "beijing",
+            "name": "����"
+        },
+        {
+            "id": 3,
+            "spell": "shanghai",
+            "name": "�Ϻ�"
+        },
+        {
+            "id": 47,
+            "spell": "xian",
+            "name": "����"
+        },
+        {
+            "id": 239,
+            "spell": "sanya",
+            "name": "����"
+        },
+        {
+            "id": 188,
+            "spell": "lijiang",
+            "name": "����"
+        },
+        {
+            "id": 125,
+            "spell": "guilin",
+            "name": "����"
+        }
+    ],
+    "cities": {
+        "A": [
+            {
+                "id": 56,
+                "spell": "aba",
+                "name": "����"
+            },
+            {
+                "id": 57,
+                "spell": "akesu",
+                "name": "������"
+            },
+            {
+                "id": 58,
+                "spell": "alashanmeng",
+                "name": "��������"
+            },
+            {
+                "id": 59,
+                "spell": "aletai",
+                "name": "����̩"
+            },
+            {
+                "id": 60,
+                "spell": "ali",
+                "name": "����"
+            },
+            {
+                "id": 61,
+                "spell": "ankang",
+                "name": "����"
+            },
+            {
+                "id": 62,
+                "spell": "anqing",
+                "name": "����"
+            },
+            {
+                "id": 63,
+                "spell": "anshan",
+                "name": "��ɽ"
+            },
+            {
+                "id": 64,
+                "spell": "anshun",
+                "name": "��˳"
+            },
+            {
+                "id": 65,
+                "spell": "anyang",
+                "name": "����"
+            },
+            {
+                "id": 338,
+                "spell": "acheng",
+                "name": "����"
+            },
+            {
+                "id": 339,
+                "spell": "anfu",
+                "name": "����"
+            },
+            {
+                "id": 340,
+                "spell": "anji",
+                "name": "����"
+            },
+            {
+                "id": 341,
+                "spell": "anning",
+                "name": "����"
+            },
+            {
+                "id": 342,
+                "spell": "anqiu",
+                "name": "����"
+            },
+            {
+                "id": 343,
+                "spell": "anxi",
+                "name": "��Ϫ"
+            },
+            {
+                "id": 344,
+                "spell": "anyi",
+                "name": "����"
+            },
+            {
+                "id": 345,
+                "spell": "anyuan",
+                "name": "��Զ"
+            }
+        ],
+        "B": [
+            {
+                "id": 1,
+                "spell": "beijing",
+                "name": "����"
+            },
+            {
+                "id": 66,
+                "spell": "baicheng",
+                "name": "�׳�"
+            },
+            {
+                "id": 67,
+                "spell": "baise",
+                "name": "��ɫ"
+            },
+            {
+                "id": 68,
+                "spell": "baishan",
+                "name": "��ɽ"
+            },
+            {
+                "id": 69,
+                "spell": "baiyin",
+                "name": "����"
+            },
+            {
+                "id": 70,
+                "spell": "bangbu",
+                "name": "����"
+            },
+            {
+                "id": 71,
+                "spell": "baoding",
+                "name": "����"
+            },
+            {
+                "id": 72,
+                "spell": "baoji",
+                "name": "����"
+            },
+            {
+                "id": 73,
+                "spell": "baoshan",
+                "name": "��ɽ"
+            },
+            {
+                "id": 74,
+                "spell": "baotou",
+                "name": "��ͷ"
+            },
+            {
+                "id": 75,
+                "spell": "bayannaoer",
+                "name": "�����׶�"
+            },
+            {
+                "id": 76,
+                "spell": "bayinguoleng",
+                "name": "��������"
+            },
+            {
+                "id": 77,
+                "spell": "bazhong",
+                "name": "����"
+            },
+            {
+                "id": 78,
+                "spell": "beihai",
+                "name": "����"
+            },
+            {
+                "id": 79,
+                "spell": "benxi",
+                "name": "��Ϫ"
+            },
+            {
+                "id": 80,
+                "spell": "bijie",
+                "name": "�Ͻ�"
+            },
+            {
+                "id": 81,
+                "spell": "binzhou",
+                "name": "����"
+            },
+            {
+                "id": 82,
+                "spell": "boertala",
+                "name": "��������"
+            },
+            {
+                "id": 83,
+                "spell": "bozhou",
+                "name": "����"
+            },
+            {
+                "id": 346,
+                "spell": "baoying",
+                "name": "��Ӧ"
+            },
+            {
+                "id": 347,
+                "spell": "bayan",
+                "name": "����"
+            },
+            {
+                "id": 348,
+                "spell": "binhai",
+                "name": "����"
+            },
+            {
+                "id": 349,
+                "spell": "binxian",
+                "name": "����"
+            },
+            {
+                "id": 350,
+                "spell": "binyang",
+                "name": "����"
+            },
+            {
+                "id": 351,
+                "spell": "bishan",
+                "name": "�ɽ"
+            },
+            {
+                "id": 352,
+                "spell": "boai",
+                "name": "����"
+            },
+            {
+                "id": 353,
+                "spell": "boluo",
+                "name": "����"
+            },
+            {
+                "id": 354,
+                "spell": "boxing",
+                "name": "����"
+            }
+        ],
+        "C": [
+            {
+                "id": 2,
+                "spell": "chongqing",
+                "name": "����"
+            },
+            {
+                "id": 5,
+                "spell": "changchun",
+                "name": "����"
+            },
+            {
+                "id": 6,
+                "spell": "changsha",
+                "name": "��ɳ"
+            },
+            {
+                "id": 7,
+                "spell": "changzhou",
+                "name": "����"
+            },
+            {
+                "id": 8,
+                "spell": "chengdu",
+                "name": "�ɶ�"
+            },
+            {
+                "id": 84,
+                "spell": "cangzhou",
+                "name": "����"
+            },
+            {
+                "id": 85,
+                "spell": "changde",
+                "name": "����"
+            },
+            {
+                "id": 86,
+                "spell": "changdu",
+                "name": "����"
+            },
+            {
+                "id": 87,
+                "spell": "changji",
+                "name": "����"
+            },
+            {
+                "id": 88,
+                "spell": "changzhi",
+                "name": "����"
+            },
+            {
+                "id": 89,
+                "spell": "chaohu",
+                "name": "����"
+            },
+            {
+                "id": 90,
+                "spell": "chaoyang",
+                "name": "����"
+            },
+            {
+                "id": 91,
+                "spell": "chaozhou",
+                "name": "����"
+            },
+            {
+                "id": 92,
+                "spell": "chengde",
+                "name": "�е�"
+            },
+            {
+                "id": 93,
+                "spell": "chenzhou",
+                "name": "����"
+            },
+            {
+                "id": 94,
+                "spell": "chifeng",
+                "name": "���"
+            },
+            {
+                "id": 95,
+                "spell": "chizhou",
+                "name": "����"
+            },
+            {
+                "id": 96,
+                "spell": "chongzuo",
+                "name": "����"
+            },
+            {
+                "id": 97,
+                "spell": "chuxiong",
+                "name": "����"
+            },
+            {
+                "id": 98,
+                "spell": "chuzhou",
+                "name": "����"
+            },
+            {
+                "id": 355,
+                "spell": "cangnan",
+                "name": "����"
+            },
+            {
+                "id": 356,
+                "spell": "cangshan",
+                "name": "��ɽ"
+            },
+            {
+                "id": 357,
+                "spell": "caoxian",
+                "name": "����"
+            },
+            {
+                "id": 358,
+                "spell": "changdao",
+                "name": "����"
+            },
+            {
+                "id": 359,
+                "spell": "changfeng",
+                "name": "����"
+            },
+            {
+                "id": 360,
+                "spell": "changhai",
+                "name": "����"
+            },
+            {
+                "id": 361,
+                "spell": "changle",
+                "name": "����"
+            },
+            {
+                "id": 362,
+                "spell": "changle",
+                "name": "����"
+            },
+            {
+                "id": 363,
+                "spell": "changshan",
+                "name": "��ɽ"
+            },
+            {
+                "id": 364,
+                "spell": "changshu",
+                "name": "����"
+            },
+            {
+                "id": 365,
+                "spell": "changtai",
+                "name": "��̩"
+            },
+            {
+                "id": 366,
+                "spell": "changting",
+                "name": "��͡"
+            },
+            {
+                "id": 367,
+                "spell": "changxing",
+                "name": "����"
+            },
+            {
+                "id": 368,
+                "spell": "changyi",
+                "name": "����"
+            },
+            {
+                "id": 369,
+                "spell": "chaoan",
+                "name": "����"
+            },
+            {
+                "id": 370,
+                "spell": "chenggong",
+                "name": "�ʹ�"
+            },
+            {
+                "id": 371,
+                "spell": "chengkou",
+                "name": "�ǿ�"
+            },
+            {
+                "id": 372,
+                "spell": "chengwu",
+                "name": "����"
+            },
+            {
+                "id": 373,
+                "spell": "chiping",
+                "name": "��ƽ"
+            },
+            {
+                "id": 374,
+                "spell": "chongren",
+                "name": "����"
+            },
+            {
+                "id": 375,
+                "spell": "chongyi",
+                "name": "����"
+            },
+            {
+                "id": 376,
+                "spell": "chongzhou",
+                "name": "����"
+            },
+            {
+                "id": 377,
+                "spell": "chunan",
+                "name": "����"
+            },
+            {
+                "id": 378,
+                "spell": "cixi",
+                "name": "��Ϫ"
+            },
+            {
+                "id": 379,
+                "spell": "conghua",
+                "name": "�ӻ�"
+            },
+            {
+                "id": 380,
+                "spell": "congyang",
+                "name": "����"
+            }
+        ],
+        "D": [
+            {
+                "id": 9,
+                "spell": "dalian",
+                "name": "����"
+            },
+            {
+                "id": 10,
+                "spell": "dongguan",
+                "name": "��ݸ"
+            },
+            {
+                "id": 99,
+                "spell": "dali",
+                "name": "����"
+            },
+            {
+                "id": 100,
+                "spell": "dandong",
+                "name": "����"
+            },
+            {
+                "id": 101,
+                "spell": "daqing",
+                "name": "����"
+            },
+            {
+                "id": 102,
+                "spell": "datong",
+                "name": "��ͬ"
+            },
+            {
+                "id": 103,
+                "spell": "daxinganling",
+                "name": "���˰���"
+            },
+            {
+                "id": 104,
+                "spell": "dazhou",
+                "name": "����"
+            },
+            {
+                "id": 105,
+                "spell": "dehong",
+                "name": "�º�"
+            },
+            {
+                "id": 106,
+                "spell": "deyang",
+                "name": "����"
+            },
+            {
+                "id": 107,
+                "spell": "dezhou",
+                "name": "����"
+            },
+            {
+                "id": 108,
+                "spell": "dingxi",
+                "name": "����"
+            },
+            {
+                "id": 109,
+                "spell": "diqing",
+                "name": "����"
+            },
+            {
+                "id": 110,
+                "spell": "dongying",
+                "name": "��Ӫ"
+            },
+            {
+                "id": 381,
+                "spell": "dafeng",
+                "name": "���"
+            },
+            {
+                "id": 382,
+                "spell": "daishan",
+                "name": "�ɽ"
+            },
+            {
+                "id": 383,
+                "spell": "dangshan",
+                "name": "��ɽ"
+            },
+            {
+                "id": 384,
+                "spell": "dangtu",
+                "name": "��Ϳ"
+            },
+            {
+                "id": 385,
+                "spell": "danxian",
+                "name": "����"
+            },
+            {
+                "id": 386,
+                "spell": "danyang",
+                "name": "����"
+            },
+            {
+                "id": 387,
+                "spell": "dapu",
+                "name": "����"
+            },
+            {
+                "id": 388,
+                "spell": "datian",
+                "name": "����"
+            },
+            {
+                "id": 389,
+                "spell": "dayi",
+                "name": "����"
+            },
+            {
+                "id": 390,
+                "spell": "dayu",
+                "name": "����"
+            },
+            {
+                "id": 391,
+                "spell": "dazu",
+                "name": "����"
+            },
+            {
+                "id": 392,
+                "spell": "dean",
+                "name": "�°�"
+            },
+            {
+                "id": 393,
+                "spell": "dehua",
+                "name": "�»�"
+            },
+            {
+                "id": 394,
+                "spell": "dehui",
+                "name": "�»�"
+            },
+            {
+                "id": 395,
+                "spell": "dengfeng",
+                "name": "�Ƿ�"
+            },
+            {
+                "id": 396,
+                "spell": "deqing",
+                "name": "����"
+            },
+            {
+                "id": 397,
+                "spell": "deqing",
+                "name": "����"
+            },
+            {
+                "id": 398,
+                "spell": "dexing",
+                "name": "����"
+            },
+            {
+                "id": 399,
+                "spell": "dianbai",
+                "name": "���"
+            },
+            {
+                "id": 400,
+                "spell": "dianjiang",
+                "name": "�潭"
+            },
+            {
+                "id": 401,
+                "spell": "dingnan",
+                "name": "����"
+            },
+            {
+                "id": 402,
+                "spell": "dingtao",
+                "name": "����"
+            },
+            {
+                "id": 403,
+                "spell": "dingyuan",
+                "name": "��Զ"
+            },
+            {
+                "id": 404,
+                "spell": "donga",
+                "name": "����"
+            },
+            {
+                "id": 405,
+                "spell": "donghai",
+                "name": "����"
+            },
+            {
+                "id": 406,
+                "spell": "dongming",
+                "name": "����"
+            },
+            {
+                "id": 407,
+                "spell": "dongping",
+                "name": "��ƽ"
+            },
+            {
+                "id": 408,
+                "spell": "dongshan",
+                "name": "��ɽ"
+            },
+            {
+                "id": 409,
+                "spell": "dongtai",
+                "name": "��̨"
+            },
+            {
+                "id": 410,
+                "spell": "dongtou",
+                "name": "��ͷ"
+            },
+            {
+                "id": 411,
+                "spell": "dongxiang",
+                "name": "����"
+            },
+            {
+                "id": 412,
+                "spell": "dongyang",
+                "name": "����"
+            },
+            {
+                "id": 413,
+                "spell": "dongyuan",
+                "name": "��Դ"
+            },
+            {
+                "id": 414,
+                "spell": "dongzhi",
+                "name": "����"
+            },
+            {
+                "id": 415,
+                "spell": "duchang",
+                "name": "����"
+            },
+            {
+                "id": 416,
+                "spell": "dujiangyan",
+                "name": "������"
+            }
+        ],
+        "E": [
+            {
+                "id": 111,
+                "spell": "eerduosi",
+                "name": "������˹"
+            },
+            {
+                "id": 112,
+                "spell": "enshi",
+                "name": "��ʩ"
+            },
+            {
+                "id": 113,
+                "spell": "ezhou",
+                "name": "����"
+            },
+            {
+                "id": 417,
+                "spell": "enping",
+                "name": "��ƽ"
+            }
+        ],
+        "F": [
+            {
+                "id": 11,
+                "spell": "foshan",
+                "name": "��ɽ"
+            },
+            {
+                "id": 12,
+                "spell": "fuzhou",
+                "name": "����"
+            },
+            {
+                "id": 114,
+                "spell": "fangchenggang",
+                "name": "���Ǹ�"
+            },
+            {
+                "id": 115,
+                "spell": "fushun",
+                "name": "��˳"
+            },
+            {
+                "id": 116,
+                "spell": "fuxin",
+                "name": "����"
+            },
+            {
+                "id": 117,
+                "spell": "fuyang",
+                "name": "����"
+            },
+            {
+                "id": 118,
+                "spell": "fuzhou",
+                "name": "����"
+            },
+            {
+                "id": 418,
+                "spell": "faku",
+                "name": "����"
+            },
+            {
+                "id": 419,
+                "spell": "fanchang",
+                "name": "����"
+            },
+            {
+                "id": 420,
+                "spell": "fangzheng",
+                "name": "����"
+            },
+            {
+                "id": 421,
+                "spell": "feicheng",
+                "name": "�ʳ�"
+            },
+            {
+                "id": 422,
+                "spell": "feidong",
+                "name": "�ʶ�"
+            },
+            {
+                "id": 423,
+                "spell": "feixi",
+                "name": "����"
+            },
+            {
+                "id": 424,
+                "spell": "feixian",
+                "name": "����"
+            },
+            {
+                "id": 425,
+                "spell": "fengcheng",
+                "name": "���"
+            },
+            {
+                "id": 426,
+                "spell": "fengdu",
+                "name": "�ᶼ"
+            },
+            {
+                "id": 427,
+                "spell": "fenghua",
+                "name": "�"
+            },
+            {
+                "id": 428,
+                "spell": "fengjie",
+                "name": "���"
+            },
+            {
+                "id": 429,
+                "spell": "fengkai",
+                "name": "�⿪"
+            },
+            {
+                "id": 430,
+                "spell": "fengshun",
+                "name": "��˳"
+            },
+            {
+                "id": 431,
+                "spell": "fengtai",
+                "name": "��̨"
+            },
+            {
+                "id": 432,
+                "spell": "fengxian",
+                "name": "����"
+            },
+            {
+                "id": 433,
+                "spell": "fengxin",
+                "name": "����"
+            },
+            {
+                "id": 434,
+                "spell": "fengyang",
+                "name": "����"
+            },
+            {
+                "id": 435,
+                "spell": "fenyi",
+                "name": "����"
+            },
+            {
+                "id": 436,
+                "spell": "fogang",
+                "name": "���"
+            },
+            {
+                "id": 437,
+                "spell": "fuan",
+                "name": "����"
+            },
+            {
+                "id": 438,
+                "spell": "fuding",
+                "name": "����"
+            },
+            {
+                "id": 439,
+                "spell": "fuliang",
+                "name": "����"
+            },
+            {
+                "id": 440,
+                "spell": "fumin",
+                "name": "����"
+            },
+            {
+                "id": 441,
+                "spell": "funan",
+                "name": "����"
+            },
+            {
+                "id": 442,
+                "spell": "funing",
+                "name": "����"
+            },
+            {
+                "id": 443,
+                "spell": "fuqing",
+                "name": "����"
+            },
+            {
+                "id": 444,
+                "spell": "fuyang",
+                "name": "����"
+            }
+        ],
+        "G": [
+            {
+                "id": 13,
+                "spell": "guangzhou",
+                "name": "����"
+            },
+            {
+                "id": 14,
+                "spell": "guiyang",
+                "name": "����"
+            },
+            {
+                "id": 119,
+                "spell": "gannan",
+                "name": "����"
+            },
+            {
+                "id": 120,
+                "spell": "ganzhou",
+                "name": "����"
+            },
+            {
+                "id": 121,
+                "spell": "ganzi",
+                "name": "����"
+            },
+            {
+                "id": 122,
+                "spell": "guangan",
+                "name": "�㰲"
+            },
+            {
+                "id": 123,
+                "spell": "guangyuan",
+                "name": "��Ԫ"
+            },
+            {
+                "id": 124,
+                "spell": "guigang",
+                "name": "���"
+            },
+            {
+                "id": 125,
+                "spell": "guilin",
+                "name": "����"
+            },
+            {
+                "id": 126,
+                "spell": "guoluo",
+                "name": "����"
+            },
+            {
+                "id": 127,
+                "spell": "guyuan",
+                "name": "��ԭ"
+            },
+            {
+                "id": 445,
+                "spell": "ganxian",
+                "name": "����"
+            },
+            {
+                "id": 446,
+                "spell": "ganyu",
+                "name": "����"
+            },
+            {
+                "id": 447,
+                "spell": "gaoan",
+                "name": "�߰�"
+            },
+            {
+                "id": 448,
+                "spell": "gaocheng",
+                "name": "޻��"
+            },
+            {
+                "id": 449,
+                "spell": "gaochun",
+                "name": "�ߴ�"
+            },
+            {
+                "id": 450,
+                "spell": "gaolan",
+                "name": "����"
+            },
+            {
+                "id": 451,
+                "spell": "gaoling",
+                "name": "����"
+            },
+            {
+                "id": 452,
+                "spell": "gaomi",
+                "name": "����"
+            },
+            {
+                "id": 453,
+                "spell": "gaoqing",
+                "name": "����"
+            },
+            {
+                "id": 454,
+                "spell": "gaotang",
+                "name": "����"
+            },
+            {
+                "id": 455,
+                "spell": "gaoyao",
+                "name": "��Ҫ"
+            },
+            {
+                "id": 456,
+                "spell": "gaoyi",
+                "name": "����"
+            },
+            {
+                "id": 457,
+                "spell": "gaoyou",
+                "name": "����"
+            },
+            {
+                "id": 458,
+                "spell": "gaozhou",
+                "name": "����"
+            },
+            {
+                "id": 459,
+                "spell": "gongyi",
+                "name": "����"
+            },
+            {
+                "id": 460,
+                "spell": "guangchang",
+                "name": "���"
+            },
+            {
+                "id": 461,
+                "spell": "guangde",
+                "name": "���"
+            },
+            {
+                "id": 462,
+                "spell": "guangfeng",
+                "name": "���"
+            },
+            {
+                "id": 463,
+                "spell": "guangning",
+                "name": "����"
+            },
+            {
+                "id": 464,
+                "spell": "guangrao",
+                "name": "����"
+            },
+            {
+                "id": 465,
+                "spell": "guangze",
+                "name": "����"
+            },
+            {
+                "id": 466,
+                "spell": "guannan",
+                "name": "����"
+            },
+            {
+                "id": 467,
+                "spell": "guanxian",
+                "name": "����"
+            },
+            {
+                "id": 468,
+                "spell": "guanyun",
+                "name": "����"
+            },
+            {
+                "id": 469,
+                "spell": "guixi",
+                "name": "��Ϫ"
+            },
+            {
+                "id": 470,
+                "spell": "gutian",
+                "name": "����"
+            },
+            {
+                "id": 471,
+                "spell": "guzhen",
+                "name": "����"
+            }
+        ],
+        "H": [
+            {
+                "id": 15,
+                "spell": "haerbin",
+                "name": "������"
+            },
+            {
+                "id": 16,
+                "spell": "haikou",
+                "name": "����"
+            },
+            {
+                "id": 17,
+                "spell": "handan",
+                "name": "����"
+            },
+            {
+                "id": 18,
+                "spell": "hangzhou",
+                "name": "����"
+            },
+            {
+                "id": 19,
+                "spell": "hefei",
+                "name": "�Ϸ�"
+            },
+            {
+                "id": 20,
+                "spell": "huizhou",
+                "name": "����"
+            },
+            {
+                "id": 128,
+                "spell": "haibei",
+                "name": "����"
+            },
+            {
+                "id": 129,
+                "spell": "haidong",
+                "name": "����"
+            },
+            {
+                "id": 130,
+                "spell": "hainan",
+                "name": "����"
+            },
+            {
+                "id": 131,
+                "spell": "haixi",
+                "name": "����"
+            },
+            {
+                "id": 132,
+                "spell": "hami",
+                "name": "����"
+            },
+            {
+                "id": 133,
+                "spell": "hanzhong",
+                "name": "����"
+            },
+            {
+                "id": 134,
+                "spell": "hebi",
+                "name": "�ױ�"
+            },
+            {
+                "id": 135,
+                "spell": "hechi",
+                "name": "�ӳ�"
+            },
+            {
+                "id": 136,
+                "spell": "hegang",
+                "name": "�׸�"
+            },
+            {
+                "id": 137,
+                "spell": "heihe",
+                "name": "�ں�"
+            },
+            {
+                "id": 138,
+                "spell": "hengshui",
+                "name": "��ˮ"
+            },
+            {
+                "id": 139,
+                "spell": "hengyang",
+                "name": "����"
+            },
+            {
+                "id": 140,
+                "spell": "hetiandi",
+                "name": "�����"
+            },
+            {
+                "id": 141,
+                "spell": "heyuan",
+                "name": "��Դ"
+            },
+            {
+                "id": 142,
+                "spell": "heze",
+                "name": "����"
+            },
+            {
+                "id": 143,
+                "spell": "hezhou",
+                "name": "����"
+            },
+            {
+                "id": 144,
+                "spell": "honghe",
+                "name": "���"
+            },
+            {
+                "id": 145,
+                "spell": "huaian",
+                "name": "����"
+            },
+            {
+                "id": 146,
+                "spell": "huaibei",
+                "name": "����"
+            },
+            {
+                "id": 147,
+                "spell": "huaihua",
+                "name": "����"
+            },
+            {
+                "id": 148,
+                "spell": "huainan",
+                "name": "����"
+            },
+            {
+                "id": 149,
+                "spell": "huanggang",
+                "name": "�Ƹ�"
+            },
+            {
+                "id": 150,
+                "spell": "huangnan",
+                "name": "����"
+            },
+            {
+                "id": 151,
+                "spell": "huangshan",
+                "name": "��ɽ"
+            },
+            {
+                "id": 152,
+                "spell": "huangshi",
+                "name": "��ʯ"
+            },
+            {
+                "id": 153,
+                "spell": "huhehaote",
+                "name": "���ͺ���"
+            },
+            {
+                "id": 154,
+                "spell": "huludao",
+                "name": "��«��"
+            },
+            {
+                "id": 155,
+                "spell": "hulunbeier",
+                "name": "���ױ���"
+            },
+            {
+                "id": 156,
+                "spell": "huzhou",
+                "name": "����"
+            },
+            {
+                "id": 472,
+                "spell": "haian",
+                "name": "����"
+            },
+            {
+                "id": 473,
+                "spell": "haifeng",
+                "name": "����"
+            },
+            {
+                "id": 474,
+                "spell": "haimen",
+                "name": "����"
+            },
+            {
+                "id": 475,
+                "spell": "haining",
+                "name": "����"
+            },
+            {
+                "id": 476,
+                "spell": "haiyan",
+                "name": "����"
+            },
+            {
+                "id": 477,
+                "spell": "haiyang",
+                "name": "����"
+            },
+            {
+                "id": 478,
+                "spell": "hanshan",
+                "name": "��ɽ"
+            },
+            {
+                "id": 479,
+                "spell": "hechuan",
+                "name": "�ϴ�"
+            },
+            {
+                "id": 480,
+                "spell": "hengfeng",
+                "name": "���"
+            },
+            {
+                "id": 481,
+                "spell": "hengxian",
+                "name": "����"
+            },
+            {
+                "id": 482,
+                "spell": "heping",
+                "name": "��ƽ"
+            },
+            {
+                "id": 483,
+                "spell": "heshan",
+                "name": "��ɽ"
+            },
+            {
+                "id": 484,
+                "spell": "hexian",
+                "name": "����"
+            },
+            {
+                "id": 485,
+                "spell": "hongze",
+                "name": "����"
+            },
+            {
+                "id": 486,
+                "spell": "huaan",
+                "name": "����"
+            },
+            {
+                "id": 487,
+                "spell": "huadian",
+                "name": "���"
+            },
+            {
+                "id": 488,
+                "spell": "huaiji",
+                "name": "����"
+            },
+            {
+                "id": 489,
+                "spell": "huaining",
+                "name": "����"
+            },
+            {
+                "id": 490,
+                "spell": "huaiyuan",
+                "name": "��Զ"
+            },
+            {
+                "id": 491,
+                "spell": "huantai",
+                "name": "��̨"
+            },
+            {
+                "id": 492,
+                "spell": "huazhou",
+                "name": "����"
+            },
+            {
+                "id": 493,
+                "spell": "huian",
+                "name": "�ݰ�"
+            },
+            {
+                "id": 494,
+                "spell": "huichang",
+                "name": "���"
+            },
+            {
+                "id": 495,
+                "spell": "huidong",
+                "name": "�ݶ�"
+            },
+            {
+                "id": 496,
+                "spell": "huilai",
+                "name": "����"
+            },
+            {
+                "id": 497,
+                "spell": "huimin",
+                "name": "����"
+            },
+            {
+                "id": 498,
+                "spell": "hukou",
+                "name": "����"
+            },
+            {
+                "id": 499,
+                "spell": "hulan",
+                "name": "����"
+            },
+            {
+                "id": 500,
+                "spell": "huoqiu",
+                "name": "����"
+            },
+            {
+                "id": 501,
+                "spell": "huoshan",
+                "name": "��ɽ"
+            },
+            {
+                "id": 502,
+                "spell": "huxian",
+                "name": "����"
+            }
+        ],
+        "J": [
+            {
+                "id": 21,
+                "spell": "jiaozuo",
+                "name": "����"
+            },
+            {
+                "id": 22,
+                "spell": "jiaxing",
+                "name": "����"
+            },
+            {
+                "id": 23,
+                "spell": "jilin",
+                "name": "����"
+            },
+            {
+                "id": 24,
+                "spell": "jinan",
+                "name": "����"
+            },
+            {
+                "id": 157,
+                "spell": "jiamusi",
+                "name": "��ľ˹"
+            },
+            {
+                "id": 158,
+                "spell": "jiangmen",
+                "name": "����"
+            },
+            {
+                "id": 159,
+                "spell": "jian",
+                "name": "����"
+            },
+            {
+                "id": 160,
+                "spell": "jiayuguan",
+                "name": "������"
+            },
+            {
+                "id": 161,
+                "spell": "jieyang",
+                "name": "����"
+            },
+            {
+                "id": 162,
+                "spell": "jinchang",
+                "name": "���"
+            },
+            {
+                "id": 163,
+                "spell": "jincheng",
+                "name": "����"
+            },
+            {
+                "id": 164,
+                "spell": "jingdezhen",
+                "name": "������"
+            },
+            {
+                "id": 165,
+                "spell": "jingmen",
+                "name": "����"
+            },
+            {
+                "id": 166,
+                "spell": "jingzhou",
+                "name": "����"
+            },
+            {
+                "id": 167,
+                "spell": "jinhua",
+                "name": "��"
+            },
+            {
+                "id": 168,
+                "spell": "jining",
+                "name": "����"
+            },
+            {
+                "id": 169,
+                "spell": "jinzhong",
+                "name": "����"
+            },
+            {
+                "id": 170,
+                "spell": "jinzhou",
+                "name": "����"
+            },
+            {
+                "id": 171,
+                "spell": "jiujiang",
+                "name": "�Ž�"
+            },
+            {
+                "id": 172,
+                "spell": "jiuquan",
+                "name": "��Ȫ"
+            },
+            {
+                "id": 173,
+                "spell": "jixi",
+                "name": "����"
+            },
+            {
+                "id": 503,
+                "spell": "jiande",
+                "name": "����"
+            },
+            {
+                "id": 504,
+                "spell": "jiangdu",
+                "name": "����"
+            },
+            {
+                "id": 505,
+                "spell": "jiangjin",
+                "name": "����"
+            },
+            {
+                "id": 506,
+                "spell": "jiangle",
+                "name": "����"
+            },
+            {
+                "id": 507,
+                "spell": "jiangshan",
+                "name": "��ɽ"
+            },
+            {
+                "id": 508,
+                "spell": "jiangyan",
+                "name": "����"
+            },
+            {
+                "id": 509,
+                "spell": "jiangyin",
+                "name": "����"
+            },
+            {
+                "id": 510,
+                "spell": "jianhu",
+                "name": "����"
+            },
+            {
+                "id": 511,
+                "spell": "jianning",
+                "name": "����"
+            },
+            {
+                "id": 512,
+                "spell": "jianou",
+                "name": "���"
+            },
+            {
+                "id": 513,
+                "spell": "jianyang",
+                "name": "����"
+            },
+            {
+                "id": 514,
+                "spell": "jian",
+                "name": "����"
+            },
+            {
+                "id": 515,
+                "spell": "jiaohe",
+                "name": "�Ժ�"
+            },
+            {
+                "id": 516,
+                "spell": "jiaoling",
+                "name": "����"
+            },
+            {
+                "id": 517,
+                "spell": "jiaonan",
+                "name": "����"
+            },
+            {
+                "id": 518,
+                "spell": "jiaozhou",
+                "name": "����"
+            },
+            {
+                "id": 519,
+                "spell": "jiashan",
+                "name": "����"
+            },
+            {
+                "id": 520,
+                "spell": "jiaxiang",
+                "name": "����"
+            },
+            {
+                "id": 521,
+                "spell": "jiedong",
+                "name": "�Ҷ�"
+            },
+            {
+                "id": 522,
+                "spell": "jieshou",
+                "name": "����"
+            },
+            {
+                "id": 523,
+                "spell": "jiexi",
+                "name": "����"
+            },
+            {
+                "id": 524,
+                "spell": "jimo",
+                "name": "��ī"
+            },
+            {
+                "id": 525,
+                "spell": "jingan",
+                "name": "����"
+            },
+            {
+                "id": 526,
+                "spell": "jingde",
+                "name": "캵�"
+            },
+            {
+                "id": 527,
+                "spell": "jinggangshan",
+                "name": "����ɽ"
+            },
+            {
+                "id": 528,
+                "spell": "jingjiang",
+                "name": "����"
+            },
+            {
+                "id": 529,
+                "spell": "jingning",
+                "name": "����"
+            },
+            {
+                "id": 530,
+                "spell": "jingxian",
+                "name": "����"
+            },
+            {
+                "id": 531,
+                "spell": "jingxing",
+                "name": "����"
+            },
+            {
+                "id": 532,
+                "spell": "jinhu",
+                "name": "���"
+            },
+            {
+                "id": 533,
+                "spell": "jinjiang",
+                "name": "����"
+            },
+            {
+                "id": 534,
+                "spell": "jinmen",
+                "name": "����"
+            },
+            {
+                "id": 535,
+                "spell": "jinning",
+                "name": "����"
+            },
+            {
+                "id": 536,
+                "spell": "jintan",
+                "name": "��̳"
+            },
+            {
+                "id": 537,
+                "spell": "jintang",
+                "name": "����"
+            },
+            {
+                "id": 538,
+                "spell": "jinxian",
+                "name": "����"
+            },
+            {
+                "id": 539,
+                "spell": "jinxi",
+                "name": "��Ϫ"
+            },
+            {
+                "id": 540,
+                "spell": "jinxiang",
+                "name": "����"
+            },
+            {
+                "id": 541,
+                "spell": "jinyun",
+                "name": "����"
+            },
+            {
+                "id": 542,
+                "spell": "jinzhai",
+                "name": "��կ"
+            },
+            {
+                "id": 543,
+                "spell": "jinzhou",
+                "name": "����"
+            },
+            {
+                "id": 544,
+                "spell": "jishui",
+                "name": "��ˮ"
+            },
+            {
+                "id": 545,
+                "spell": "jiujiang",
+                "name": "�Ž�"
+            },
+            {
+                "id": 546,
+                "spell": "jiutai",
+                "name": "��̨"
+            },
+            {
+                "id": 547,
+                "spell": "jixi",
+                "name": "��Ϫ"
+            },
+            {
+                "id": 548,
+                "spell": "jiyang",
+                "name": "����"
+            },
+            {
+                "id": 549,
+                "spell": "jiyuan",
+                "name": "��Դ"
+            },
+            {
+                "id": 550,
+                "spell": "juancheng",
+                "name": "۲��"
+            },
+            {
+                "id": 551,
+                "spell": "junan",
+                "name": "����"
+            },
+            {
+                "id": 552,
+                "spell": "jurong",
+                "name": "����"
+            },
+            {
+                "id": 553,
+                "spell": "juxian",
+                "name": "����"
+            },
+            {
+                "id": 554,
+                "spell": "juye",
+                "name": "��Ұ"
+            }
+        ],
+        "K": [
+            {
+                "id": 25,
+                "spell": "kunming",
+                "name": "����"
+            },
+            {
+                "id": 174,
+                "spell": "kaifeng",
+                "name": "����"
+            },
+            {
+                "id": 175,
+                "spell": "kashidi",
+                "name": "��ʲ��"
+            },
+            {
+                "id": 176,
+                "spell": "kelamayi",
+                "name": "��������"
+            },
+            {
+                "id": 177,
+                "spell": "kezile",
+                "name": "������"
+            },
+            {
+                "id": 555,
+                "spell": "kaihua",
+                "name": "����"
+            },
+            {
+                "id": 556,
+                "spell": "kaiping",
+                "name": "��ƽ"
+            },
+            {
+                "id": 557,
+                "spell": "kaixian",
+                "name": "����"
+            },
+            {
+                "id": 558,
+                "spell": "kaiyang",
+                "name": "����"
+            },
+            {
+                "id": 559,
+                "spell": "kangping",
+                "name": "��ƽ"
+            },
+            {
+                "id": 560,
+                "spell": "kenli",
+                "name": "����"
+            },
+            {
+                "id": 561,
+                "spell": "kunshan",
+                "name": "��ɽ"
+            }
+        ],
+        "L": [
+            {
+                "id": 26,
+                "spell": "lanzhou",
+                "name": "����"
+            },
+            {
+                "id": 27,
+                "spell": "liuzhou",
+                "name": "����"
+            },
+            {
+                "id": 28,
+                "spell": "luoyang",
+                "name": "����"
+            },
+            {
+                "id": 178,
+                "spell": "laibin",
+                "name": "����"
+            },
+            {
+                "id": 179,
+                "spell": "laiwu",
+                "name": "����"
+            },
+            {
+                "id": 180,
+                "spell": "langfang",
+                "name": "�ȷ�"
+            },
+            {
+                "id": 181,
+                "spell": "lasa",
+                "name": "����"
+            },
+            {
+                "id": 182,
+                "spell": "leshan",
+                "name": "��ɽ"
+            },
+            {
+                "id": 183,
+                "spell": "liangshan",
+                "name": "��ɽ"
+            },
+            {
+                "id": 184,
+                "spell": "lianyungang",
+                "name": "���Ƹ�"
+            },
+            {
+                "id": 185,
+                "spell": "liaocheng",
+                "name": "�ĳ�"
+            },
+            {
+                "id": 186,
+                "spell": "liaoyang",
+                "name": "����"
+            },
+            {
+                "id": 187,
+                "spell": "liaoyuan",
+                "name": "��Դ"
+            },
+            {
+                "id": 188,
+                "spell": "lijiang",
+                "name": "����"
+            },
+            {
+                "id": 189,
+                "spell": "lincang",
+                "name": "�ٲ�"
+            },
+            {
+                "id": 190,
+                "spell": "linfen",
+                "name": "�ٷ�"
+            },
+            {
+                "id": 191,
+                "spell": "linxia",
+                "name": "����"
+            },
+            {
+                "id": 192,
+                "spell": "linyi",
+                "name": "����"
+            },
+            {
+                "id": 193,
+                "spell": "linzhi",
+                "name": "��֥"
+            },
+            {
+                "id": 194,
+                "spell": "lishui",
+                "name": "��ˮ"
+            },
+            {
+                "id": 195,
+                "spell": "liuan",
+                "name": "����"
+            },
+            {
+                "id": 196,
+                "spell": "liupanshui",
+                "name": "����ˮ"
+            },
+            {
+                "id": 197,
+                "spell": "longnan",
+                "name": "¤��"
+            },
+            {
+                "id": 198,
+                "spell": "longyan",
+                "name": "����"
+            },
+            {
+                "id": 199,
+                "spell": "loudi",
+                "name": "¦��"
+            },
+            {
+                "id": 200,
+                "spell": "luohe",
+                "name": "���"
+            },
+            {
+                "id": 201,
+                "spell": "luzhou",
+                "name": "����"
+            },
+            {
+                "id": 202,
+                "spell": "lvliang",
+                "name": "����"
+            },
+            {
+                "id": 562,
+                "spell": "laian",
+                "name": "����"
+            },
+            {
+                "id": 563,
+                "spell": "laixi",
+                "name": "����"
+            },
+            {
+                "id": 564,
+                "spell": "laiyang",
+                "name": "����"
+            },
+            {
+                "id": 565,
+                "spell": "laizhou",
+                "name": "����"
+            },
+            {
+                "id": 566,
+                "spell": "langxi",
+                "name": "��Ϫ"
+            },
+            {
+                "id": 567,
+                "spell": "lantian",
+                "name": "����"
+            },
+            {
+                "id": 568,
+                "spell": "lanxi",
+                "name": "��Ϫ"
+            },
+            {
+                "id": 569,
+                "spell": "lean",
+                "name": "�ְ�"
+            },
+            {
+                "id": 570,
+                "spell": "lechang",
+                "name": "�ֲ�"
+            },
+            {
+                "id": 571,
+                "spell": "leizhou",
+                "name": "����"
+            },
+            {
+                "id": 572,
+                "spell": "leling",
+                "name": "����"
+            },
+            {
+                "id": 573,
+                "spell": "leping",
+                "name": "��ƽ"
+            },
+            {
+                "id": 574,
+                "spell": "leqing",
+                "name": "����"
+            },
+            {
+                "id": 575,
+                "spell": "leting",
+                "name": "��ͤ"
+            },
+            {
+                "id": 576,
+                "spell": "liancheng",
+                "name": "����"
+            },
+            {
+                "id": 577,
+                "spell": "liangping",
+                "name": "��ƽ"
+            },
+            {
+                "id": 578,
+                "spell": "liangshan",
+                "name": "��ɽ"
+            },
+            {
+                "id": 579,
+                "spell": "lianhua",
+                "name": "����"
+            },
+            {
+                "id": 580,
+                "spell": "lianjiang",
+                "name": "����"
+            },
+            {
+                "id": 581,
+                "spell": "lianjiang",
+                "name": "����"
+            },
+            {
+                "id": 582,
+                "spell": "liannan",
+                "name": "����"
+            },
+            {
+                "id": 583,
+                "spell": "lianping",
+                "name": "��ƽ"
+            },
+            {
+                "id": 584,
+                "spell": "lianshan",
+                "name": "��ɽ"
+            },
+            {
+                "id": 585,
+                "spell": "lianshui",
+                "name": "��ˮ"
+            },
+            {
+                "id": 586,
+                "spell": "lianzhou",
+                "name": "����"
+            },
+            {
+                "id": 587,
+                "spell": "liaozhong",
+                "name": "����"
+            },
+            {
+                "id": 588,
+                "spell": "lichuan",
+                "name": "�质"
+            },
+            {
+                "id": 589,
+                "spell": "lijin",
+                "name": "����"
+            },
+            {
+                "id": 590,
+                "spell": "linan",
+                "name": "�ٰ�"
+            },
+            {
+                "id": 591,
+                "spell": "lingbi",
+                "name": "���"
+            },
+            {
+                "id": 592,
+                "spell": "lingshou",
+                "name": "����"
+            },
+            {
+                "id": 593,
+                "spell": "lingxian",
+                "name": "����"
+            },
+            {
+                "id": 594,
+                "spell": "linhai",
+                "name": "�ٺ�"
+            },
+            {
+                "id": 595,
+                "spell": "linqing",
+                "name": "����"
+            },
+            {
+                "id": 596,
+                "spell": "linquan",
+                "name": "��Ȫ"
+            },
+            {
+                "id": 597,
+                "spell": "linqu",
+                "name": "����"
+            },
+            {
+                "id": 598,
+                "spell": "linshu",
+                "name": "����"
+            },
+            {
+                "id": 599,
+                "spell": "linyi",
+                "name": "����"
+            },
+            {
+                "id": 600,
+                "spell": "lishui",
+                "name": "��ˮ"
+            },
+            {
+                "id": 601,
+                "spell": "liucheng",
+                "name": "����"
+            },
+            {
+                "id": 602,
+                "spell": "liujiang",
+                "name": "����"
+            },
+            {
+                "id": 603,
+                "spell": "liuyang",
+                "name": "���"
+            },
+            {
+                "id": 604,
+                "spell": "lixin",
+                "name": "����"
+            },
+            {
+                "id": 605,
+                "spell": "liyang",
+                "name": "����"
+            },
+            {
+                "id": 606,
+                "spell": "longan",
+                "name": "¡��"
+            },
+            {
+                "id": 607,
+                "spell": "longchuan",
+                "name": "����"
+            },
+            {
+                "id": 608,
+                "spell": "longhai",
+                "name": "����"
+            },
+            {
+                "id": 609,
+                "spell": "longkou",
+                "name": "����"
+            },
+            {
+                "id": 610,
+                "spell": "longmen",
+                "name": "����"
+            },
+            {
+                "id": 611,
+                "spell": "longnan",
+                "name": "����"
+            },
+            {
+                "id": 612,
+                "spell": "longquan",
+                "name": "��Ȫ"
+            },
+            {
+                "id": 613,
+                "spell": "longyou",
+                "name": "����"
+            },
+            {
+                "id": 614,
+                "spell": "luancheng",
+                "name": "���"
+            },
+            {
+                "id": 615,
+                "spell": "luanchuan",
+                "name": "�ﴨ"
+            },
+            {
+                "id": 616,
+                "spell": "luannan",
+                "name": "����"
+            },
+            {
+                "id": 617,
+                "spell": "luanxian",
+                "name": "����"
+            },
+            {
+                "id": 618,
+                "spell": "lufeng",
+                "name": "½��"
+            },
+            {
+                "id": 619,
+                "spell": "luhe",
+                "name": "½��"
+            },
+            {
+                "id": 620,
+                "spell": "lujiang",
+                "name": "®��"
+            },
+            {
+                "id": 621,
+                "spell": "luoding",
+                "name": "�޶�"
+            },
+            {
+                "id": 622,
+                "spell": "luoning",
+                "name": "����"
+            },
+            {
+                "id": 623,
+                "spell": "luoyuan",
+                "name": "��Դ"
+            },
+            {
+                "id": 624,
+                "spell": "luquan",
+                "name": "¹Ȫ"
+            },
+            {
+                "id": 625,
+                "spell": "luquan",
+                "name": "»Ȱ"
+            },
+            {
+                "id": 626,
+                "spell": "luxi",
+                "name": "«Ϫ"
+            },
+            {
+                "id": 627,
+                "spell": "luzhai",
+                "name": "¹կ"
+            }
+        ],
+        "M": [
+            {
+                "id": 203,
+                "spell": "maanshan",
+                "name": "����ɽ"
+            },
+            {
+                "id": 204,
+                "spell": "maoming",
+                "name": "ï��"
+            },
+            {
+                "id": 205,
+                "spell": "meishan",
+                "name": "üɽ"
+            },
+            {
+                "id": 206,
+                "spell": "meizhou",
+                "name": "÷��"
+            },
+            {
+                "id": 207,
+                "spell": "mianyang",
+                "name": "����"
+            },
+            {
+                "id": 208,
+                "spell": "mudanjiang",
+                "name": "ĵ����"
+            },
+            {
+                "id": 628,
+                "spell": "mashan",
+                "name": "��ɽ"
+            },
+            {
+                "id": 629,
+                "spell": "meixian",
+                "name": "÷��"
+            },
+            {
+                "id": 630,
+                "spell": "mengcheng",
+                "name": "�ɳ�"
+            },
+            {
+                "id": 631,
+                "spell": "mengjin",
+                "name": "�Ͻ�"
+            },
+            {
+                "id": 632,
+                "spell": "mengyin",
+                "name": "����"
+            },
+            {
+                "id": 633,
+                "spell": "mengzhou",
+                "name": "����"
+            },
+            {
+                "id": 634,
+                "spell": "mingguang",
+                "name": "����"
+            },
+            {
+                "id": 635,
+                "spell": "mingxi",
+                "name": "��Ϫ"
+            },
+            {
+                "id": 636,
+                "spell": "minhou",
+                "name": "����"
+            },
+            {
+                "id": 637,
+                "spell": "minqing",
+                "name": "����"
+            },
+            {
+                "id": 638,
+                "spell": "mulan",
+                "name": "ľ��"
+            }
+        ],
+        "N": [
+            {
+                "id": 29,
+                "spell": "nanchang",
+                "name": "�ϲ�"
+            },
+            {
+                "id": 30,
+                "spell": "nanjing",
+                "name": "�Ͼ�"
+            },
+            {
+                "id": 31,
+                "spell": "nanning",
+                "name": "����"
+            },
+            {
+                "id": 32,
+                "spell": "nantong",
+                "name": "��ͨ"
+            },
+            {
+                "id": 33,
+                "spell": "ningbo",
+                "name": "����"
+            },
+            {
+                "id": 209,
+                "spell": "nanchong",
+                "name": "�ϳ�"
+            },
+            {
+                "id": 210,
+                "spell": "nanping",
+                "name": "��ƽ"
+            },
+            {
+                "id": 211,
+                "spell": "nanyang",
+                "name": "����"
+            },
+            {
+                "id": 212,
+                "spell": "naqu",
+                "name": "����"
+            },
+            {
+                "id": 213,
+                "spell": "neijiang",
+                "name": "�ڽ�"
+            },
+            {
+                "id": 214,
+                "spell": "ningde",
+                "name": "����"
+            },
+            {
+                "id": 215,
+                "spell": "nujiang",
+                "name": "ŭ��"
+            },
+            {
+                "id": 639,
+                "spell": "nanan",
+                "name": "�ϰ�"
+            },
+            {
+                "id": 640,
+                "spell": "nanao",
+                "name": "�ϰ�"
+            },
+            {
+                "id": 641,
+                "spell": "nancheng",
+                "name": "�ϳ�"
+            },
+            {
+                "id": 642,
+                "spell": "nanchuan",
+                "name": "�ϴ�"
+            },
+            {
+                "id": 643,
+                "spell": "nanfeng",
+                "name": "�Ϸ�"
+            },
+            {
+                "id": 644,
+                "spell": "nanjing",
+                "name": "�Ͼ�"
+            },
+            {
+                "id": 645,
+                "spell": "nankang",
+                "name": "�Ͽ�"
+            },
+            {
+                "id": 646,
+                "spell": "nanling",
+                "name": "����"
+            },
+            {
+                "id": 647,
+                "spell": "nanxiong",
+                "name": "����"
+            },
+            {
+                "id": 648,
+                "spell": "ningdu",
+                "name": "����"
+            },
+            {
+                "id": 649,
+                "spell": "ningguo",
+                "name": "����"
+            },
+            {
+                "id": 650,
+                "spell": "ninghai",
+                "name": "����"
+            },
+            {
+                "id": 651,
+                "spell": "ninghua",
+                "name": "����"
+            },
+            {
+                "id": 652,
+                "spell": "ningjin",
+                "name": "����"
+            },
+            {
+                "id": 653,
+                "spell": "ningxiang",
+                "name": "����"
+            },
+            {
+                "id": 654,
+                "spell": "ningyang",
+                "name": "����"
+            },
+            {
+                "id": 655,
+                "spell": "nongan",
+                "name": "ũ��"
+            }
+        ],
+        "P": [
+            {
+                "id": 216,
+                "spell": "panjin",
+                "name": "�̽�"
+            },
+            {
+                "id": 217,
+                "spell": "panzhihua",
+                "name": "��֦��"
+            },
+            {
+                "id": 218,
+                "spell": "pingdingshan",
+                "name": "ƽ��ɽ"
+            },
+            {
+                "id": 219,
+                "spell": "pingliang",
+                "name": "ƽ��"
+            },
+            {
+                "id": 220,
+                "spell": "pingxiang",
+                "name": "Ƽ��"
+            },
+            {
+                "id": 221,
+                "spell": "puer",
+                "name": "�ն�"
+            },
+            {
+                "id": 222,
+                "spell": "putian",
+                "name": "����"
+            },
+            {
+                "id": 223,
+                "spell": "puyang",
+                "name": "���"
+            },
+            {
+                "id": 656,
+                "spell": "panan",
+                "name": "�Ͱ�"
+            },
+            {
+                "id": 657,
+                "spell": "panshi",
+                "name": "��ʯ"
+            },
+            {
+                "id": 658,
+                "spell": "peixian",
+                "name": "����"
+            },
+            {
+                "id": 659,
+                "spell": "penglai",
+                "name": "����"
+            },
+            {
+                "id": 660,
+                "spell": "pengshui",
+                "name": "��ˮ"
+            },
+            {
+                "id": 661,
+                "spell": "pengze",
+                "name": "����"
+            },
+            {
+                "id": 662,
+                "spell": "pengzhou",
+                "name": "����"
+            },
+            {
+                "id": 663,
+                "spell": "pingdu",
+                "name": "ƽ��"
+            },
+            {
+                "id": 664,
+                "spell": "pinghe",
+                "name": "ƽ��"
+            },
+            {
+                "id": 665,
+                "spell": "pinghu",
+                "name": "ƽ��"
+            },
+            {
+                "id": 666,
+                "spell": "pingnan",
+                "name": "����"
+            },
+            {
+                "id": 667,
+                "spell": "pingshan",
+                "name": "ƽɽ"
+            },
+            {
+                "id": 668,
+                "spell": "pingtan",
+                "name": "ƽ̶"
+            },
+            {
+                "id": 669,
+                "spell": "pingyang",
+                "name": "ƽ��"
+            },
+            {
+                "id": 670,
+                "spell": "pingyin",
+                "name": "ƽ��"
+            },
+            {
+                "id": 671,
+                "spell": "pingyi",
+                "name": "ƽ��"
+            },
+            {
+                "id": 672,
+                "spell": "pingyuan",
+                "name": "ƽԭ"
+            },
+            {
+                "id": 673,
+                "spell": "pingyuan",
+                "name": "ƽԶ"
+            },
+            {
+                "id": 674,
+                "spell": "pixian",
+                "name": "ۯ��"
+            },
+            {
+                "id": 675,
+                "spell": "pizhou",
+                "name": "����"
+            },
+            {
+                "id": 676,
+                "spell": "poyang",
+                "name": "۶��"
+            },
+            {
+                "id": 677,
+                "spell": "pucheng",
+                "name": "�ֳ�"
+            },
+            {
+                "id": 678,
+                "spell": "pujiang",
+                "name": "�ֽ�"
+            },
+            {
+                "id": 679,
+                "spell": "pujiang",
+                "name": "�ѽ�"
+            },
+            {
+                "id": 680,
+                "spell": "pulandian",
+                "name": "������"
+            },
+            {
+                "id": 681,
+                "spell": "puning",
+                "name": "����"
+            }
+        ],
+        "Q": [
+            {
+                "id": 34,
+                "spell": "qingdao",
+                "name": "�ൺ"
+            },
+            {
+                "id": 35,
+                "spell": "quanzhou",
+                "name": "Ȫ��"
+            },
+            {
+                "id": 224,
+                "spell": "qiandong",
+                "name": "ǭ��"
+            },
+            {
+                "id": 225,
+                "spell": "qiannan",
+                "name": "ǭ��"
+            },
+            {
+                "id": 226,
+                "spell": "qianxinan",
+                "name": "ǭ����"
+            },
+            {
+                "id": 227,
+                "spell": "qingyang",
+                "name": "����"
+            },
+            {
+                "id": 228,
+                "spell": "qingyuan",
+                "name": "��Զ"
+            },
+            {
+                "id": 229,
+                "spell": "qinhuangdao",
+                "name": "�ػʵ�"
+            },
+            {
+                "id": 230,
+                "spell": "qinzhou",
+                "name": "����"
+            },
+            {
+                "id": 231,
+                "spell": "qiqihaer",
+                "name": "�������"
+            },
+            {
+                "id": 232,
+                "spell": "qitaihe",
+                "name": "��̨��"
+            },
+            {
+                "id": 233,
+                "spell": "qujing",
+                "name": "����"
+            },
+            {
+                "id": 234,
+                "spell": "quzhou",
+                "name": "����"
+            },
+            {
+                "id": 682,
+                "spell": "qianan",
+                "name": "Ǩ��"
+            },
+            {
+                "id": 683,
+                "spell": "qianshan",
+                "name": "Ǳɽ"
+            },
+            {
+                "id": 684,
+                "spell": "qianshan",
+                "name": "Ǧɽ"
+            },
+            {
+                "id": 685,
+                "spell": "qianxi",
+                "name": "Ǩ��"
+            },
+            {
+                "id": 686,
+                "spell": "qidong",
+                "name": "����"
+            },
+            {
+                "id": 687,
+                "spell": "qihe",
+                "name": "���"
+            },
+            {
+                "id": 688,
+                "spell": "qijiang",
+                "name": "�뽭"
+            },
+            {
+                "id": 689,
+                "spell": "qimen",
+                "name": "����"
+            },
+            {
+                "id": 690,
+                "spell": "qingliu",
+                "name": "����"
+            },
+            {
+                "id": 691,
+                "spell": "qingtian",
+                "name": "����"
+            },
+            {
+                "id": 692,
+                "spell": "qingxin",
+                "name": "����"
+            },
+            {
+                "id": 693,
+                "spell": "qingyang",
+                "name": "����"
+            },
+            {
+                "id": 694,
+                "spell": "qingyuan",
+                "name": "��Ԫ"
+            },
+            {
+                "id": 695,
+                "spell": "qingyun",
+                "name": "����"
+            },
+            {
+                "id": 696,
+                "spell": "qingzhen",
+                "name": "����"
+            },
+            {
+                "id": 697,
+                "spell": "qingzhou",
+                "name": "����"
+            },
+            {
+                "id": 698,
+                "spell": "qinyang",
+                "name": "����"
+            },
+            {
+                "id": 699,
+                "spell": "qionglai",
+                "name": "����"
+            },
+            {
+                "id": 700,
+                "spell": "qixia",
+                "name": "��ϼ"
+            },
+            {
+                "id": 701,
+                "spell": "quanjiao",
+                "name": "ȫ��"
+            },
+            {
+                "id": 702,
+                "spell": "quannan",
+                "name": "ȫ��"
+            },
+            {
+                "id": 703,
+                "spell": "qufu",
+                "name": "����"
+            },
+            {
+                "id": 704,
+                "spell": "qujiang",
+                "name": "����"
+            }
+        ],
+        "R": [
+            {
+                "id": 235,
+                "spell": "rikaze",
+                "name": "�տ���"
+            },
+            {
+                "id": 236,
+                "spell": "rizhao",
+                "name": "����"
+            },
+            {
+                "id": 705,
+                "spell": "raoping",
+                "name": "��ƽ"
+            },
+            {
+                "id": 706,
+                "spell": "renhua",
+                "name": "�ʻ�"
+            },
+            {
+                "id": 707,
+                "spell": "rongan",
+                "name": "�ڰ�"
+            },
+            {
+                "id": 708,
+                "spell": "rongchang",
+                "name": "�ٲ�"
+            },
+            {
+                "id": 709,
+                "spell": "rongcheng",
+                "name": "�ٳ�"
+            },
+            {
+                "id": 710,
+                "spell": "rongshui",
+                "name": "��ˮ"
+            },
+            {
+                "id": 711,
+                "spell": "rudong",
+                "name": "�綫"
+            },
+            {
+                "id": 712,
+                "spell": "rugao",
+                "name": "���"
+            },
+            {
+                "id": 713,
+                "spell": "ruian",
+                "name": "��"
+            },
+            {
+                "id": 714,
+                "spell": "ruichang",
+                "name": "���"
+            },
+            {
+                "id": 715,
+                "spell": "ruijin",
+                "name": "���"
+            },
+            {
+                "id": 716,
+                "spell": "rushan",
+                "name": "��ɽ"
+            },
+            {
+                "id": 717,
+                "spell": "ruyang",
+                "name": "����"
+            },
+            {
+                "id": 718,
+                "spell": "ruyuan",
+                "name": "��Դ"
+            }
+        ],
+        "S": [
+            {
+                "id": 3,
+                "spell": "shanghai",
+                "name": "�Ϻ�"
+            },
+            {
+                "id": 36,
+                "spell": "shenyang",
+                "name": "����"
+            },
+            {
+                "id": 37,
+                "spell": "shenzhen",
+                "name": "����"
+            },
+            {
+                "id": 38,
+                "spell": "shijiazhuang",
+                "name": "ʯ��ׯ"
+            },
+            {
+                "id": 39,
+                "spell": "suzhou",
+                "name": "����"
+            },
+            {
+                "id": 237,
+                "spell": "sanmenxia",
+                "name": "����Ͽ"
+            },
+            {
+                "id": 238,
+                "spell": "sanming",
+                "name": "����"
+            },
+            {
+                "id": 239,
+                "spell": "sanya",
+                "name": "����"
+            },
+            {
+                "id": 240,
+                "spell": "shangluo",
+                "name": "����"
+            },
+            {
+                "id": 241,
+                "spell": "shangqiu",
+                "name": "����"
+            },
+            {
+                "id": 242,
+                "spell": "shangrao",
+                "name": "����"
+            },
+            {
+                "id": 243,
+                "spell": "shannan",
+                "name": "ɽ��"
+            },
+            {
+                "id": 244,
+                "spell": "shantou",
+                "name": "��ͷ"
+            },
+            {
+                "id": 245,
+                "spell": "shanwei",
+                "name": "��β"
+            },
+            {
+                "id": 246,
+                "spell": "shaoguan",
+                "name": "�ع�"
+            },
+            {
+                "id": 247,
+                "spell": "shaoxing",
+                "name": "����"
+            },
+            {
+                "id": 248,
+                "spell": "shaoyang",
+                "name": "����"
+            },
+            {
+                "id": 249,
+                "spell": "shiyan",
+                "name": "ʮ��"
+            },
+            {
+                "id": 250,
+                "spell": "shizuishan",
+                "name": "ʯ��ɽ"
+            },
+            {
+                "id": 251,
+                "spell": "shuangyashan",
+                "name": "˫Ѽɽ"
+            },
+            {
+                "id": 252,
+                "spell": "shuozhou",
+                "name": "˷��"
+            },
+            {
+                "id": 253,
+                "spell": "siping",
+                "name": "��ƽ"
+            },
+            {
+                "id": 254,
+                "spell": "songyuan",
+                "name": "��ԭ"
+            },
+            {
+                "id": 255,
+                "spell": "suihua",
+                "name": "�绯"
+            },
+            {
+                "id": 256,
+                "spell": "suining",
+                "name": "����"
+            },
+            {
+                "id": 257,
+                "spell": "suizhou",
+                "name": "����"
+            },
+            {
+                "id": 258,
+                "spell": "suqian",
+                "name": "��Ǩ"
+            },
+            {
+                "id": 259,
+                "spell": "suzhou",
+                "name": "����"
+            },
+            {
+                "id": 719,
+                "spell": "sanjiang",
+                "name": "����"
+            },
+            {
+                "id": 720,
+                "spell": "sanmen",
+                "name": "����"
+            },
+            {
+                "id": 721,
+                "spell": "saoan",
+                "name": "گ��"
+            },
+            {
+                "id": 722,
+                "spell": "shanggao",
+                "name": "�ϸ�"
+            },
+            {
+                "id": 723,
+                "spell": "shanghang",
+                "name": "�Ϻ�"
+            },
+            {
+                "id": 724,
+                "spell": "shanghe",
+                "name": "�̺�"
+            },
+            {
+                "id": 725,
+                "spell": "shangli",
+                "name": "����"
+            },
+            {
+                "id": 726,
+                "spell": "shanglin",
+                "name": "����"
+            },
+            {
+                "id": 727,
+                "spell": "shangrao",
+                "name": "����"
+            },
+            {
+                "id": 728,
+                "spell": "shangyou",
+                "name": "����"
+            },
+            {
+                "id": 729,
+                "spell": "shangyu",
+                "name": "����"
+            },
+            {
+                "id": 730,
+                "spell": "shangzhi",
+                "name": "��־"
+            },
+            {
+                "id": 731,
+                "spell": "shaowu",
+                "name": "����"
+            },
+            {
+                "id": 732,
+                "spell": "shaoxing",
+                "name": "����"
+            },
+            {
+                "id": 733,
+                "spell": "shaxian",
+                "name": "ɳ��"
+            },
+            {
+                "id": 734,
+                "spell": "shengsi",
+                "name": "����"
+            },
+            {
+                "id": 735,
+                "spell": "shengzhou",
+                "name": "����"
+            },
+            {
+                "id": 736,
+                "spell": "shenxian",
+                "name": "ݷ��"
+            },
+            {
+                "id": 737,
+                "spell": "shenze",
+                "name": "����"
+            },
+            {
+                "id": 738,
+                "spell": "shexian",
+                "name": "���"
+            },
+            {
+                "id": 739,
+                "spell": "sheyang",
+                "name": "����"
+            },
+            {
+                "id": 740,
+                "spell": "shicheng",
+                "name": "ʯ��"
+            },
+            {
+                "id": 741,
+                "spell": "shilin",
+                "name": "ʯ��"
+            },
+            {
+                "id": 742,
+                "spell": "shishi",
+                "name": "ʯʨ"
+            },
+            {
+                "id": 743,
+                "spell": "shitai",
+                "name": "ʯ̨"
+            },
+            {
+                "id": 744,
+                "spell": "shixing",
+                "name": "ʼ��"
+            },
+            {
+                "id": 745,
+                "spell": "shizhu",
+                "name": "ʯ��"
+            },
+            {
+                "id": 746,
+                "spell": "shouguang",
+                "name": "�ٹ�"
+            },
+            {
+                "id": 747,
+                "spell": "shouning",
+                "name": "����"
+            },
+            {
+                "id": 748,
+                "spell": "shouxian",
+                "name": "����"
+            },
+            {
+                "id": 749,
+                "spell": "shuangcheng",
+                "name": "˫��"
+            },
+            {
+                "id": 750,
+                "spell": "shuangliu",
+                "name": "˫��"
+            },
+            {
+                "id": 751,
+                "spell": "shucheng",
+                "name": "���"
+            },
+            {
+                "id": 752,
+                "spell": "shulan",
+                "name": "����"
+            },
+            {
+                "id": 753,
+                "spell": "shunchang",
+                "name": "˳��"
+            },
+            {
+                "id": 754,
+                "spell": "shuyang",
+                "name": "����"
+            },
+            {
+                "id": 755,
+                "spell": "sihong",
+                "name": "����"
+            },
+            {
+                "id": 756,
+                "spell": "sihui",
+                "name": "�Ļ�"
+            },
+            {
+                "id": 757,
+                "spell": "sishui",
+                "name": "��ˮ"
+            },
+            {
+                "id": 758,
+                "spell": "sixian",
+                "name": "����"
+            },
+            {
+                "id": 759,
+                "spell": "siyang",
+                "name": "����"
+            },
+            {
+                "id": 760,
+                "spell": "songming",
+                "name": "����"
+            },
+            {
+                "id": 761,
+                "spell": "songxi",
+                "name": "��Ϫ"
+            },
+            {
+                "id": 762,
+                "spell": "songxian",
+                "name": "����"
+            },
+            {
+                "id": 763,
+                "spell": "songyang",
+                "name": "����"
+            },
+            {
+                "id": 764,
+                "spell": "suichang",
+                "name": "���"
+            },
+            {
+                "id": 765,
+                "spell": "suichuan",
+                "name": "�촨"
+            },
+            {
+                "id": 766,
+                "spell": "suining",
+                "name": "���"
+            },
+            {
+                "id": 767,
+                "spell": "suixi",
+                "name": "�Ϫ"
+            },
+            {
+                "id": 768,
+                "spell": "suixi",
+                "name": "��Ϫ"
+            },
+            {
+                "id": 769,
+                "spell": "susong",
+                "name": "����"
+            },
+            {
+                "id": 770,
+                "spell": "suyu",
+                "name": "��ԥ"
+            }
+        ],
+        "T": [
+            {
+                "id": 4,
+                "spell": "tianjin",
+                "name": "���"
+            },
+            {
+                "id": 40,
+                "spell": "taizhou",
+                "name": "̨��"
+            },
+            {
+                "id": 41,
+                "spell": "tangshan",
+                "name": "��ɽ"
+            },
+            {
+                "id": 260,
+                "spell": "tachengdi",
+                "name": "���ǵ�"
+            },
+            {
+                "id": 261,
+                "spell": "taian",
+                "name": "̩��"
+            },
+            {
+                "id": 262,
+                "spell": "taiyuan",
+                "name": "̫ԭ"
+            },
+            {
+                "id": 263,
+                "spell": "taizhou",
+                "name": "̩��"
+            },
+            {
+                "id": 264,
+                "spell": "tianshui",
+                "name": "��ˮ"
+            },
+            {
+                "id": 265,
+                "spell": "tieling",
+                "name": "����"
+            },
+            {
+                "id": 266,
+                "spell": "tongchuan",
+                "name": "ͭ��"
+            },
+            {
+                "id": 267,
+                "spell": "tonghua",
+                "name": "ͨ��"
+            },
+            {
+                "id": 268,
+                "spell": "tongliao",
+                "name": "ͨ��"
+            },
+            {
+                "id": 269,
+                "spell": "tongling",
+                "name": "ͭ��"
+            },
+            {
+                "id": 270,
+                "spell": "tongren",
+                "name": "ͭ��"
+            },
+            {
+                "id": 271,
+                "spell": "tulufan",
+                "name": "��³��"
+            },
+            {
+                "id": 771,
+                "spell": "taicang",
+                "name": "̫��"
+            },
+            {
+                "id": 772,
+                "spell": "taihe",
+                "name": "̫��"
+            },
+            {
+                "id": 773,
+                "spell": "taihe",
+                "name": "̩��"
+            },
+            {
+                "id": 774,
+                "spell": "taihu",
+                "name": "̫��"
+            },
+            {
+                "id": 775,
+                "spell": "taining",
+                "name": "̩��"
+            },
+            {
+                "id": 776,
+                "spell": "taishan",
+                "name": "̨ɽ"
+            },
+            {
+                "id": 777,
+                "spell": "taishun",
+                "name": "̩˳"
+            },
+            {
+                "id": 778,
+                "spell": "taixing",
+                "name": "̩��"
+            },
+            {
+                "id": 779,
+                "spell": "tancheng",
+                "name": "۰��"
+            },
+            {
+                "id": 780,
+                "spell": "tanghai",
+                "name": "�ƺ�"
+            },
+            {
+                "id": 781,
+                "spell": "tengzhou",
+                "name": "����"
+            },
+            {
+                "id": 782,
+                "spell": "tianchang",
+                "name": "�쳤"
+            },
+            {
+                "id": 783,
+                "spell": "tiantai",
+                "name": "��̨"
+            },
+            {
+                "id": 784,
+                "spell": "tongcheng",
+                "name": "ͩ��"
+            },
+            {
+                "id": 785,
+                "spell": "tonggu",
+                "name": "ͭ��"
+            },
+            {
+                "id": 786,
+                "spell": "tonghe",
+                "name": "ͨ��"
+            },
+            {
+                "id": 787,
+                "spell": "tongliang",
+                "name": "ͭ��"
+            },
+            {
+                "id": 788,
+                "spell": "tongling",
+                "name": "ͭ��"
+            },
+            {
+                "id": 789,
+                "spell": "tonglu",
+                "name": "ͩ®"
+            },
+            {
+                "id": 790,
+                "spell": "tongnan",
+                "name": "����"
+            },
+            {
+                "id": 791,
+                "spell": "tongshan",
+                "name": "ͭɽ"
+            },
+            {
+                "id": 792,
+                "spell": "tongxiang",
+                "name": "ͩ��"
+            },
+            {
+                "id": 793,
+                "spell": "tongzhou",
+                "name": "ͨ��"
+            }
+        ],
+        "W": [
+            {
+                "id": 42,
+                "spell": "weifang",
+                "name": "Ϋ��"
+            },
+            {
+                "id": 43,
+                "spell": "weihai",
+                "name": "����"
+            },
+            {
+                "id": 44,
+                "spell": "wuhan",
+                "name": "�人"
+            },
+            {
+                "id": 45,
+                "spell": "wuxi",
+                "name": "����"
+            },
+            {
+                "id": 272,
+                "spell": "weinan",
+                "name": "μ��"
+            },
+            {
+                "id": 273,
+                "spell": "wenshan",
+                "name": "��ɽ"
+            },
+            {
+                "id": 274,
+                "spell": "wenzhou",
+                "name": "����"
+            },
+            {
+                "id": 275,
+                "spell": "wuhai",
+                "name": "�ں�"
+            },
+            {
+                "id": 276,
+                "spell": "wuhu",
+                "name": "�ߺ�"
+            },
+            {
+                "id": 277,
+                "spell": "wulanchabu",
+                "name": "�����첼"
+            },
+            {
+                "id": 278,
+                "spell": "wulumuqi",
+                "name": "��³ľ��"
+            },
+            {
+                "id": 279,
+                "spell": "wuwei",
+                "name": "����"
+            },
+            {
+                "id": 280,
+                "spell": "wuzhong",
+                "name": "����"
+            },
+            {
+                "id": 281,
+                "spell": "wuzhou",
+                "name": "����"
+            },
+            {
+                "id": 794,
+                "spell": "wafangdian",
+                "name": "�߷���"
+            },
+            {
+                "id": 795,
+                "spell": "wanan",
+                "name": "��"
+            },
+            {
+                "id": 796,
+                "spell": "wangcheng",
+                "name": "����"
+            },
+            {
+                "id": 797,
+                "spell": "wangjiang",
+                "name": "����"
+            },
+            {
+                "id": 798,
+                "spell": "wannian",
+                "name": "����"
+            },
+            {
+                "id": 799,
+                "spell": "wanzai",
+                "name": "����"
+            },
+            {
+                "id": 800,
+                "spell": "weishan",
+                "name": "΢ɽ"
+            },
+            {
+                "id": 801,
+                "spell": "wencheng",
+                "name": "�ĳ�"
+            },
+            {
+                "id": 802,
+                "spell": "wendeng",
+                "name": "�ĵ�"
+            },
+            {
+                "id": 803,
+                "spell": "wengyuan",
+                "name": "��Դ"
+            },
+            {
+                "id": 804,
+                "spell": "wenling",
+                "name": "����"
+            },
+            {
+                "id": 805,
+                "spell": "wenshang",
+                "name": "����"
+            },
+            {
+                "id": 806,
+                "spell": "wenxian",
+                "name": "����"
+            },
+            {
+                "id": 807,
+                "spell": "woyang",
+                "name": "����"
+            },
+            {
+                "id": 808,
+                "spell": "wuchang",
+                "name": "�峣"
+            },
+            {
+                "id": 809,
+                "spell": "wucheng",
+                "name": "���"
+            },
+            {
+                "id": 810,
+                "spell": "wuchuan",
+                "name": "�⴨"
+            },
+            {
+                "id": 811,
+                "spell": "wudi",
+                "name": "���"
+            },
+            {
+                "id": 812,
+                "spell": "wuhe",
+                "name": "���"
+            },
+            {
+                "id": 813,
+                "spell": "wuhu",
+                "name": "�ߺ�"
+            },
+            {
+                "id": 814,
+                "spell": "wuhua",
+                "name": "�廪"
+            },
+            {
+                "id": 815,
+                "spell": "wuji",
+                "name": "�޼�"
+            },
+            {
+                "id": 816,
+                "spell": "wujiang",
+                "name": "�⽭"
+            },
+            {
+                "id": 817,
+                "spell": "wulian",
+                "name": "����"
+            },
+            {
+                "id": 818,
+                "spell": "wulong",
+                "name": "��¡"
+            },
+            {
+                "id": 819,
+                "spell": "wuming",
+                "name": "����"
+            },
+            {
+                "id": 820,
+                "spell": "wuning",
+                "name": "����"
+            },
+            {
+                "id": 821,
+                "spell": "wuping",
+                "name": "��ƽ"
+            },
+            {
+                "id": 822,
+                "spell": "wushan",
+                "name": "��ɽ"
+            },
+            {
+                "id": 823,
+                "spell": "wuwei",
+                "name": "��Ϊ"
+            },
+            {
+                "id": 824,
+                "spell": "wuxi",
+                "name": "��Ϫ"
+            },
+            {
+                "id": 825,
+                "spell": "wuyi",
+                "name": "����"
+            },
+            {
+                "id": 826,
+                "spell": "wuyishan",
+                "name": "����ɽ"
+            },
+            {
+                "id": 827,
+                "spell": "wuyuan",
+                "name": "��Դ"
+            },
+            {
+                "id": 828,
+                "spell": "wuzhi",
+                "name": "����"
+            }
+        ],
+        "X": [
+            {
+                "id": 46,
+                "spell": "xiamen",
+                "name": "����"
+            },
+            {
+                "id": 47,
+                "spell": "xian",
+                "name": "����"
+            },
+            {
+                "id": 48,
+                "spell": "xuchang",
+                "name": "����"
+            },
+            {
+                "id": 49,
+                "spell": "xuzhou",
+                "name": "����"
+            },
+            {
+                "id": 282,
+                "spell": "xiangfan",
+                "name": "�差"
+            },
+            {
+                "id": 283,
+                "spell": "xiangtan",
+                "name": "��̶"
+            },
+            {
+                "id": 284,
+                "spell": "xiangxi",
+                "name": "����"
+            },
+            {
+                "id": 285,
+                "spell": "xianning",
+                "name": "����"
+            },
+            {
+                "id": 286,
+                "spell": "xianyang",
+                "name": "����"
+            },
+            {
+                "id": 287,
+                "spell": "xiaogan",
+                "name": "Т��"
+            },
+            {
+                "id": 288,
+                "spell": "xilinguolemeng",
+                "name": "���ֹ�����"
+            },
+            {
+                "id": 289,
+                "spell": "xinganmeng",
+                "name": "�˰���"
+            },
+            {
+                "id": 290,
+                "spell": "xingtai",
+                "name": "��̨"
+            },
+            {
+                "id": 291,
+                "spell": "xining",
+                "name": "����"
+            },
+            {
+                "id": 292,
+                "spell": "xinxiang",
+                "name": "����"
+            },
+            {
+                "id": 293,
+                "spell": "xinyang",
+                "name": "����"
+            },
+            {
+                "id": 294,
+                "spell": "xinyu",
+                "name": "����"
+            },
+            {
+                "id": 295,
+                "spell": "xinzhou",
+                "name": "����"
+            },
+            {
+                "id": 296,
+                "spell": "xishuangbanna",
+                "name": "��˫����"
+            },
+            {
+                "id": 297,
+                "spell": "xuancheng",
+                "name": "����"
+            },
+            {
+                "id": 829,
+                "spell": "xiajiang",
+                "name": "Ͽ��"
+            },
+            {
+                "id": 830,
+                "spell": "xiajin",
+                "name": "�Ľ�"
+            },
+            {
+                "id": 831,
+                "spell": "xiangshan",
+                "name": "��ɽ"
+            },
+            {
+                "id": 832,
+                "spell": "xiangshui",
+                "name": "��ˮ"
+            },
+            {
+                "id": 833,
+                "spell": "xianju",
+                "name": "�ɾ�"
+            },
+            {
+                "id": 834,
+                "spell": "xianyou",
+                "name": "����"
+            },
+            {
+                "id": 835,
+                "spell": "xiaoxian",
+                "name": "����"
+            },
+            {
+                "id": 836,
+                "spell": "xiapu",
+                "name": "ϼ��"
+            },
+            {
+                "id": 837,
+                "spell": "xifeng",
+                "name": "Ϣ��"
+            },
+            {
+                "id": 838,
+                "spell": "xinan",
+                "name": "�°�"
+            },
+            {
+                "id": 839,
+                "spell": "xinchang",
+                "name": "�²�"
+            },
+            {
+                "id": 840,
+                "spell": "xinfeng",
+                "name": "�ŷ�"
+            },
+            {
+                "id": 841,
+                "spell": "xinfeng",
+                "name": "�·�"
+            },
+            {
+                "id": 842,
+                "spell": "xingan",
+                "name": "�¸�"
+            },
+            {
+                "id": 843,
+                "spell": "xingguo",
+                "name": "�˹�"
+            },
+            {
+                "id": 844,
+                "spell": "xinghua",
+                "name": "�˻�"
+            },
+            {
+                "id": 845,
+                "spell": "xingning",
+                "name": "����"
+            },
+            {
+                "id": 846,
+                "spell": "xingtang",
+                "name": "����"
+            },
+            {
+                "id": 847,
+                "spell": "xingyang",
+                "name": "����"
+            },
+            {
+                "id": 848,
+                "spell": "xingzi",
+                "name": "����"
+            },
+            {
+                "id": 849,
+                "spell": "xinji",
+                "name": "����"
+            },
+            {
+                "id": 850,
+                "spell": "xinjian",
+                "name": "�½�"
+            },
+            {
+                "id": 851,
+                "spell": "xinjin",
+                "name": "�½�"
+            },
+            {
+                "id": 852,
+                "spell": "xinle",
+                "name": "����"
+            },
+            {
+                "id": 853,
+                "spell": "xinmin",
+                "name": "����"
+            },
+            {
+                "id": 854,
+                "spell": "xinmi",
+                "name": "����"
+            },
+            {
+                "id": 855,
+                "spell": "xintai",
+                "name": "��̩"
+            },
+            {
+                "id": 856,
+                "spell": "xinxing",
+                "name": "����"
+            },
+            {
+                "id": 857,
+                "spell": "xinyi",
+                "name": "����"
+            },
+            {
+                "id": 858,
+                "spell": "xinyi",
+                "name": "����"
+            },
+            {
+                "id": 859,
+                "spell": "xinzheng",
+                "name": "��֣"
+            },
+            {
+                "id": 860,
+                "spell": "xiuning",
+                "name": "����"
+            },
+            {
+                "id": 861,
+                "spell": "xiushan",
+                "name": "��ɽ"
+            },
+            {
+                "id": 862,
+                "spell": "xiushui",
+                "name": "��ˮ"
+            },
+            {
+                "id": 863,
+                "spell": "xiuwen",
+                "name": "����"
+            },
+            {
+                "id": 864,
+                "spell": "xiuwu",
+                "name": "����"
+            },
+            {
+                "id": 865,
+                "spell": "xundian",
+                "name": "Ѱ��"
+            },
+            {
+                "id": 866,
+                "spell": "xunwu",
+                "name": "Ѱ��"
+            },
+            {
+                "id": 867,
+                "spell": "xuwen",
+                "name": "����"
+            },
+            {
+                "id": 868,
+                "spell": "xuyi",
+                "name": "����"
+            }
+        ],
+        "Y": [
+            {
+                "id": 50,
+                "spell": "yangzhou",
+                "name": "����"
+            },
+            {
+                "id": 51,
+                "spell": "yantai",
+                "name": "��̨"
+            },
+            {
+                "id": 298,
+                "spell": "yaan",
+                "name": "�Ű�"
+            },
+            {
+                "id": 299,
+                "spell": "yanan",
+                "name": "�Ӱ�"
+            },
+            {
+                "id": 300,
+                "spell": "yanbian",
+                "name": "�ӱ�"
+            },
+            {
+                "id": 301,
+                "spell": "yancheng",
+                "name": "�γ�"
+            },
+            {
+                "id": 302,
+                "spell": "yangjiang",
+                "name": "����"
+            },
+            {
+                "id": 303,
+                "spell": "yangquan",
+                "name": "��Ȫ"
+            },
+            {
+                "id": 304,
+                "spell": "yibin",
+                "name": "�˱�"
+            },
+            {
+                "id": 305,
+                "spell": "yichang",
+                "name": "�˲�"
+            },
+            {
+                "id": 306,
+                "spell": "yichun",
+                "name": "����"
+            },
+            {
+                "id": 307,
+                "spell": "yichun",
+                "name": "�˴�"
+            },
+            {
+                "id": 308,
+                "spell": "yilihasake",
+                "name": "���������"
+            },
+            {
+                "id": 309,
+                "spell": "yinchuan",
+                "name": "����"
+            },
+            {
+                "id": 310,
+                "spell": "yingkou",
+                "name": "Ӫ��"
+            },
+            {
+                "id": 311,
+                "spell": "yingtan",
+                "name": "ӥ̶"
+            },
+            {
+                "id": 312,
+                "spell": "yiyang",
+                "name": "����"
+            },
+            {
+                "id": 313,
+                "spell": "yongzhou",
+                "name": "����"
+            },
+            {
+                "id": 314,
+                "spell": "yueyang",
+                "name": "����"
+            },
+            {
+                "id": 315,
+                "spell": "yulin",
+                "name": "����"
+            },
+            {
+                "id": 316,
+                "spell": "yulin",
+                "name": "����"
+            },
+            {
+                "id": 317,
+                "spell": "yuncheng",
+                "name": "�˳�"
+            },
+            {
+                "id": 318,
+                "spell": "yunfu",
+                "name": "�Ƹ�"
+            },
+            {
+                "id": 319,
+                "spell": "yushu",
+                "name": "����"
+            },
+            {
+                "id": 320,
+                "spell": "yuxi",
+                "name": "��Ϫ"
+            },
+            {
+                "id": 869,
+                "spell": "yangchun",
+                "name": "����"
+            },
+            {
+                "id": 870,
+                "spell": "yangdong",
+                "name": "����"
+            },
+            {
+                "id": 871,
+                "spell": "yanggu",
+                "name": "����"
+            },
+            {
+                "id": 872,
+                "spell": "yangshan",
+                "name": "��ɽ"
+            },
+            {
+                "id": 873,
+                "spell": "yangxin",
+                "name": "����"
+            },
+            {
+                "id": 874,
+                "spell": "yangxi",
+                "name": "����"
+            },
+            {
+                "id": 875,
+                "spell": "yangzhong",
+                "name": "����"
+            },
+            {
+                "id": 876,
+                "spell": "yanshi",
+                "name": "��ʦ"
+            },
+            {
+                "id": 877,
+                "spell": "yanshou",
+                "name": "����"
+            },
+            {
+                "id": 878,
+                "spell": "yanzhou",
+                "name": "����"
+            },
+            {
+                "id": 879,
+                "spell": "yichuan",
+                "name": "����"
+            },
+            {
+                "id": 880,
+                "spell": "yifeng",
+                "name": "�˷�"
+            },
+            {
+                "id": 881,
+                "spell": "yihuang",
+                "name": "�˻�"
+            },
+            {
+                "id": 882,
+                "spell": "yilan",
+                "name": "����"
+            },
+            {
+                "id": 883,
+                "spell": "yiliang",
+                "name": "����"
+            },
+            {
+                "id": 884,
+                "spell": "yinan",
+                "name": "����"
+            },
+            {
+                "id": 885,
+                "spell": "yingde",
+                "name": "Ӣ��"
+            },
+            {
+                "id": 886,
+                "spell": "yingshang",
+                "name": "���"
+            },
+            {
+                "id": 887,
+                "spell": "yishui",
+                "name": "��ˮ"
+            },
+            {
+                "id": 888,
+                "spell": "yiwu",
+                "name": "����"
+            },
+            {
+                "id": 889,
+                "spell": "yixian",
+                "name": "����"
+            },
+            {
+                "id": 890,
+                "spell": "yixing",
+                "name": "����"
+            },
+            {
+                "id": 891,
+                "spell": "yiyang",
+                "name": "߮��"
+            },
+            {
+                "id": 892,
+                "spell": "yiyang",
+                "name": "����"
+            },
+            {
+                "id": 893,
+                "spell": "yiyuan",
+                "name": "��Դ"
+            },
+            {
+                "id": 894,
+                "spell": "yizheng",
+                "name": "����"
+            },
+            {
+                "id": 895,
+                "spell": "yongan",
+                "name": "����"
+            },
+            {
+                "id": 896,
+                "spell": "yongchuan",
+                "name": "����"
+            },
+            {
+                "id": 897,
+                "spell": "yongchun",
+                "name": "����"
+            },
+            {
+                "id": 898,
+                "spell": "yongdeng",
+                "name": "����"
+            },
+            {
+                "id": 899,
+                "spell": "yongding",
+                "name": "����"
+            },
+            {
+                "id": 900,
+                "spell": "yongfeng",
+                "name": "����"
+            },
+            {
+                "id": 901,
+                "spell": "yongji",
+                "name": "����"
+            },
+            {
+                "id": 902,
+                "spell": "yongjia",
+                "name": "����"
+            },
+            {
+                "id": 903,
+                "spell": "yongkang",
+                "name": "����"
+            },
+            {
+                "id": 904,
+                "spell": "yongning",
+                "name": "����"
+            },
+            {
+                "id": 905,
+                "spell": "yongtai",
+                "name": "��̩"
+            },
+            {
+                "id": 906,
+                "spell": "yongxin",
+                "name": "����"
+            },
+            {
+                "id": 907,
+                "spell": "yongxiu",
+                "name": "����"
+            },
+            {
+                "id": 908,
+                "spell": "youxi",
+                "name": "��Ϫ"
+            },
+            {
+                "id": 909,
+                "spell": "youyang",
+                "name": "����"
+            },
+            {
+                "id": 910,
+                "spell": "yuanshi",
+                "name": "Ԫ��"
+            },
+            {
+                "id": 911,
+                "spell": "yucheng",
+                "name": "����"
+            },
+            {
+                "id": 912,
+                "spell": "yudu",
+                "name": "�ڶ�"
+            },
+            {
+                "id": 913,
+                "spell": "yuexi",
+                "name": "����"
+            },
+            {
+                "id": 914,
+                "spell": "yugan",
+                "name": "���"
+            },
+            {
+                "id": 915,
+                "spell": "yuhuan",
+                "name": "��"
+            },
+            {
+                "id": 916,
+                "spell": "yujiang",
+                "name": "�཭"
+            },
+            {
+                "id": 917,
+                "spell": "yunan",
+                "name": "����"
+            },
+            {
+                "id": 918,
+                "spell": "yunan",
+                "name": "�ư�"
+            },
+            {
+                "id": 919,
+                "spell": "yuncheng",
+                "name": "۩��"
+            },
+            {
+                "id": 920,
+                "spell": "yunhe",
+                "name": "�ƺ�"
+            },
+            {
+                "id": 921,
+                "spell": "yunxiao",
+                "name": "����"
+            },
+            {
+                "id": 922,
+                "spell": "yunyang",
+                "name": "����"
+            },
+            {
+                "id": 923,
+                "spell": "yushan",
+                "name": "��ɽ"
+            },
+            {
+                "id": 924,
+                "spell": "yushu",
+                "name": "����"
+            },
+            {
+                "id": 925,
+                "spell": "yutai",
+                "name": "��̨"
+            },
+            {
+                "id": 926,
+                "spell": "yutian",
+                "name": "����"
+            },
+            {
+                "id": 927,
+                "spell": "yuyao",
+                "name": "��Ҧ"
+            },
+            {
+                "id": 928,
+                "spell": "yuzhong",
+                "name": "����"
+            }
+        ],
+        "Z": [
+            {
+                "id": 52,
+                "spell": "zhangzhou",
+                "name": "����"
+            },
+            {
+                "id": 53,
+                "spell": "zhengzhou",
+                "name": "֣��"
+            },
+            {
+                "id": 54,
+                "spell": "zhongshan",
+                "name": "��ɽ"
+            },
+            {
+                "id": 55,
+                "spell": "zhuhai",
+                "name": "�麣"
+            },
+            {
+                "id": 321,
+                "spell": "zaozhuang",
+                "name": "��ׯ"
+            },
+            {
+                "id": 322,
+                "spell": "zhangjiajie",
+                "name": "�żҽ�"
+            },
+            {
+                "id": 323,
+                "spell": "zhangjiakou",
+                "name": "�żҿ�"
+            },
+            {
+                "id": 324,
+                "spell": "zhangye",
+                "name": "��Ҵ"
+            },
+            {
+                "id": 325,
+                "spell": "zhanjiang",
+                "name": "տ��"
+            },
+            {
+                "id": 326,
+                "spell": "zhaoqing",
+                "name": "����"
+            },
+            {
+                "id": 327,
+                "spell": "zhaotong",
+                "name": "��ͨ"
+            },
+            {
+                "id": 328,
+                "spell": "zhenjiang",
+                "name": "��"
+            },
+            {
+                "id": 329,
+                "spell": "zhongwei",
+                "name": "����"
+            },
+            {
+                "id": 330,
+                "spell": "zhoukou",
+                "name": "�ܿ�"
+            },
+            {
+                "id": 331,
+                "spell": "zhoushan",
+                "name": "��ɽ"
+            },
+            {
+                "id": 332,
+                "spell": "zhumadian",
+                "name": "פ����"
+            },
+            {
+                "id": 333,
+                "spell": "zhuzhou",
+                "name": "����"
+            },
+            {
+                "id": 334,
+                "spell": "zibo",
+                "name": "�Ͳ�"
+            },
+            {
+                "id": 335,
+                "spell": "zigong",
+                "name": "�Թ�"
+            },
+            {
+                "id": 336,
+                "spell": "ziyang",
+                "name": "����"
+            },
+            {
+                "id": 337,
+                "spell": "zunyi",
+                "name": "����"
+            },
+            {
+                "id": 929,
+                "spell": "zanhuang",
+                "name": "�޻�"
+            },
+            {
+                "id": 930,
+                "spell": "zengcheng",
+                "name": "����"
+            },
+            {
+                "id": 931,
+                "spell": "zhangjiagang",
+                "name": "�żҸ�"
+            },
+            {
+                "id": 932,
+                "spell": "zhangping",
+                "name": "��ƽ"
+            },
+            {
+                "id": 933,
+                "spell": "zhangpu",
+                "name": "����"
+            },
+            {
+                "id": 934,
+                "spell": "zhangqiu",
+                "name": "����"
+            },
+            {
+                "id": 935,
+                "spell": "zhangshu",
+                "name": "����"
+            },
+            {
+                "id": 936,
+                "spell": "zhanhua",
+                "name": "մ��"
+            },
+            {
+                "id": 937,
+                "spell": "zhaoxian",
+                "name": "����"
+            },
+            {
+                "id": 938,
+                "spell": "zhaoyuan",
+                "name": "��Զ"
+            },
+            {
+                "id": 939,
+                "spell": "zhengding",
+                "name": "����"
+            },
+            {
+                "id": 940,
+                "spell": "zhenghe",
+                "name": "����"
+            },
+            {
+                "id": 941,
+                "spell": "zherong",
+                "name": "����"
+            },
+            {
+                "id": 942,
+                "spell": "zhongmou",
+                "name": "��Ĳ"
+            },
+            {
+                "id": 943,
+                "spell": "zhongxian",
+                "name": "����"
+            },
+            {
+                "id": 944,
+                "spell": "zhouning",
+                "name": "����"
+            },
+            {
+                "id": 945,
+                "spell": "zhouzhi",
+                "name": "����"
+            },
+            {
+                "id": 946,
+                "spell": "zhuanghe",
+                "name": "ׯ��"
+            },
+            {
+                "id": 947,
+                "spell": "zhucheng",
+                "name": "���"
+            },
+            {
+                "id": 948,
+                "spell": "zhuji",
+                "name": "����"
+            },
+            {
+                "id": 949,
+                "spell": "zijin",
+                "name": "�Ͻ�"
+            },
+            {
+                "id": 950,
+                "spell": "zixi",
+                "name": "��Ϫ"
+            },
+            {
+                "id": 951,
+                "spell": "zoucheng",
+                "name": "�޳�"
+            },
+            {
+                "id": 952,
+                "spell": "zouping",
+                "name": "��ƽ"
+            },
+            {
+                "id": 953,
+                "spell": "zunhua",
+                "name": "��"
+            }
+        ]
+    }
+}

@@ -45,19 +45,19 @@
     line-height: 50px;
     float:left;
 }
-.iconfont{
+.movies-iconfont{
     font-size: 24px;
 }
 
 /*渲染页面*/
-.positionHeight{
+.movies-positionHeight{
     /*flex: 1;*/
     /*overflow: hidden;*/
 }
-.position-list{
+.movies-position-list{
     /*display:block;*/
 }
-.position-detail-list{
+.movies-position-detail-list{
     display: flex;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -66,23 +66,23 @@
     border-bottom:1px solid #EFEFEF;
     background:#fff;
 }
-.position-img{
+.movies-position-img{
     width:60px;
     height:90px;
     margin-right:10px;
 }
-.position-detail-list-mid{
+.movies-position-detail-list-mid{
     /*background:red;*/
     width:100%;
 }
-.name{
+.movies-name{
     width:100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 5px;
 }
-.one-title{
+.movies-one-title{
     font-size:17px;
     color:#000;
     font-weight:bold;
@@ -91,26 +91,26 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.two-title{
+.movies-two-title{
     float:right;
     color:#FAAF00;
     margin-right:10px;
     font-size: 15px;
 }
-.name-detail{
+.movies-name-detail{
     width:100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.name-detail-left{
+.movies-name-detail-left{
     font-size:13px;
-    /*width:150px;*/
-    /*white-space: nowrap;*/
-    /*overflow: hidden;*/
-    /*text-overflow: ellipsis;*/
+    width:150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
-.want-look{
+.movies-want-look{
     display: flex;
     padding:5px 10px;
     /*background:#FAAF00;*/

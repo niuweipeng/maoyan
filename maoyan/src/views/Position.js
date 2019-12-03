@@ -11,9 +11,13 @@ class Position extends React.Component {
             <div>
                 <div className="position-all">
                     <div className="position-list">
-                        <p className="position-title">定位城市</p>
+                        <p className="position-title">定位城市{}</p>
                         <div className="position-box clearfix">
-                            <span className="position-info">定位失败，请点击重试</span>
+                            <span className="position-info" onClick={()=>this.props.history.push("/positionMap")}>
+                                    {localStorage.position ?
+                                        localStorage.position.slice(0,2):"定位失败，请点击重试"
+                                    }
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -26,6 +30,7 @@ class Position extends React.Component {
                                 this.props.historyCity.map((v, i) => (
                                     <span className="position-info" key={i} onClick={() => {
                                         this.props.getHistoryCity(v.id, v.nm)
+                                        this.props.goBack.call(this,v.id, v.nm)
                                     }}>{v.nm}</span>
                                 ))
                             }
@@ -40,6 +45,7 @@ class Position extends React.Component {
                                 this.props.hotCities.map(v => (
                                     <span className="position-info" key={v.id} onClick={() => {
                                         this.props.getHistoryCity(v.id, v.nm)
+                                        this.props.goBack.call(this,v.id,v.nm)
                                     }}>{v.nm}</span>
                                 ))
                             }
@@ -57,6 +63,7 @@ class Position extends React.Component {
                                             <div className="position-box-two clearfix" key={k.id}>
                                                 <span className="position-each" onClick={() => {
                                                     this.props.getHistoryCity(k.id, k.nm)
+                                                    this.props.goBack.call(this,k.id, k.nm)
                                                 }}>{k.nm}</span>
                                             </div>
                                         ))
@@ -83,8 +90,8 @@ class Position extends React.Component {
     }
 
     componentDidMount() {
-        // console.log(localStorage.Maoyan_historyCity)
-        // console.log(Map)
+    console.log(this.props)
+        // let nm =
     }
 }
 
@@ -92,7 +99,8 @@ function mapStateToProps(state) {
     return {
         cities: state.position.cities,
         hotCities: state.position.hotCities,
-        historyCity: state.position.historyCity
+        historyCity: state.position.historyCity,
+        cityList:state.position.cityList
     }
 }
 
@@ -100,12 +108,10 @@ function mapDispatchToProps(dispatch) {
     return {
         getHistoryCity(id, nm) {
             dispatch(action.getHistoryCity.call(this, id, nm))
-            //     dispatch({
-            //         type:"GET_HISTORY_CITY",
-            //         payload:{
-            //             historyCity:{cityId:id,cityname:nm}
-            //         }
-            //     })
+        },
+        goBack(id,nm){
+            this.props.history.go(-1)
+            localStorage.maoyan_position = JSON.stringify({id,nm})
         }
     }
 }
