@@ -7,7 +7,7 @@ import {
 } from "react-redux"
 import "../../assets/iconfont/iconfont.css"
 import "../../assets/css/cinemaSmall/allCity.css"
-import CityDetail from "./cityDetail"
+import CityDetailSmall from "./cityDetailSmall"
 import cinemaActionCreatore,{changeDetailName,allCityShow,getSubItemsId} from "../../store/action/cinema"
 class AllCity extends React.Component{
 render(){
@@ -25,14 +25,14 @@ render(){
                         ))
                     }
                 </ul>
-                <CityDetail></CityDetail>
+                <CityDetailSmall></CityDetailSmall>
             </div>
         </div>
       )
     }
     componentDidMount(){
-        document.querySelectorAll(".cityHead1")[0].style.color = "#F03D37";
-        document.querySelectorAll(".cityHead1")[0].style.borderBottom = "1px solid #f03d37";
+        document.querySelectorAll(".cityHead12")[0].style.color = "#F03D37";
+        document.querySelectorAll(".cityHead12")[0].style.borderBottom = "1px solid #f03d37";
         this.props.getAllCity.call(this);
     }
 }
@@ -67,8 +67,19 @@ function mapDispatchToProps(dispatch){
             //  dispatch(cinemaActionCreatore.getCinemaSmall.call(this))
             //  dispatch(changeDetailName("全城"))//重新命名箭头左侧名称
             // }
-            let cityBodyLeftLi = document.querySelectorAll(".cityBodyLeftLi");
+            let cityBodyLeftLi = document.querySelectorAll(".cityBodyLeftLi2");
             cityBodyLeftLi[0].style.color = "#777777";//点击将第一个li颜色变为原来的
+            for(let i=0;i<cityBodyLeftLi.length;i++){
+                cityBodyLeftLi[i].style.backgroundColor = "#ffffff";
+                cityBodyLeftLi[i].style.color = "#777777";
+            }
+            if(e.target.className === "cityBodyLeftLi2"){
+                e.target.style.backgroundColor = "#F5F5F5";
+                e.target.style.color = "#F03D37";
+            }else{
+                e.target.parentNode.style.backgroundColor = "#F5F5F5";
+                e.target.parentNode.style.color = "#F03D37";
+            }
         },
         getSort(typeNum){//点击商区或者地铁站，根据类型不同获取不同的数据(1为商区、2为地铁站)
             const cityHead10 =  document.querySelectorAll(".cityHead1")[0];

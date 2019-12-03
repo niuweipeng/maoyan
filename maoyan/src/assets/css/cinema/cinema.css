@@ -5,6 +5,7 @@
 .cinema{
     width: 100%;
     position: relative;
+    top: 94px;
 }
 .cinema .cinemaNav{
     width: 100%;
@@ -65,6 +66,7 @@
     margin-bottom: 50px;
     box-sizing: border-box;
     margin-bottom: 58.8px;
+
 }
 .cinemaBodyOut{
     width: 100%;

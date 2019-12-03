@@ -7,12 +7,12 @@ import {
 } from "react-redux"
 import "../../assets/css/cinemaSmall/cinema.css"
 import "../../assets/iconfont/iconfont.css"
-import AllCity from "../cinema/AllCity"
-import Brand from "../cinema/Brand"
-import Character from "../cinema/Character"
+import AllCitySmall from "./AllCitySmall"
+import BrandSmall from "./BrandSmall"
+import CharacterSmall from "./CharacterSmall"
 import cinemaActionCreatore,{allCityShow,allBrandShow,allCharacterShow,changeCharacterColor} from "../../store/action/cinema"
 import Tools from "../../filters/tools"
-class Cinema extends React.Component{
+class CinemaSmall extends React.Component{
     constructor(){
         super();
     }
@@ -35,9 +35,9 @@ class Cinema extends React.Component{
                         </li>
                     </ul>
                 </div>
-                <AllCity></AllCity>
-                <Brand></Brand>
-                <Character></Character>
+                <AllCitySmall></AllCitySmall>
+                <BrandSmall></BrandSmall>
+                <CharacterSmall></CharacterSmall>
                 <div className={"cinemaBody2"}>
                     {
                         this.props.cinema.map(v=>(
@@ -108,7 +108,6 @@ class Cinema extends React.Component{
     }
 }
 function mapStateToProps(state) {
-    console.log(typeof state.cinemaReducer.characterColor,"jljkdsjkdsjksdk");
     return{
         cinema:state.cinemaReducer.cinema,
         allCityShow:state.cinemaReducer.allCityShow,
@@ -143,4 +142,4 @@ function mapDispatchToProps(dispatch) {
         }
     }
 };
-export default connect(mapStateToProps,mapDispatchToProps)(Cinema);
+export default connect(mapStateToProps,mapDispatchToProps)(CinemaSmall);

@@ -97,7 +97,8 @@ export const character = (hallType,service)=>{
 
 const cinema = {
     getCinemaSmall(params){
-        let {day=Tools.filDate(),offset=0,limit=20,districtId=localStorage.districtId,lineId=localStorage.lineId,hallType=localStorage.hallType,brandId=localStorage.brandId,serviceId=localStorage.serviceId,areaId=localStorage.areaId,stationId=localStorage.stationId,item=-1,updateShowDay=true,reqId=Date.now(),cityId=1,movieId=-1} = params || ""
+        console.log(params);
+        let {day=localStorage.dayDay?localStorage.dayDay:Tools.filDate(),offset=0,limit=20,districtId=localStorage.districtId,lineId=localStorage.lineId,hallType=localStorage.hallType,brandId=localStorage.brandId,serviceId=localStorage.serviceId,areaId=localStorage.areaId,stationId=localStorage.stationId,item=-1,updateShowDay=true,reqId=Date.now(),cityId=1,movieId=localStorage.movieId?localStorage.movieId:-1} = params || ""
         return async (dispatch)=>{
             const data = await this.$axios.post("/ajax/movie?"+"forceUpdate="+new Date(),{
                     day,
@@ -141,7 +142,6 @@ const cinema = {
                     type
                 }
             })
-            console.log(offset);
             dispatch(cinemas(data.cinemas,offset,type))
         }
     },
@@ -167,7 +167,6 @@ const cinema = {
                     ci:1
                 }
             })
-            // console.log(data,"速度快扩扩扩扩扩扩扩扩军");
             dispatch(brand(data.brand.subItems))
         }
     },

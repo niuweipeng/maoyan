@@ -9,7 +9,6 @@ const cinemaReducer = (state=cinema,action)=>{
         }else{
             state.cinema = action.payload.cinemas;
         }
-
     }
     if(action.type==="GET_SUBITEMS"){//得到商区或地铁列表数据
         state.subItems = null;//每次调用时，重置该数组，防止残留数据污染

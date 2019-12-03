@@ -60,15 +60,20 @@ function mapDispatchToProps(dispatch){
                      dispatch(allCityShow());
                 }
             }
-            //     localStorage.districtId = -1;
-            //     localStorage.areaId = -1;
-            //     localStorage.lineId = -1;
-            //     localStorage.stationId = -1;
-            //  dispatch(cinemaActionCreatore.getCinema.call(this))
-            //  dispatch(changeDetailName("全城"))//重新命名箭头左侧名称
-            // }
+
             let cityBodyLeftLi = document.querySelectorAll(".cityBodyLeftLi");
-            cityBodyLeftLi[0].style.color = "#777777";//点击将第一个li颜色变为原来的
+            // cityBodyLeftLi[0].style.color = "#777777";//点击将第一个li颜色变为原来的
+            for(let i=0;i<cityBodyLeftLi.length;i++){
+                cityBodyLeftLi[i].style.backgroundColor = "#ffffff";
+                cityBodyLeftLi[i].style.color = "#777777";
+            }
+            if(e.target.className === "cityBodyLeftLi"){
+                e.target.style.backgroundColor = "#F5F5F5";
+                e.target.style.color = "#F03D37";
+            }else{
+                e.target.parentNode.style.backgroundColor = "#F5F5F5";
+                e.target.parentNode.style.color = "#F03D37";
+            }
         },
         getSort(typeNum){//点击商区或者地铁站，根据类型不同获取不同的数据(1为商区、2为地铁站)
             const cityHead10 =  document.querySelectorAll(".cityHead1")[0];

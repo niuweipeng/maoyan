@@ -18,11 +18,6 @@ class Cinema extends React.Component{
     }
     render(){
         return (
-            <div>
-                <div style={{
-                    height:"94px"
-                }}>qqqqqqqqqqqqqqqqqqqqqqqqqqq</div>
-
                 <div className={"cinema"}>
                 <div className={"cinemaNav"}>
                     <ul className={"cinemaNavUl"}>
@@ -91,11 +86,10 @@ class Cinema extends React.Component{
                     }
                     <div className={"download-tip"}></div>
                     <div className={"white-bg"}></div>
-                    <input className={"addCinema"} type="button" disabled={this.props.offset>260?"disabled":null} value={this.props.offset>260?"已加载所有影院":"加载更多"} onClick={()=>{this.props.addCinema.call(this,this.props.offset,1)}}/>
+                    <input className={"addCinema"} type="button" disabled={this.props.offset>260?"disabled":null} value={"已加载所有影院"} style={{display:this.props.offset>260?"block":"none"}} onClick={()=>{this.props.addCinema.call(this,this.props.offset,1)}}/>
                 </div>
 
             </div>
-          </div>
         )
     }
     UNSAFE_componentWillReceiveProps(){
@@ -108,13 +102,57 @@ class Cinema extends React.Component{
             cinemaNavLiName[0].innerText = this.props.detaiCitylName;
         } else cinemaNavLiName[0].innerText = "全城";
     }
+    componentWillReceiveProps(){
+
+
+    }
     componentDidMount(){
         localStorage.districtId = localStorage.lineId = localStorage.hallType = localStorage.brandId = localStorage.serviceId = localStorage.areaId = localStorage.stationId = -1;//初始化本地存储
         this.props.getCinema.call(this);
+        const _this = this;
+        function getScrollTop(){
+            var scrollTop = 0, bodyScrollTop = 0, documentScrollTop = 0;
+            if(document.body){
+                bodyScrollTop = document.body.scrollTop;
+            }
+            if(document.documentElement){
+                documentScrollTop = document.documentElement.scrollTop;
+            }
+            scrollTop = (bodyScrollTop - documentScrollTop > 0) ? bodyScrollTop : documentScrollTop;
+            return scrollTop;
+        }
+//文档的总高度
+        function getScrollHeight(){
+            var scrollHeight = 0, bodyScrollHeight = 0, documentScrollHeight = 0;
+            if(document.body){
+                bodyScrollHeight = document.body.scrollHeight;
+            }
+            if(document.documentElement){
+                documentScrollHeight = document.documentElement.scrollHeight;
+            }
+            scrollHeight = (bodyScrollHeight - documentScrollHeight > 0) ? bodyScrollHeight : documentScrollHeight;
+            return scrollHeight;
+        }
+        function getWindowHeight(){
+            var windowHeight = 0;
+            if(document.compatMode == "CSS1Compat"){
+                windowHeight = document.documentElement.clientHeight;
+            }else{
+                windowHeight = document.body.clientHeight;
+            }
+            return windowHeight;
+        }
+        window.onscroll = function(){
+            if(Math.ceil(getScrollTop() + getWindowHeight()) == getScrollHeight()){
+                if(_this.props.offset<=260 && (localStorage.districtId = localStorage.lineId = localStorage.hallType = localStorage.brandId = localStorage.serviceId = localStorage.areaId = localStorage.stationId = -1)){
+                    _this.props.addCinema.call(_this,_this.props.offset,1);
+                }
+
+            }
+        };
     }
 }
 function mapStateToProps(state){
-    console.log(state.cinemaReducer.offset);
     return{
         cinema:state.cinemaReducer.cinema,
         offset:state.cinemaReducer.offset,//分页数，跳过多少条
