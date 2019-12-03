@@ -1,5 +1,7 @@
 import React from "react";
+import tools from "../filters/tools";
 import "../assets/css/informationMovie/informationMovie.css";
+import informationMovieAction from "../store/action/informationMovie";
 import {
     connect
 } from "react-redux";
@@ -17,7 +19,7 @@ class InformationMovie extends React.Component{
     render(){
         return(
             <div className="movie-page">
-                <a id="download-header" href="w">
+                <a id="download-header" href="javascript:void(0);">
                     <div className="download-app-bar">
                         <img className="img-noneBg-logo" src="//s0.meituan.net/bs/?f=myfe/canary:/asgard/images/avatar.png"/>
                         <div className="app-name-desc">
@@ -27,28 +29,28 @@ class InformationMovie extends React.Component{
                         <div className="btn-open-app">立即打开</div>
                     </div>
                 </a>
-                <div className="movie-info">
+                <div className="movie-info" style={{background:this.props.detailMovie.backgroundColor}}>
                     <div className="movie-info-top">
                         <div className="movie-cover">
-                            <a href="w">
-                                <img className="img-noneBg-poster" alt="电影封面图" src="//p1.meituan.net/moviemachine/58ee13be6dc60bf5e636cf915bbbaaa55787785.jpg@300w_414h" style={{width:"100px",height:"138px"}}/>
-                                <img className="img-noneBg-poster-play" alt="" src="//s0.meituan.net/bs/?f=myfe/canary:/asgard/images/movie/poster-play.png"/>
+                            <a href="javascript:void(0);">
+                                <img className="img-noneBg-poster" alt="" src={tools.detailMoviesPic(this.props.detailMovie.img)} style={{width:"100px",height:"138px"}}/>
+                                <img className="img-noneBg-poster-play" alt="" src="//s0.meituan.net/bs/?f=myfe/canary:/asgard/images/movie/poster-play.png"  onClick={()=>{this.props.history.push("/preview")}}/>
                             </a>
                         </div>
                         <div className="movie-desc">
                             <div className="movie-desc-top">
-                                <div className="movie-cn-name">冰雪奇缘2</div>
-                                <div className="movie-en-name">Frozen II</div>
+                                <div className="movie-cn-name">{this.props.detailMovie.nm}</div>
+                                <div className="movie-en-name">{this.props.detailMovie.enm}</div>
                                 <div className="movie-other-info">
                                     <div className="movie-type">
-                                        <span className="movie-cat">喜剧 / 动画 / 冒险</span>
-                                        <span className="movie-tag">
-                                            <img className="img-noneBg-3dmax" alt="" src="//s0.meituan.net/bs/?f=myfe/canary:/asgard/images/movie/movie-tag-3DIMAX.png"/>
+                                        <span className="movie-cat">{this.props.detailMovie.cat}</span>
+                                        <span className="movie-tag" style={{display:this.props.detailMovie.egg?"inline-block":"none"}}>
+                                            <img className="img-noneBg-3dmax" alt="" src={tools.IMAX3D()}/>
                                         </span>
                                     </div>
-                                    <div className="actors">克里斯汀·贝尔 / 伊迪娜·门泽尔 / 乔纳森·格罗夫</div>
+                                    <div className="actors">{(this.props.detailMovie.star).replace(/,/g,"/")}</div>
                                     <div className="movie-show-time">
-                                        <span>2019-11-22大陆上映 / 104分钟</span>
+                                        <span>{this.props.detailMovie.pubDesc} / {this.props.detailMovie.dur}分钟</span>
                                         <img className="img-noneBg-youjiantou" alt="" src="//s0.meituan.net/bs/?f=myfe/canary:/asgard/images/movie/arrow-right.png"/>
                                     </div>
                                 </div>
@@ -58,7 +60,7 @@ class InformationMovie extends React.Component{
                                     <img className="img-noneBg-xiangkan" alt="" src="//s0.meituan.net/bs/?f=myfe/canary:/asgard/images/movie/want-to-watch.png"/>
                                     <span>想看</span>
                                 </button>
-                                <a href="w" className="link-button-btn-right-watched" >
+                                <a href="javascript:void(0);" className="link-button-btn-right-watched" >
                                     <img className="img-noneBg-kanguo" alt="" src="//s0.meituan.net/bs/?f=myfe/canary:/asgard/images/movie/star.png"/>
                                     <span>看过</span>
                                 </a>
@@ -72,33 +74,39 @@ class InformationMovie extends React.Component{
                                 <span>实时口碑</span>
                             </div>
                             <div className="right">
-                                <span className="num">204361</span>
+                                <span className="num">{this.props.wish}</span>
                                 <span>人想看</span>
-                                <span className="num-watched">167128</span>
+                                <span className="num-watched">{this.props.watched}</span>
                                 <span>人看过</span>
                             </div>
                         </div>
                         <div className="middle">
-                            <div className="left">
-                                <span className="score">8.9</span>
-                                <span className="people-grade">
-                                    <span>179125</span>
-                                    <span>人评</span>
-                                </span>
+                            {this.props.detailMovie.sc/1 > 0?
+                                <div className="left">
+                                    <span className="score">{this.props.detailMovie.sc}</span>
+                                    <span className="people-grade">
+                                        <span>{this.props.snum}</span>
+                                        <span>人评</span>
+                                    </span>
+                                </div>:
+                            <div className="left-two">
+                                <span className="score">{this.props.wish}</span>
+                                <span>人想看</span>
                             </div>
+                            }
                             <div className="right">
                                 {/* 找到数据再写吧 */}
                             </div>
                         </div>
                         <div className="separator-line"></div>
-                        <div className="bottom">
+                        {/* <div className="bottom">
                             <div className="left">
                                 <span>同期动画片中评分第一</span>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="activity-bar">
-                        <a href="" className="link-btn-open-app" link="w">
+                        <a href="javascript:void(0);" className="link-btn-open-app" link="w">
                         <div className="left">
                             <img className="img-noneBg-juzi" alt="" src="//p1.meituan.net/moviemachine/18acdfb0ecb99eb5250512446d7e87fe2282.png"/>
                             <span>0 元看电影，速抢 👉</span>
@@ -113,7 +121,7 @@ class InformationMovie extends React.Component{
                     <div className="movie-watching-tips">
                         <div className="tip">
                             <div className="icon">
-                                <img class="img-noneBg-egg" alt="" src="//s0.meituan.net/bs/?f=myfe/canary:/asgard/images/movie/tip-icon-surprise.png"/>
+                                <img className="img-noneBg-egg" alt="" src="//s0.meituan.net/bs/?f=myfe/canary:/asgard/images/movie/tip-icon-surprise.png"/>
                             </div>
                             <span>有1个彩蛋，在片尾出现</span>
                         </div>
@@ -123,19 +131,35 @@ class InformationMovie extends React.Component{
                         <div className="title">
                             <span>简介</span>
                             <div>
-                                <button type="button" className="open">
+                                <button type="button" className="open" onClick={()=>{console.log(this.refs.lienClamp.id = "")}}>
                                     <span>展开</span>
                                     <img className="img-noneBg-xiajian" alt="" src="//s0.meituan.net/bs/?f=myfe/canary:/asgard/images/movie/arrow-right.png"/>
                                 </button>
                             </div>
                         </div>
                         <div className="content ">
-                            <p id="brief-introduction-content" className="line-clamp">为什么艾莎（伊迪娜·门泽尔 配音）天生就拥有神奇魔法？谜题的答案一直呼唤着她，也威胁着王国的安全。她将和安娜（克里斯汀·贝尔 配音）、克斯托夫（乔纳森·格罗夫 配音）、雪宝（乔什·盖德 配音）和驯鹿斯特共同开启一场非凡的冒险旅程。艾莎曾担心世界不能接受自己的冰雪魔法，但在《冰雪奇缘2》中她却必须祈祷自己的魔法足够强大，能够拯救世界。本片由奥斯卡金牌团队打造——导演珍妮弗·李和克里斯·巴克、制作人彼得·戴尔·维克以及词曲作者克里斯汀·安德森-洛佩兹及罗伯特·洛佩兹悉数回归，原配音班底伊迪娜·门泽尔、克里斯汀·贝尔、乔纳森·格罗夫和乔什·盖德再度加盟。华特迪士尼动画工作室荣誉出品《冰雪奇缘2》将于2019年11月22日登陆北美院线。</p>
+                            <p id="brief-introduction-content" className="line-clamp" ref={"lienClamp"}>{this.props.detailMovie.dra}</p>
                         </div>
                     </div>
                 </div>
             </div>
         )
     }
+    componentDidMount(){
+        setInterval(() => {
+            this.props.getNum(this.props.detailMovie.id)
+        }, 2000);
+    }
 }
-export default InformationMovie;
+function mapStateToProps(state) {
+    return {
+        detailMovie:state.detailMovie.detailMovie,
+        snum:state.informationMovie.snum,
+        watched:state.informationMovie.watched,
+        wish:state.informationMovie.wish,
+    }
+}
+function mapDispatchToProps(dispatch){
+    return bindActionCreators(informationMovieAction,dispatch)
+}   
+export default connect(mapStateToProps, mapDispatchToProps)(InformationMovie);

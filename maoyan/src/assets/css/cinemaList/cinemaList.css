@@ -8,7 +8,7 @@
     min-height:700px;
     background:#F5F5F5 !important;
 }
-.navbar{
+.navbar_cinemaList{
     height: 50px;
     color: #fff;
     background: #e54847;
@@ -35,19 +35,18 @@
     overflow: hidden;
     margin-right: 52px;
 }
-.nav-wrap-left{
+.nav-wrap-left_cinemaList{
     height: 50px;
     width: 50px;
     line-height: 50px;
     float:left;
 }
-.iconfont{
+.iconfont_cinemaList{
     font-size: 24px;
 }
 /*渲染页面*/
-.cinemas-body{
-}
-.cinemas-detail-list{
+
+.cinemas-detail-list_cinemaList{
     display: flex;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -56,92 +55,32 @@
     border-bottom:1px solid #EFEFEF;
     background:#fff;
 }
-.cinemas-img{
-    width:60px;
-    height:90px;
-    margin-right:10px;
-}
-.cinemas-detail-list-mid{
+.cinemas-detail-list-mid_cinemaList{
     /*background:red;*/
     width:100%;
 }
-.name{
+.name_cinemaList{
     width:100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 5px;
 }
-.one-title{
-    font-size:17px;
-    color:#000;
-    font-weight:bold;
-    width:170px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-.two-title{
-    float:right;
-    color:#FAAF00;
-}
-.cinemas-detail{
+
+.cinemas-detail_cinemaList{
     width:100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.cinemas-detail-left{
+.cinemas-detail-left_cinemaList{
     font-size:13px;
     width:85%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.want-look{
-    display: flex;
-    padding:5px 10px;
-    /*background:#FAAF00;*/
-    border-radius: 5px;
-    color:#fff;
-}
-.total{
-    color:red;
-    font-size:15px;
-    box-sizing: border-box;
-    padding:15px 15px;
-    background:#fff;
-    text-align:center;
-    margin-bottom:10px;
-}
-.context{
-    box-sizing: border-box;
-    line-height: 1;
-    /*padding:0 15px;*/
-}
-.context-one{
-    box-sizing: border-box;
-    padding:10px 15px;
-    background:#fff;
-    border-top: 1px solid #e5e5e5;
-}
-.cinemas-icon-one{
-    float: left;
-    position: absolute;
-    left: 5%;
-    font-size: 14px;
-}
-.context-text{
-    margin-left:7%;
-}
-.cinemas-icon-two{
-    float: right;
-    position: absolute;
-    right: 5%;
-    top:16.5%;
-    font-size: 14px;
-}
-.three-title{
+.three-title_cinemaList{
     font-size:16px;
     color:#000;
     font-weight:bold;
@@ -151,10 +90,10 @@
     text-overflow: ellipsis;
 
 }
-.four-title{
+.four-title_cinemaList{
     color:red;
 }
-.address-three{
+.address-three_cinemaList{
     font-size:13px;
     width:75%;
     white-space: nowrap;
@@ -162,7 +101,7 @@
     text-overflow: ellipsis;
     margin-bottom:5px;
 }
-.choose{
+.choose_cinemaList{
     padding: 1px 3px;
     margin-left:5px;
     margin-bottom:5px;
@@ -175,7 +114,7 @@
     border-radius: 5px;
     float: left;
 }
-.choose-two{
+.choose-two_cinemaList{
     float: left;
     padding: 1px 3px;
     margin-left:5px;

@@ -7,7 +7,7 @@
     min-height:700px;
     background:#F5F5F5 !important;
 }
-.navbar-one{
+.search-navbar-one{
     height: 50px;
     color: #fff;
     background: #e54847;
@@ -18,7 +18,7 @@
     padding:0 15px;
     z-index: 1000;
 }
-.nav-header-one{
+.search-nav-header-one{
     display: block;
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -32,7 +32,7 @@
     overflow: hidden;
     margin-right: 52px;
 }
-.nav-wrap-left-one{
+.search-nav-wrap-left-one{
     height: 50px;
     width: 50px;
     line-height: 50px;
@@ -57,7 +57,7 @@
     position: relative;
     z-index: 1;
 }
-.input-wrapper{
+.search-input-wrapper{
     /*padding: 0 10px;*/
     border: 1px solid #e6e6e6;
     border-radius: 5px;
@@ -66,6 +66,7 @@
     width:83%;
 }
 .search-icon{
+    font-size: 24px;
     width: 15px;
     height: 15px;
     /*margin-right: 6px;*/
@@ -86,12 +87,13 @@
 .search-icon-cuowu{
     float:right;
     position:absolute;
-    top:20%;
+    font-size: 24px;
+    top:25%;
     right:20%;
     color:#A0A1A7;
     font-size:18px;
 }
-.cancel{
+.search-cancel{
     height: 30px;
     line-height: 30px;
     padding: 0 10px;
@@ -127,14 +129,14 @@
     /*background:red;*/
     width:100%;
 }
-.name{
+.search-name{
     width:100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 5px;
 }
-.one-title{
+.search-one-title{
     font-size:17px;
     color:#000;
     font-weight:bold;
@@ -143,31 +145,31 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.two-title{
+.search-two-title{
     float:right;
     color:#FAAF00;
 }
-.name-detail{
+.search-name-detail{
     width:100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.name-detail-left{
+.search-name-detail-left{
     font-size:13px;
     width:70%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.want-look{
+.search-want-look{
     display: flex;
     padding:5px 10px;
     /*background:#FAAF00;*/
     border-radius: 5px;
     color:#fff;
 }
-.total{
+.search-total{
     color:red;
     font-size:15px;
     box-sizing: border-box;
@@ -176,12 +178,12 @@
     text-align:center;
     margin-bottom:10px;
 }
-.context{
+.search-context{
     box-sizing: border-box;
     line-height: 1;
     /*padding:0 15px;*/
 }
-.context-one{
+.search-context-one{
     box-sizing: border-box;
     padding:10px 15px;
     background:#fff;
@@ -193,7 +195,7 @@
     left: 5%;
     font-size: 14px;
 }
-.context-text{
+.search-context-text{
     margin-left:7%;
 }
 .search-icon-two{
@@ -203,7 +205,7 @@
     top:16.5%;
     font-size: 14px;
 }
-.three-title{
+.search-three-title{
     font-size:16px;
     color:#000;
     font-weight:bold;
@@ -213,10 +215,10 @@
     text-overflow: ellipsis;
 
 }
-.four-title{
+.search-four-title{
     color:red;
 }
-.address{
+.search-address{
     font-size:13px;
     width:100%;
     white-space: nowrap;
@@ -225,6 +227,7 @@
     margin-bottom:5px;
 }
 .search-div{
+    margin-top:5px;
     padding: 1px 3px;
     margin-left:5px;
     margin-bottom:5px;
@@ -239,6 +242,7 @@
 }
 .search-first{
     float: left;
+    margin-top:5px;
     padding: 1px 3px;
     margin-left:5px;
     margin-bottom:5px;

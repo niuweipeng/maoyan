@@ -8,46 +8,40 @@ import {
 import moviesList from "../store/reducer/moviesList";
 
 class MoviesList extends React.Component {
-    constructor(props){
-        super(props);
-        this.state = {
-            scrollHeight: 0
-        }
-    }
     render() {
         return (
             <div className="moviesList-all">
-                <div className="movies-bar" ref={"header"}>
+                <div className="movies-bar">
                     <div className="movies-wrap-left">
-                        <span className="iconfont icon-left" onClick={() =>
+                        <span className="iconfont movies-iconfont icon-left" onClick={() =>
                             this.props.history.go(-1)
                         }></span>
                     </div>
                     <h1 className="movies-nav-header">猫眼电影</h1>
                 </div>
-                <div className="positionHeight" ref={"positionHeight"}>
-                    <ul className="position-list">
+                <div className="movies-positionHeight">
+                    <ul className="movies-position-list">
                         {
 
                             this.props.movies ? this.props.movies.map((v, i) => (
-                                <li className="position-detail-list" key={i}>
-                                    <img src={tools.detailMoviesPicTwo(v.img)} alt="" className="position-img"/>
-                                    <div className="position-detail-list-mid">
-                                        <p className="name">
-                                            <span className="one-title">{v.nm}</span>
-                                            <span className="two-title" style={{
+                                <li className="movies-position-detail-list" key={i}>
+                                    <img src={tools.detailMoviesPicTwo(v.img)} alt="" className="movies-position-img"/>
+                                    <div className="movies-position-detail-list-mid">
+                                        <p className="movies-name">
+                                            <span className="movies-one-title">{v.nm}</span>
+                                            <span className="movies-two-title" style={{
                                                 color: v.sc > 0 ? "#ffaa00" : "#666666",
                                                 fontSize: v.sc > 0 ? "16px" : "14px"
                                             }}>{v.sc > 0 ? v.sc + "分" : "暂无评分"}</span>
                                         </p>
-                                        <div className="name-detail">
-                                            <div className="name-detail-left">
+                                        <div className="movies-name-detail">
+                                            <div className="movies-name-detail-left">
                                                 <p>{v.enm}</p>
                                                 <p>{v.cat}</p>
                                                 <p>{v.rt}</p>
                                             </div>
-                                            <div className="name-detail-right">
-                                            <span className="want-look" style={{
+                                            <div className="movies-name-detail-right">
+                                            <span className="movies-want-look" style={{
                                                 background: v.globalReleased ? "#3c9fe6" : "#ef4238"
                                             }}>{v.globalReleased ? "购票" : "预售"}</span>
                                             </div>
@@ -69,26 +63,46 @@ class MoviesList extends React.Component {
         this.props.getAllMovies.call(this, id, keyWord, offset);
 
 
+        const _this = this
+        function getScrollTop(){
+            var scrollTop = 0, bodyScrollTop = 0, documentScrollTop = 0;
+            if(document.body){
+                bodyScrollTop = document.body.scrollTop;
+            }
+            if(document.documentElement){
+                documentScrollTop = document.documentElement.scrollTop;
+            }
+            scrollTop = (bodyScrollTop - documentScrollTop > 0) ? bodyScrollTop : documentScrollTop;
+            return scrollTop;
+        }
+//文档的总高度
+        function getScrollHeight(){
+            var scrollHeight = 0, bodyScrollHeight = 0, documentScrollHeight = 0;
+            if(document.body){
+                bodyScrollHeight = document.body.scrollHeight;
+            }
+            if(document.documentElement){
+                documentScrollHeight = document.documentElement.scrollHeight;
+            }
+            scrollHeight = (bodyScrollHeight - documentScrollHeight > 0) ? bodyScrollHeight : documentScrollHeight;
+            return scrollHeight;
+        }
+        function getWindowHeight(){
+            var windowHeight = 0;
+            if(document.compatMode == "CSS1Compat"){
+                windowHeight = document.documentElement.clientHeight;
+            }else{
+                windowHeight = document.body.clientHeight;
+            }
+            return windowHeight;
+        }
+        window.onscroll = function(){
+            let newOffSet = offset + 20;
+            if(Math.floor(getScrollTop() + getWindowHeight()) == getScrollHeight()){
+                _this.props.getNextMovies.call(_this, id, keyWord, newOffSet)
+            };
 
-
-        // const _this = this
-        // // console.log(this.props.count)
-        // window.onscroll=function(){
-        //     let t = document.body.scrollTop?document.body.scrollTop:document.documentElement.scrollTop;
-        //     console.log(t)
-        //     // console.log(t)
-        //     // console.log(_this.refs.positionHeight.offsetHeight)
-        //     let height = _this.refs.positionHeight.offsetHeight
-        //     // for(let i=1;i<_this.props.count-1;i++) {
-        //     //     //     setTimeout(()=>{
-        //     //             if(t>height*i){
-        //     //                 let newOffset = offset + 20
-        //     //                 _this.props.getAllMovies.call(_this, id, keyWord, newOffset)
-        //     //             }
-        //     //     //     },1000)
-        //     }
-        // }
-
+        }
     }
 }
 
@@ -105,6 +119,9 @@ function mapDispatchToProps(dispatch) {
     return {
         getAllMovies(id, keyWord, offset) {
             dispatch(action.getAllMovies.call(this, id, keyWord, offset))
+        },
+        getNextMovies(id, keyWord, offset) {
+            dispatch(action.getNextMovies.call(this, id, keyWord, offset))
         }
     }
 }

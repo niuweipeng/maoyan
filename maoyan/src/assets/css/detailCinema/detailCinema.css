@@ -2,24 +2,24 @@
     margin:0;
     padding:0;
 }
-.navbar{
+.navbar-c{
     height: 50.5px;
     color: #fff;
     background: #e54847;
     border-bottom: 1px solid #e54847;
     position: relative;
 }
-.navbar .nav-wrap-left{
+.navbar-c .nav-wrap-left{
     height: 50.5px;
     width: 22.5px;
     line-height: 50px;
     padding: 0 15px;
     float: left;
 }
-.navbar .nav-wrap-left .icon-fanhui{
+.navbar-c .nav-wrap-left .icon-fanhui{
     font-size:20px;
 }
-.navbar .nav-header{
+.navbar-c .nav-header{
     font-size: 18px;
     font-weight: 400;
     text-align: center;
