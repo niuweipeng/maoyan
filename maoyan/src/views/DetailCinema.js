@@ -28,7 +28,7 @@ class DetailCinema extends React.Component{
                 <p className="nav-header">{this.props.cinemaData.nm}</p>
             </header>
             <div className="body">
-                <a id="download-header" href="w">
+                <a id="download-header" href="javascript:void(0);">
                     <div className="download-app-bar">
                         <img alt="" className="img-noneBg-logo" src="//s0.meituan.net/bs/?f=myfe/canary:/asgard/images/avatar.png"/>
                         <div className="app-name-desc">

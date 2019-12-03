@@ -19,7 +19,7 @@ class InformationMovie extends React.Component{
     render(){
         return(
             <div className="movie-page">
-                <a id="download-header" href="w">
+                <a id="download-header" href="javascript:void(0);">
                     <div className="download-app-bar">
                         <img className="img-noneBg-logo" src="//s0.meituan.net/bs/?f=myfe/canary:/asgard/images/avatar.png"/>
                         <div className="app-name-desc">
@@ -32,9 +32,9 @@ class InformationMovie extends React.Component{
                 <div className="movie-info" style={{background:this.props.detailMovie.backgroundColor}}>
                     <div className="movie-info-top">
                         <div className="movie-cover">
-                            <a href="w">
-                                <img className="img-noneBg-poster" alt="电影封面图" src={tools.detailMoviesPic(this.props.detailMovie.img)} style={{width:"100px",height:"138px"}}/>
-                                <img className="img-noneBg-poster-play" alt="" src="//s0.meituan.net/bs/?f=myfe/canary:/asgard/images/movie/poster-play.png"/>
+                            <a href="javascript:void(0);">
+                                <img className="img-noneBg-poster" alt="" src={tools.detailMoviesPic(this.props.detailMovie.img)} style={{width:"100px",height:"138px"}}/>
+                                <img className="img-noneBg-poster-play" alt="" src="//s0.meituan.net/bs/?f=myfe/canary:/asgard/images/movie/poster-play.png"  onClick={()=>{this.props.history.push("/preview")}}/>
                             </a>
                         </div>
                         <div className="movie-desc">
@@ -60,7 +60,7 @@ class InformationMovie extends React.Component{
                                     <img className="img-noneBg-xiangkan" alt="" src="//s0.meituan.net/bs/?f=myfe/canary:/asgard/images/movie/want-to-watch.png"/>
                                     <span>想看</span>
                                 </button>
-                                <a href="w" className="link-button-btn-right-watched" >
+                                <a href="javascript:void(0);" className="link-button-btn-right-watched" >
                                     <img className="img-noneBg-kanguo" alt="" src="//s0.meituan.net/bs/?f=myfe/canary:/asgard/images/movie/star.png"/>
                                     <span>看过</span>
                                 </a>
@@ -99,14 +99,14 @@ class InformationMovie extends React.Component{
                             </div>
                         </div>
                         <div className="separator-line"></div>
-                        <div className="bottom">
+                        {/* <div className="bottom">
                             <div className="left">
                                 <span>同期动画片中评分第一</span>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="activity-bar">
-                        <a href="" className="link-btn-open-app" link="w">
+                        <a href="javascript:void(0);" className="link-btn-open-app" link="w">
                         <div className="left">
                             <img className="img-noneBg-juzi" alt="" src="//p1.meituan.net/moviemachine/18acdfb0ecb99eb5250512446d7e87fe2282.png"/>
                             <span>0 元看电影，速抢 👉</span>
