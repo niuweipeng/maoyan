@@ -12,10 +12,12 @@ import Position from "./views/Position"
 import Search from "./views/Search"
 import MoviesList from "./views/MoviesList"
 import CinemaList from "./views/CinemaList"
+import PositionMap from "./components/position"
 function App() {
   return (
     <div className="App">
         <Switch>
+<Route path={"/positionMap"} component={PositionMap}></Route>
  <Route path={"/cinemaList"} component={CinemaList}></Route>
             <Route path={"/moviesList"} component={MoviesList}></Route>
             <Route path={"/position"} component={Position}></Route>

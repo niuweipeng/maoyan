@@ -11,5 +11,14 @@ export default function(state = initState,{type,payload}){
         state.total = payload.total
         state.count = Math.ceil(payload.total/20)
     }
+    if(type === "GET_NEXT_MOVIES"){
+        if(payload.moviesNext){
+            state.moviesList = [
+                ...state.moviesList,
+                ...payload.moviesNext
+            ]
+        }
+        state.total = payload.total
+    }
     return state
 }

@@ -5,11 +5,20 @@ export default function(state = initState,{type,payload}){
         if(payload.cinemas){
             state.cinemasList = [
                 ...state.cinemasList,
-                ...payload.cinemas
+                ...payload.cinemas,
             ]
         }
         state.total = payload.total
         state.count = Math.ceil(payload.total/20)
     }
+    if(type === "GET_NEXT_CINEMA"){
+        if(payload.cinemasNext){
+            state.cinemasList = [
+                ...state.cinemasList,
+                ...payload.cinemasNext
+            ]
+        }
+    }
+    // console.log(state)
     return state
 }
