@@ -26,8 +26,8 @@ class DetailMovie extends React.Component{
     render(){
         return(
             <>
-            <header className="navbar">
-                <div className="nav-wrap-left"><i className={"iconfont icon-fanhui"}></i></div>
+            <header className="navbar-c">
+                <div className="nav-wrap-left"><i className={"iconfont icon-fanhui"} onClick={()=>{this.props.history.go(-1)}}></i></div>
                 <p className="nav-header">{this.props.detailMovie.nm}</p>
             </header>
             <div className="body">
@@ -41,7 +41,7 @@ class DetailMovie extends React.Component{
                         <div className="btn-open-app">立即打开</div>
                     </div>
                 </a>
-                <Link to={{pathname:"/informationMovie",state:{id:this.props.location.state.id}}}>
+                <Link to={{pathname:"/informationMovie",state:{id:this.props.detailMovie}}}>
                 <div className="movie-detail">
                     <div className="movie-filter"></div>
                     <div className="poster-bg" style={{backgroundImage:"url("+tools.detailMoviesBgPic(this.props.detailMovie.img)+")"}}></div>
@@ -75,7 +75,7 @@ class DetailMovie extends React.Component{
                 </Link>
             </div>
             <div className="swiper-bax">
-                <div className="swiper-container">
+                <div className="swiper-container swiper2">
                     <div className="swiper-wrapper">
                         {
                             this.props.showDays.dates?
@@ -95,8 +95,8 @@ class DetailMovie extends React.Component{
     }
     componentDidMount(){
         this.props.getDetailMovie(this.props.location.state.id);
-        this.props.getCinemaSmall.call(this,{day:this.props.showDays.date?this.props.showDays.dates[0].date:""})
-        new Swiper('.swiper-container', {
+        this.props.getCinemaSmall.call(this,{day:this.props.showDays.date,movieId:this.props.detailMovie.id})
+        new Swiper('.swiper2', {
             slidesPerView: 3,
             observer:true,
             centeredSlides: true,
@@ -115,9 +115,5 @@ function mapDispatchToProps(dispatch){
         ...bindActionCreators(detailMovieActionCreator,dispatch),
         ...bindActionCreators(cinemaActionCreatore,dispatch),
     }
-    // return bindActionCreators({
-    //     detailMovieActionCreator,dispatch,
-    //     cinemaActionCreatore,dispatch
-    // })
 }
 export default connect(mapStateToProps, mapDispatchToProps)(DetailMovie);

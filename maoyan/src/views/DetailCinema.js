@@ -23,7 +23,7 @@ class DetailCinema extends React.Component{
     render(){
         return(
             <>
-              <header className="navbar">
+              <header className="navbar-c">
                 <div className="nav-wrap-left"><i className={"iconfont icon-fanhui"}></i></div>
                 <p className="nav-header">{this.props.cinemaData.nm}</p>
             </header>
