@@ -1,4 +1,4 @@
-import  React from "react"
+﻿import  React from "react"
 import  {
     connect
 } from "react-redux"
@@ -54,23 +54,55 @@ class  Nowplay extends  React.Component{
         )
     }
     componentDidMount(){
-        // console.log(this.props.movieList,10101010)
-        this.props.getdata.call(this)
-        // const that=this
-        // window.onscroll = function() {
-        //    console.log(Tools.changeArr(that.props.movieIds,13),14785269)
-        //     const movieIds=(Tools.changeArr(that.props.movieIds,13)[1]).join(",")
-        //     var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-        //     if(scrollTop>921&&scrollTop<922){
-        //         setTimeout(()=>{
-        //             that.props.getMoredata.call(that,movieIds)
-        //         },1000)
-        //
-        //     }
-        //
-        //     // console.log("滚动距离" + scrollTop);
-        //
-        // }
+       this.props.getdata.call(this)
+        const that=this
+        function addEvent(obj,type,fn){
+            if(obj.attachEvent){ //ie
+                obj.attachEvent('on'+type,function(){
+                    fn.call(obj);
+                })
+            }else{
+                obj.addEventListener(type,fn,false);
+            }
+        }
+        addEvent(window,'scroll',function(){
+            const  arrlength= Tools.changeArr(that.props.movieIds,13).length
+            const movieIds1=(Tools.changeArr(that.props.movieIds,13)[1]).join(",")
+            var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            if(scrollTop>921&&scrollTop<922){
+                setTimeout(()=>{
+                    that.props.getNowMoremovielist.call(that,movieIds1)
+                },1000)
+            }
+            const movieIds2=(Tools.changeArr(that.props.movieIds,13)[2]).join(",")
+            if(scrollTop>2289&&scrollTop<2290){
+                setTimeout(()=>{
+                    that.props.getNowMoremovielist.call(that,movieIds2)
+                },1000)
+            }
+            for(let i=3;i<arrlength;i++){
+                const movieIds3=(Tools.changeArr(that.props.movieIds,13)[i]).join(",")
+                if(scrollTop>2289+(i-2)*1368&&scrollTop<2289+(i-2)*1368+1){
+                    // setTimeout(()=>{
+                    that.props.getNowMoremovielist.call(that,movieIds3)
+                    // },1000)
+                }
+            }
+        })
+
+
+        addEvent(window,'scroll',function(){
+            var t=document.documentElement.scrollTop;
+            if(t>=50){
+                document.querySelector(".white-bg").style.position="sticky";
+                document.querySelector(".white-bg").style.top="50px";
+            }
+            if(t>=120){
+                document.querySelector(".download-tip").style.display="block";
+            }else{
+                document.querySelector(".download-tip").style.display="none";
+            }
+        })
     }
 }
 

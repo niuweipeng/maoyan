@@ -48,7 +48,6 @@
     padding: 20px 16px;
     color: #fff;
     position: relative;
-    background-color: rgb(41, 56, 102);
 }
 .movie-info .movie-info-top{
     overflow: hidden;
@@ -271,6 +270,13 @@
 }
 .real-time-word-of-mouth .middle .left .people-grade span{
     font-size: 10px;
+}
+.real-time-word-of-mouth .middle .left-two .score{
+    color: #ffbb29;
+    margin-right: 4px;
+}
+.real-time-word-of-mouth .middle .left-two span{
+    font-size: 26px;
 }
 .movie-page .separator-line{
     position: relative;

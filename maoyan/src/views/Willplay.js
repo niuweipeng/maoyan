@@ -1,4 +1,4 @@
-import React from "react"
+﻿import React from "react"
 import action from "../store/action/movies/index";
 import {connect} from "react-redux";
 import Swiper from 'swiper/js/swiper.js'
@@ -104,12 +104,35 @@ class Willplay extends  React.Component {
                 clickable: true,
             },
         });
+         function addEvent(obj,type,fn){
+            if(obj.attachEvent){ //ie
+                obj.attachEvent('on'+type,function(){
+                    fn.call(obj);
+                })
+            }else{
+                obj.addEventListener(type,fn,false);
+            }
+        }
+
+        addEvent(window,'scroll',function(){
+            var t=document.documentElement.scrollTop;
+            if(t>=50){
+                document.querySelector(".white-bg").style.position="sticky";
+                document.querySelector(".white-bg").style.top="50px";
+            }
+            if(t>=120){
+                document.querySelector(".download-tip").style.display="block";
+            }else{
+                document.querySelector(".download-tip").style.display="none";
+            }
+        })
     }
 }
 function  mapStateToProps(state) {
     return {
         wantlookList:state.movies.wantlookList,
-        willplaymoviesList:state.movies.willplaymoviesList
+        willplaymoviesList:state.movies.willplaymoviesList,
+        willmovieIds:state.movies.willmovieIds
     }
 }
 function  mapDispatchToProps(dispatch) {
@@ -119,6 +142,9 @@ return {
     },
     getWillplay(){
         dispatch(action.getWillwantmovielist.call(this))
+    },
+ getmoreWillwantmovielist(willmovieIds){
+        dispatch(action.getmoreWillwantmovielist.call(this,willmovieIds))
     }
 }
 }
