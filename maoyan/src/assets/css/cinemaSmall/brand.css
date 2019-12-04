@@ -7,7 +7,7 @@ ul li{
 }
 .brand2{
     width: 100%;
-    position: fixed;
+    position: sticky;
     background: white;
     overflow: scroll;
     font-size: 14px;
@@ -15,7 +15,7 @@ ul li{
     z-index: 100;
     padding-right: 15px;
     box-sizing: border-box;
-    top:133px;
+    top:40px;
 }
 .brand2 .brandOut2{
     background-color: #fff;

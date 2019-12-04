@@ -7,9 +7,9 @@ ul li{
 }
 .allCity2{
     width: 100%;
-    position: fixed;
+    position: sticky;
     background: white;
-    top:133px;
+    top:40px;
 }
 .allCityHead2{
     width: 100%;

@@ -12,9 +12,9 @@ ul li{
     overflow: scroll;
     font-size: 14px;
     color: #777;
-    position: fixed;
+    position: sticky;
     background: white;
-    top:133px;
+    top:40px;
 }
 .character2 .charOut2{
     height: 345.2px;

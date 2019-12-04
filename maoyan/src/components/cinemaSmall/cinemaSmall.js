@@ -41,7 +41,7 @@ class Cinema extends React.Component{
                 <div className={"cinemaBody2"}>
                     {
                         this.props.cinema.map(v=>(
-                         <Link key={v.id+1} to={"/"+v._id} style={{textDecoration:"none"}}>
+                         <Link key={v.id+1} to={{pathname:"/detailCinema",state:{id:v.id}}} style={{textDecoration:"none"}}>
                             <div key={v.id} className={"cinemaBodyOut2"}>
                                 <div className={"cinemaBodyIn2"}>
                                     <div className={"inTitleDiv2"}>

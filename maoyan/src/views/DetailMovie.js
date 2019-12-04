@@ -87,7 +87,7 @@ class DetailMovie extends React.Component{
                             this.props.showDays.dates?
                             this.props.showDays.dates.map(v=>(
                                 <div className="swiper-slide" key={v.date} 
-                                onClick={()=>{this.props.getCinemaSmall.call(this,{day:v.date,movieId:this.props.detailMovie.id})
+                                onClick={()=>{localStorage.dayDay = v.date;this.props.getCinemaSmall.call(this,{day:v.date,movieId:this.props.detailMovie.id})
                                 }}
                                 >{v.date}</div>
                             )):null
@@ -100,6 +100,7 @@ class DetailMovie extends React.Component{
         )
     }
     componentDidMount(){
+        localStorage.movieId = this.props.location.state.id;
         this.props.getDetailMovie(this.props.location.state.id);
         this.props.getCinemaSmall.call(this,{day:this.props.showDays.date,movieId:this.props.detailMovie.id})
         new Swiper('.swiper2', {

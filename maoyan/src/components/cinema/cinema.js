@@ -18,12 +18,7 @@ class Cinema extends React.Component{
     }
     render(){
         return (
-            <div>
-                <div style={{
-                    height:"94px"
-                }}>qqqqqqqqqqqqqqqqqqqqqqqqqqq</div>
-
-                <div className={"cinema"}>
+             <div className={"cinema"}>
                 <div className={"cinemaNav"}>
                     <ul className={"cinemaNavUl"}>
                         <li onClick={()=>{this.props.changeAllCityShow()}} className={"cinemaNavLi"} style={{color:this.props.allCityShow?"#E54847":"#777777"}}>
@@ -46,7 +41,7 @@ class Cinema extends React.Component{
                 <div className={"cinemaBody"}>
                     {
                         this.props.cinema.map(v=>(
-                         <Link key={v.id+1} to={"/"+v._id} style={{textDecoration:"none"}}>
+                         <Link key={v.id+1} to={{pathname:"/detailCinema",state:{id:v.id}}}  style={{textDecoration:"none"}}>
                             <div key={v.id} className={"cinemaBodyOut"}>
                                 <div className={"cinemaBodyIn"}>
                                     <div className={"inTitleDiv"}>
@@ -95,7 +90,6 @@ class Cinema extends React.Component{
                 </div>
 
             </div>
-          </div>
         )
     }
     UNSAFE_componentWillReceiveProps(){
