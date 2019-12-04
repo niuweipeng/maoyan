@@ -9,11 +9,11 @@ export const getDetaiList = payload => ({
 //     payload
 // })
 export default {
-    getDetailMovie(){
+    getDetailMovie(cinemaId){
         return(dispatch)=>{
             axios.get("/ajax/cinemaDetail",{
                 params:{
-                    cinemaId:107
+                    cinemaId
                 }
             }).then((data)=>{
                 const {cinemaData,dealList,showData} = data

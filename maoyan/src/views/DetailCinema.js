@@ -24,7 +24,7 @@ class DetailCinema extends React.Component{
         return(
             <>
               <header className="navbar-c">
-                <div className="nav-wrap-left"><i className={"iconfont icon-fanhui"}></i></div>
+                <div className="nav-wrap-left"><i className={"iconfont icon-fanhui"} onClick={()=>{this.props.history.go(-1)}}></i></div>
                 <p className="nav-header">{this.props.cinemaData.nm}</p>
             </header>
             <div className="body">
@@ -90,6 +90,8 @@ class DetailCinema extends React.Component{
                                 </div>
                             )):null
                         }
+ 			<div className={"download-tip"}></div>
+                   	<div className={"white-bg"}></div>
                     </div>
                 </div>       
             </div>  
@@ -97,7 +99,7 @@ class DetailCinema extends React.Component{
         )
     }
     componentDidMount(){
-        this.props.getDetailMovie();
+        this.props.getDetailMovie(this.props.location.state.id);
         new Swiper('.swiper1', {
             slidesPerView: 3,
             observer:true,
