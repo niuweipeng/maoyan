@@ -47,14 +47,6 @@ class Character extends React.Component{
     }
     componentDidMount(){
         this.props.getCharacter.call(this) //所有特色列表数据
-        // let charSpeList1 = document.querySelectorAll(".charSpeList1");
-        // let charTitleList1 = document.querySelectorAll(".charTitleList1");
-        // charSpeList1[0].style.background = "#fcf0f0";
-        // charSpeList1[0].style.color = "#f03d37";
-        // charSpeList1[0].style.border = "1px solid #f03d37";
-        // charTitleList1[0].style.background = "#fcf0f0";
-        // charTitleList1[0].style.color = "#f03d37";
-        // charTitleList1[0].style.border = "1px solid #f03d37";
         localStorage.hallTypeId = -1;
         localStorage.serverId = -1;
     }
@@ -72,11 +64,10 @@ function mapDispatchToProps(dispatch) {
             dispatch(cinemaActionCreatore.getCharacter.call(this))
         },
         getServerId(serviceId,e){//获取服务的Id
-            console.log(serviceId,"serviceId");
-            for(let i=0;i<document.querySelectorAll(".charTitleList1").length;i++){//重置样式
-                document.querySelectorAll(".charTitleList1")[i].style.background = "#FFF";
-                document.querySelectorAll(".charTitleList1")[i].style.color = "#777";
-                document.querySelectorAll(".charTitleList1")[i].style.border = "1px solid #ccc";
+            for(let i=0;i<document.querySelectorAll(".charTitleList12").length;i++){//重置样式
+                document.querySelectorAll(".charTitleList12")[i].style.background = "#FFF";
+                document.querySelectorAll(".charTitleList12")[i].style.color = "#777";
+                document.querySelectorAll(".charTitleList12")[i].style.border = "1px solid #ccc";
             }
             let etc = e.target;
             if(e.target.className !== "charTitleList12")
@@ -90,10 +81,10 @@ function mapDispatchToProps(dispatch) {
         getHallTypeId(hallTypeId,e){//获取特殊厅的Id
             console.log(hallTypeId,"hallTypeId");
 
-            for(let i=0;i<document.querySelectorAll(".charSpeList1").length;i++){//重置样式
-                document.querySelectorAll(".charSpeList1")[i].style.background = "#FFF";
-                document.querySelectorAll(".charSpeList1")[i].style.color = "#777";
-                document.querySelectorAll(".charSpeList1")[i].style.border = "1px solid #ccc";
+            for(let i=0;i<document.querySelectorAll(".charSpeList12").length;i++){//重置样式
+                document.querySelectorAll(".charSpeList12")[i].style.background = "#FFF";
+                document.querySelectorAll(".charSpeList12")[i].style.color = "#777";
+                document.querySelectorAll(".charSpeList12")[i].style.border = "1px solid #ccc";
             }
             let etc = e.target;
             if(e.target.className !== "charSpeList12")
@@ -116,14 +107,14 @@ function mapDispatchToProps(dispatch) {
         reset(){//点击重置，重置所有样式,并清空特色功能和特色厅的所选项
             localStorage.serviceId = -1;
             localStorage.hallType = -1;
-            let charSpeList1 = document.querySelectorAll(".charSpeList1")
-            let charTitleList1 = document.querySelectorAll(".charTitleList1")
-            for(let i=0;i<document.querySelectorAll(".charSpeList1").length;i++){//重置样式
+            let charSpeList1 = document.querySelectorAll(".charSpeList12")
+            let charTitleList1 = document.querySelectorAll(".charTitleList12")
+            for(let i=0;i<document.querySelectorAll(".charSpeList12").length;i++){//重置样式
                 charSpeList1[i].style.background = "#FFF";
                 charSpeList1[i].style.color = "#777";
                 charSpeList1[i].style.border = "1px solid #ccc";
             }
-            for(let i=0;i<document.querySelectorAll(".charTitleList1").length;i++){//重置样式
+            for(let i=0;i<document.querySelectorAll(".charTitleList12").length;i++){//重置样式
                 charTitleList1[i].style.background = "#FFF";
                 charTitleList1[i].style.color = "#777";
                 charTitleList1[i].style.border = "1px solid #ccc";

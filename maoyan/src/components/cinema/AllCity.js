@@ -21,7 +21,7 @@ render(){
                 <ul className={"cityBodyLeft"}>
                     {
         this.props.subItems.map(v=>(
-      <li key={v.id} className={"cityBodyLeftLi"} onClick={(e)=>{this.props.getSubItemsId.call(this,v.id,e)}}>{v.name}<span>({v.count/1})</span></li>
+      <li key={v.id} className={"cityBodyLeftLi"} onClick={(e)=>{this.props.getSubItemsId.call(this,v.id,e)}}>{v.name}<span className={"cityBodyLeftSpan"}>({v.count/1})</span></li>
                         ))
                     }
                 </ul>
@@ -48,6 +48,18 @@ function mapDispatchToProps(dispatch){
             dispatch(cinemaActionCreatore.getAllCity.call(this))
         },
         getSubItemsId(id,e){//根据左边的区，得到Id，用来得到区下面的地名
+            let cityBodyLeftLi = document.querySelectorAll(".cityBodyLeftLi");
+            for(let i=0;i<cityBodyLeftLi.length;i++){
+                cityBodyLeftLi[i].style.color = "#777777";
+                cityBodyLeftLi[i].style.backgroundColor = "#ffffff";
+            }
+            if(e.target.className === "cityBodyLeftLi"){
+                e.target.style.color = "#F03D37";
+                e.target.style.backgroundColor = "#F5F5F5";
+            }else{
+                e.target.parentNode.style.color = "#F03D37";
+                e.target.parentNode.style.backgroundColor = "#F5F5F5";
+            }
             dispatch(getSubItemsId(id))
             if(id===-1) {//如果点击的是全部，则直接刷新页面
                 if(!(localStorage.districtId/1===-1 && localStorage.areaId/1===-1 && localStorage.lineId/1===-1 && localStorage.stationId/1===-1)){
@@ -59,20 +71,6 @@ function mapDispatchToProps(dispatch){
                      dispatch(changeDetailName("全城"))//重新命名箭头左侧名称
                      dispatch(allCityShow());
                 }
-            }
-
-            let cityBodyLeftLi = document.querySelectorAll(".cityBodyLeftLi");
-            // cityBodyLeftLi[0].style.color = "#777777";//点击将第一个li颜色变为原来的
-            for(let i=0;i<cityBodyLeftLi.length;i++){
-                cityBodyLeftLi[i].style.backgroundColor = "#ffffff";
-                cityBodyLeftLi[i].style.color = "#777777";
-            }
-            if(e.target.className === "cityBodyLeftLi"){
-                e.target.style.backgroundColor = "#F5F5F5";
-                e.target.style.color = "#F03D37";
-            }else{
-                e.target.parentNode.style.backgroundColor = "#F5F5F5";
-                e.target.parentNode.style.color = "#F03D37";
             }
         },
         getSort(typeNum){//点击商区或者地铁站，根据类型不同获取不同的数据(1为商区、2为地铁站)

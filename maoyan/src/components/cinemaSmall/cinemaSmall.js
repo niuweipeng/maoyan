@@ -12,7 +12,7 @@ import BrandSmall from "./BrandSmall"
 import CharacterSmall from "./CharacterSmall"
 import cinemaActionCreatore,{allCityShow,allBrandShow,allCharacterShow,changeCharacterColor} from "../../store/action/cinema"
 import Tools from "../../filters/tools"
-class CinemaSmall extends React.Component{
+class Cinema extends React.Component{
     constructor(){
         super();
     }
@@ -101,15 +101,13 @@ class CinemaSmall extends React.Component{
         } else cinemaNavLiName[0].innerText = "全城";
     }
     componentDidMount(){
-        // window.removeEventListener("scroll",function () {
-        //     alert("assasaas")
-        // },false)
         localStorage.districtId = localStorage.lineId = localStorage.hallType = localStorage.brandId = localStorage.serviceId = localStorage.areaId = localStorage.stationId = -1;//初始化本地存储
     }
-}
+};
 function mapStateToProps(state) {
     return{
         cinema:state.cinemaReducer.cinema,
+        offset:state.cinemaReducer.offset,
         allCityShow:state.cinemaReducer.allCityShow,
         allBrandShow:state.cinemaReducer.allBrandShow,
         allCharacterShow:state.cinemaReducer.allCharacterShow,
@@ -129,7 +127,7 @@ function mapDispatchToProps(dispatch) {
             dispatch(allCityShow());
         },
         //修改品牌组件是否显示显示的组件
-        changeAllBrandShow() {
+        changeAllBrandShow(){
             dispatch(allBrandShow());
         },
         //修改特色组件是否显示显示的组件
@@ -139,7 +137,10 @@ function mapDispatchToProps(dispatch) {
         //改变标题特色名称的颜色
         changeCharacterColor(status){
             dispatch(allCharacterShow(status));
+        },
+        addCinema(offset,type){
+            dispatch(cinemaActionCreatore.getCinemaSmall.call(this,{offset:offset+20,type}))
         }
     }
 };
-export default connect(mapStateToProps,mapDispatchToProps)(CinemaSmall);
+export default connect(mapStateToProps,mapDispatchToProps)(Cinema);
