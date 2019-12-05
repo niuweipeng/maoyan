@@ -7,6 +7,7 @@ import  Tools from  "../filters/tools"
 import  {
     Link
 } from "react-router-dom"
+let time=""
 class Willplay extends  React.Component {
     render() {
         return (
@@ -26,7 +27,9 @@ class Willplay extends  React.Component {
                                                     <span className={"wish-num"}>{v.wish} 人想看</span>
                                                 </div>
                                             </div>
-                                            <h5 className={"name line-ellipsis"}>{v.nm}</h5>
+                                            <h5 className={"name line-ellipsis"} style={{
+                                              
+                                            }}>{v.nm}</h5>
                                             <p className={"date"}>{v.comingTitle}</p>
                                         </div>
                                     </div>
@@ -43,14 +46,14 @@ class Willplay extends  React.Component {
 
                 <div style={{marginLeft:"-16px"}}>
                     {
-                        this.props.willplaymoviesList.map((v)=>(
+                       this.props.willplaymoviesList.map((v,i)=>(
 
-                            <Link to={"/detail"} key={v.id} className={"nounderline"}>
+                            <Link to={"/detail"} key={i} className={"nounderline"}>
 
                                 <div className="list-wrap" >
                                     <div className="item" >
                                         <div className="main-block">
-                                            <div>{v.comingTitle}</div>
+                                        <div style={{color:"#333333"}}>{time!==v.comingTitle?time=v.comingTitle:""}</div>
                                             <div className="avatar" sort-flag="">
                                                 <div className="default-img-bg">
                                                     <img src={Tools.detailMoviesPictwo(v.img)} alt={""} style={{width: "100%",margintop: "0px"}}/>
@@ -93,18 +96,71 @@ class Willplay extends  React.Component {
     }
 
     componentDidMount(){
+        this.props.getmoreWillwantmovielist.call(this)
+        const  that=this
+
+        function getScrollTop(){
+            var scrollTop = 0, bodyScrollTop = 0, documentScrollTop = 0;
+            if(document.body){
+                bodyScrollTop = document.body.scrollTop;
+            }
+            if(document.documentElement){
+                documentScrollTop = document.documentElement.scrollTop;
+            }
+            scrollTop = (bodyScrollTop - documentScrollTop > 0) ? bodyScrollTop : documentScrollTop;
+            return scrollTop;
+        }
+//文档的总高度
+        function getScrollHeight(){
+            var scrollHeight = 0, bodyScrollHeight = 0, documentScrollHeight = 0;
+            if(document.body){
+                bodyScrollHeight = document.body.scrollHeight;
+            }
+            if(document.documentElement){
+                documentScrollHeight = document.documentElement.scrollHeight;
+            }
+            scrollHeight = (bodyScrollHeight - documentScrollHeight > 0) ? bodyScrollHeight : documentScrollHeight;
+            return scrollHeight;
+        }
+        function getWindowHeight(){
+            var windowHeight = 0;
+            if(document.compatMode == "CSS1Compat"){
+                windowHeight = document.documentElement.clientHeight;
+            }else{
+                windowHeight = document.body.clientHeight;
+            }
+            return windowHeight;
+        }
+
+        window.onscroll = function(){
+
+            if(Math.ceil(getScrollTop() + getWindowHeight()) == getScrollHeight()){
+                const  Arrlength= Tools.changeArr(that.props.willmovieIds,10).length
+               for(let i=1;i<Arrlength;i++){
+               // setTimeout(()=>{
+               //  let i= 0
+                that.props.getmoreWillwantmovielist.call(that,(Tools.changeArr(that.props.willmovieIds,10)[i]).join(","))
+                 // },1000)
+               return 0;
+          }
+            }
+        };
+
+
         this.props.getWillwantmovie.call(this)
         this.props.getWillplay.call(this)
         new Swiper('.swiper-container', {
             slidesPerView: 3.9,
             spaceBetween: 30,
             freeMode: true,
+            observer:true,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
             },
         });
-         function addEvent(obj,type,fn){
+
+        function addEvent(obj,type,fn){
             if(obj.attachEvent){ //ie
                 obj.attachEvent('on'+type,function(){
                     fn.call(obj);

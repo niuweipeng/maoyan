@@ -64,15 +64,17 @@
 
 }
 .topbar-bg {
+    box-sizing: border-box;
+    padding:0 15px;
     display: flex;
-    -webkit-box-align: center;
+    /* -webkit-box-align: center; */
     align-items: center;
     height: 44px;
     -webkit-box-pack: justify;
     justify-content: space-between;
 }
 .city-entry {
-    padding-left: 15px;
+    /* padding-left: 15px; */
     font-size: 15px;
     color: #666;
     display: -webkit-box;
@@ -105,7 +107,8 @@
     font-weight: 700;
 }
 
-.search-icon {
+.search-entry .search-icon {
+    float:right;
     width: 20px;
     height: 20px;
     background-size: 20px;
@@ -286,7 +289,7 @@
 .expected-item .poster .wish  .wish-num{
     position: absolute;
     left: 4px;
-    bottom: 57px;
+    bottom: 35px;
     color: #faaf00;
     font-size: 11px;
     font-weight: 700;
@@ -305,12 +308,14 @@
     line-height: 1;
     margin-top: 2px;
     /*margin-left: 5px;*/
-    position: relative;
+    /* position: relative; */
+   
+
 }
 
 .wantshow .date{
     font-size: 12px;
-    margin-top: -18px;
+    /* margin-top: -18px; */
     color: #999;
 }
 

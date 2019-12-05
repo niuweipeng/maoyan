@@ -12,8 +12,8 @@ class  Nowplay extends  React.Component{
         return (
             <div className={"nnnnnnn"}>
                 {
-                    this.props.movieList.map(v=>(
-                        <Link to={{pathname:"/detailMovie",state:{id:v.id}}} key={v.id} className={"nounderline"}>
+                    this.props.movieList.map((v,i)=>(
+                        <Link to={{pathname:"/detailMovie",state:{id:v.id}}} key={i} className={"nounderline"}>
                             <div className="list-wrap" >
                                 <div className="item" >
                                     <div className="main-block">
@@ -49,13 +49,15 @@ class  Nowplay extends  React.Component{
                         </Link>
                         ))
                 }
-
+                <div>
+                    <a  className={"download-tip"} href={"#"}></a>
+                </div>
             </div>
         )
     }
     componentDidMount(){
-       this.props.getdata.call(this)
-        const that=this
+        this.props.getdata.call(this)
+
         function addEvent(obj,type,fn){
             if(obj.attachEvent){ //ie
                 obj.attachEvent('on'+type,function(){
@@ -65,29 +67,27 @@ class  Nowplay extends  React.Component{
                 obj.addEventListener(type,fn,false);
             }
         }
+        const that=this
         addEvent(window,'scroll',function(){
-            const  arrlength= Tools.changeArr(that.props.movieIds,13).length
-            const movieIds1=(Tools.changeArr(that.props.movieIds,13)[1]).join(",")
+                const  arrlength= Tools.changeArr(that.props.movieIds,13).length
+                // console.log(arrlength)
+                const movieIds1=(Tools.changeArr(that.props.movieIds,13)[1]).join(",")
+            //    console.log(movieIds1)
             var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-            if(scrollTop>921&&scrollTop<922){
-                setTimeout(()=>{
-                    that.props.getNowMoremovielist.call(that,movieIds1)
-                },1000)
-            }
-            const movieIds2=(Tools.changeArr(that.props.movieIds,13)[2]).join(",")
-            if(scrollTop>2289&&scrollTop<2290){
-                setTimeout(()=>{
-                    that.props.getNowMoremovielist.call(that,movieIds2)
-                },1000)
-            }
-            for(let i=3;i<arrlength;i++){
-                const movieIds3=(Tools.changeArr(that.props.movieIds,13)[i]).join(",")
-                if(scrollTop>2289+(i-2)*1368&&scrollTop<2289+(i-2)*1368+1){
+            // console.log(scrollTop)
+                if(scrollTop==921){
                     // setTimeout(()=>{
-                    that.props.getNowMoremovielist.call(that,movieIds3)
+                        that.props.getMoredata.call(that,movieIds1)
                     // },1000)
                 }
-            }
+                for(let i=2;i<arrlength;i++){
+                    const movieIds3=(Tools.changeArr(that.props.movieIds,13)[i]).join(",")
+                    if(scrollTop>2287+(i-2)*1368&&scrollTop<2288+(i-2)*1368+1){
+                        // setTimeout(()=>{
+                        that.props.getMoredata.call(that,movieIds3)
+                        // },1000)
+                    }
+                }
         })
 
 
@@ -107,6 +107,7 @@ class  Nowplay extends  React.Component{
 }
 
 function mapStateToProps(state) {
+    // console.log(state,111111111111111)
     return {
         movieList:state.movies.movieList,
         movieIds:state.movies.movieIds
@@ -118,7 +119,8 @@ function mapDispatchToProps(dispatch) {
             dispatch(action.getmoviesList.call(this))
         },
         getMoredata(movieIds){
-            dispatch(action.getMoremovielist.call(this,movieIds))
+            // console.log(movieIds)
+            dispatch(action.getNowMoremovielist.call(this,movieIds))
         }
     }
 

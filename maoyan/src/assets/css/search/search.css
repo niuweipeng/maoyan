@@ -220,11 +220,15 @@
 }
 .search-address{
     font-size:13px;
+    color:#000;
     width:100%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     margin-bottom:5px;
+}
+.search-distance{
+    color:#000;
 }
 .search-div{
     margin-top:5px;

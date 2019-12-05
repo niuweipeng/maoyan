@@ -21,7 +21,6 @@ export default {
                     limit:20
                 }
             })
-            console.log(data)
             dispatch(moviesList_actor({
                 movies:data.movies,
                 total:data.total
@@ -38,7 +37,6 @@ export default {
                     limit:20
                 }
             })
-            console.log(data)
             dispatch(moviesList_next({
                 moviesNext:data.movies,
                 total:data.total

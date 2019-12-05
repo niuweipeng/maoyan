@@ -1,5 +1,7 @@
-import  Movies from "./Movies"
-import  Cinema from "../components/cinema/cinema"
+﻿import  Movies from "./Movies"
+import GuardRouter from "../router/GuuardRouter"
+// import  Cinema from "../components/cinema/cinema"
+import  CineMa from "./CineMa"
 import  My from "./My"
 import  React from "react"
 import  {
@@ -12,13 +14,13 @@ import  {
       return (
           <div>
               <nav className={"navbottom"}>
-                  <NavLink className={"App-link"} activeClassName={"App-active"} to={"/movie"}><span className="iconfont" style={{"display":"block","fontSize":"24px"}}>&#xe652;</span>电影</NavLink>
-                  <NavLink className={"App-link"} activeClassName={"App-active"} to={"/ciname"}><span className="iconfont" style={{"display":"block","fontSize":"24px"}}>&#xe662;</span>影院</NavLink>
-                  <NavLink className={"App-link"} activeClassName={"App-active"} to={"/my"}><span className="iconfont" style={{"display":"block","fontSize":"24px"}}>&#xe61b;</span>我的</NavLink>
+                  <NavLink className={"App-link"} activeClassName={"App-active"} to={"/movie"}><span className="iconfont icon-yingpianA" style={{"display":"block","fontSize":"24px","marginBottom":"3px"}}></span>电影</NavLink>
+                  <NavLink className={"App-link"} activeClassName={"App-active"} to={"/ciname"}><span className="iconfont icon-yingyuan" style={{"display":"block","fontSize":"24px","marginBottom":"3px"}}></span>影院</NavLink>
+                  <NavLink className={"App-link"} activeClassName={"App-active"} to={"/my"}><span className="iconfont icon-zhuomian-" style={{"display":"block","fontSize":"24px","marginBottom":"3px"}}></span>我的</NavLink>
               </nav>
-              <Route path={"/movie"} component={Movies}></Route>
-              <Route path={"/ciname"} component={Cinema}></Route>
-              <Route path={"/my"} component={My}></Route>
+      <Route path={"/movie"}  render={()=><GuardRouter component={Movies}></GuardRouter>}></Route>
+              <Route path={"/ciname"} render={()=><GuardRouter component={CineMa}></GuardRouter>}></Route>
+              <Route path={"/my"} render={()=><GuardRouter component={My}></GuardRouter>}></Route>
           </div>
       )
     }

@@ -1,4 +1,4 @@
-export const movieList = (movieList,movieIds,type)=>{//»ñÈ¡µçÓ°Ò³µÄµÚÒ»´ÎÊý¾Ý
+export const movieList = (movieList,movieIds,type)=>{//ï¿½ï¿½È¡ï¿½ï¿½Ó°Ò³ï¿½Äµï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     return{
         type:"GET_MOVIELIST",
         payload:{
@@ -8,7 +8,7 @@ export const movieList = (movieList,movieIds,type)=>{//»ñÈ¡µçÓ°Ò³µÄµÚÒ»´ÎÊý¾Ý
     }
 }
 
-export const wantlookList = (wantlookList,type)=>{//»ñÈ¡Ó°ÔºÂÖ²¥Êý¾Ý
+export const wantlookList = (wantlookList,type)=>{//ï¿½ï¿½È¡Ó°Ôºï¿½Ö²ï¿½ï¿½ï¿½ï¿½ï¿½
     return{
         type:"GET_WANTLOOKLIST",
         payload:{
@@ -16,7 +16,7 @@ export const wantlookList = (wantlookList,type)=>{//»ñÈ¡Ó°ÔºÂÖ²¥Êý¾Ý
         }
     }
 }
-export const MoremoviesList = (MoremoviesList,type)=>{//»ñÈ¡Ó°ÔºµÚÒ»´ÎµçÓ°Êý¾Ý
+export const MoremoviesList = (MoremoviesList,type)=>{//ï¿½ï¿½È¡Ó°Ôºï¿½ï¿½Ò»ï¿½Îµï¿½Ó°ï¿½ï¿½ï¿½ï¿½
     return{
         type:"GET_MOREMOVIES",
         payload:{
@@ -25,7 +25,7 @@ export const MoremoviesList = (MoremoviesList,type)=>{//»ñÈ¡Ó°ÔºµÚÒ»´ÎµçÓ°Êý¾Ý
     }
 }
 
-export const willplaymoviesList = (willplaymoviesList,willmovieIds,type)=>{//»ñÈ¡µçÓ°Ò³µÄÏÂÀ­Êý¾Ý
+export const willplaymoviesList = (willplaymoviesList,willmovieIds,type)=>{//ï¿½ï¿½È¡ï¿½ï¿½Ó°Ò³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     return{
         type:"GET_WANPLAYLIST",
         payload:{
@@ -35,7 +35,7 @@ export const willplaymoviesList = (willplaymoviesList,willmovieIds,type)=>{//»ñÈ
     }
 }
 
-//»ñÈ¡Ó°ÔºÏÂÀ­¸ü¶àÊý¾Ý
+//ï¿½ï¿½È¡Ó°Ôºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 export const morewillplaymoviesList = (morewillplaymoviesList,type)=>{
     return{
         type:"GET_MOREWANPLAYLIST",
@@ -48,7 +48,7 @@ export const morewillplaymoviesList = (morewillplaymoviesList,type)=>{
 
 
 export default {
-    getmoviesList(){//»ñÈ¡µçÓ°Ò³µÄµÚÒ»´ÎÊý¾Ý
+    getmoviesList(){//ï¿½ï¿½È¡ï¿½ï¿½Ó°Ò³ï¿½Äµï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         return async (dispatch)=>{
             const  data= await this.$axios.get("/ajax/movieOnInfoList",{
                 params:{
@@ -59,11 +59,11 @@ export default {
             dispatch(movieList(data.movieList,data.movieIds))
         }
     },
-    getWillwantmovie(){//»ñÈ¡Ó°ÔºÂÖ²¥Êý¾Ý
+    getWillwantmovie(){//ï¿½ï¿½È¡Ó°Ôºï¿½Ö²ï¿½ï¿½ï¿½ï¿½ï¿½
         return async (dispatch)=>{
             const  data = await  this.$axios.get("/ajax/mostExpected",{
                 params:{
-                    ci:1,
+                    ci:localStorage.maoyan_position?JSON.parse(localStorage.maoyan_position).id:"1",
                     limit:10,
                     offset:0,
                     token:""
@@ -74,11 +74,11 @@ export default {
         }
     },
 
-    getWillwantmovielist(){//»ñÈ¡Ó°ÔºµÚÒ»´ÎµçÓ°Êý¾Ý
+    getWillwantmovielist(){//ï¿½ï¿½È¡Ó°Ôºï¿½ï¿½Ò»ï¿½Îµï¿½Ó°ï¿½ï¿½ï¿½ï¿½
         return async (dispatch)=>{
             const  data = await  this.$axios.get("/ajax/comingList",{
                 params:{
-                    ci:1,
+                    ci:localStorage.maoyan_position?JSON.parse(localStorage.maoyan_position).id:"1",
                     limit:10,
                     token:""
                 }
@@ -87,7 +87,7 @@ export default {
             dispatch(willplaymoviesList(data.coming,data.movieIds))
         }
     },
-    getNowMoremovielist(movieIds=""){//»ñÈ¡µçÓ°Ò³µÄÏÂÀ­Êý¾Ý
+    getNowMoremovielist(movieIds=""){//ï¿½ï¿½È¡ï¿½ï¿½Ó°Ò³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         return async (dispatch)=>{
             const  data = await this.$axios.get("/ajax/moreComingList",{
                 params:{
@@ -100,16 +100,17 @@ export default {
             dispatch(MoremoviesList(data.coming))
         }
     },
-    getmoreWillwantmovielist(willmovieIds){//»ñÈ¡Ó°ÔºÏÂÀ­¸ü¶àÊý¾Ý
+    getmoreWillwantmovielist(willmovieIds){//ï¿½ï¿½È¡Ó°Ôºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         return async (dispatch)=>{
             const  data = await  this.$axios.get("/ajax/moreComingList",{
                 params:{
-                    ci:1,
+                    ci:localStorage.maoyan_position?JSON.parse(localStorage.maoyan_position).id:"1",
                     limit:10,
                     token:"",
                     movieIds:willmovieIds
                 }
             })
+            // console.log(data,1222222222222)
             dispatch(morewillplaymoviesList(data.coming))
         }
     },

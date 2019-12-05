@@ -2,6 +2,9 @@ import React from "react"
 import {
     connect
 } from "react-redux"
+import {
+    Link
+} from "react-router-dom";
 import action from "../store/action/cinemasList";
 import "../assets/css/cinemaList/cinemaList.css"
 
@@ -21,7 +24,8 @@ class CinemaList extends React.Component {
                     <ul className="cinema_list">
                         {
                             this.props.cinemas ? this.props.cinemas.map((v,i) => (
-                                <li className="cinemas-detail-list_cinemaList" key={v.id+i}>
+                                <Link key={v.id+1} to={{pathname:"/detailCinema",state:{id:v.id}}}  style={{textDecoration:"none"}}>
+                                    <li className="cinemas-detail-list_cinemaList" key={v.id+Date.now()}>
                                     <div className="cinemas-detail-list-mid_cinemaList">
                                         <p className="name_cinemaList">
                                             <span className="three-title_cinemaList">{v.nm}</span>
@@ -59,11 +63,14 @@ class CinemaList extends React.Component {
                                         </div>
                                     </div>
                                 </li>
+                                </Link>
                             )) : ""
                         }
                     </ul>
-
+                    
                 </div>
+                <div className={"download-tip"}></div>
+                <div className={"white-bg"}></div>
             </div>
         )
     }
@@ -118,7 +125,6 @@ class CinemaList extends React.Component {
 }
 
 function mapStateToProps(state) {
-    console.log(state)
     return {
         offset: state.cinemasList.offset,
         cinemas: state.cinemasList.cinemasList,

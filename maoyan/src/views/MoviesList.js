@@ -36,9 +36,9 @@ class MoviesList extends React.Component {
                                         </p>
                                         <div className="movies-name-detail">
                                             <div className="movies-name-detail-left">
-                                                <p>{v.enm}</p>
-                                                <p>{v.cat}</p>
-                                                <p>{v.rt}</p>
+                                                <p style={{"marginBottom":"5px"}}>{v.enm}</p>
+                                                <p style={{"marginBottom":"5px"}}>{v.cat}</p>
+                                                <p style={{"marginBottom":"5px"}}>{v.rt}</p>
                                             </div>
                                             <div className="movies-name-detail-right">
                                             <span className="movies-want-look" style={{
@@ -51,6 +51,8 @@ class MoviesList extends React.Component {
                             )) : ""
                         }
                     </ul>
+                    <div className={"download-tip"}></div>
+                    <div className={"white-bg"}></div>
                 </div>
             </div>
         )

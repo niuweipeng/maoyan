@@ -23,15 +23,19 @@ class  Movies extends  React.Component{
 
                 <div className={"white-bg topbar-bg "} >
                     <div className={"city-entry"} onClick={()=>this.props.history.push("/position")}>
-                        <span className={"city-name"}>北京</span>
-                        <span className={"iconfont icon-shangjiantou1"} style={{fontSize:"12px",marginLeft:"10px"}}></span>
+                        <span className={"city-name"}>{JSON.parse(localStorage.maoyan_position).nm}</span>
+                        <span className={"iconfont icon-shangjiantou1"} style={{fontSize:"12px"}}></span>
                     </div>
                     <nav className={"switch-hot"} data-active=".n-hot">
                         <NavLink to={"/movie"} exact className={"hot-item"} activeClassName={"hot-item active"} style={{"textDecoration": "none"}}>正在热映</NavLink>
                         <NavLink to={"/movie/willplay"} className={"hot-item"} activeClassName={"hot-item active"} style={{"textDecoration": "none"}}>即将热映</NavLink>
 
                     </nav>
-                   <div className={"search-entry search-icon"} data-type="movie"><span className="iconfont icon-glass" style={{"fontSize":"26px","color":"red"}}></span></div>
+                    <span className="iconfont icon-glass" style={{"fontSize":"26px","color":"red"}} 
+                    onClick={()=>{
+                        this.props.history.push("/search")
+                    }}
+                    ></span>
                 </div>
                 <Route path={"/movie/willplay"} component={Willplay}></Route>
                 <Route path={"/movie"} component={Nowplay} exact></Route>

@@ -13,12 +13,14 @@ const  reducer = function (state=obj,{type,payload}) {
         state.willmovieIds=payload.willmovieIds
     }
     if(type==="GET_MOREMOVIES"){
+        // console.log(payload.MoremoviesList)
         state.movieList= [
             ...state.movieList,
             ...payload.MoremoviesList
         ]
     }
         if(type==="GET_MOREWANPLAYLIST"){
+        // console.log(payload.morewillplaymoviesList)
         state.willplaymoviesList= [
             ...state.willplaymoviesList,
             ...payload.morewillplaymoviesList

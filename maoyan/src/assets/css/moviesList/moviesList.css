@@ -106,9 +106,9 @@
 .movies-name-detail-left{
     font-size:13px;
     width:150px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
 }
 .movies-want-look{
     display: flex;

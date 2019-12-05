@@ -21,6 +21,6 @@
   display: flex;
   justify-content: space-around;
   z-index: 100;
-  padding-top: 15px;
+  padding: 10px 0 5px 0;
   font-size: 10px;
 }

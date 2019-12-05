@@ -27,7 +27,7 @@ export default class App extends React.Component {
                         // borderBottom:"1px solid",
                         boxSizing: "border-box"
                     }}>
-                        <NavLink to={"/nogin/meituan"}
+                        <NavLink to={"/nogin/meituan"} className={"App-link"}
                                  activeClassName={"active-meituan"}
                                  exact
                                  style={{
@@ -45,6 +45,7 @@ export default class App extends React.Component {
                     }}>
                         <NavLink to={"/nogin/phone"}
                                  activeClassName={"active-meituan"}
+                                 className={"App-link"}
                                  style={{
                                      textDecoration: "none",
                                      padding: "20px 0 10px",
@@ -57,7 +58,7 @@ export default class App extends React.Component {
                     {/*<Meituan></Meituan>*/}
                     {/*    <Route path={"/login/phone"}  component={Phone}></Route>*/}
                     <Route path={"/nogin/meituan"}  component={Meituan}></Route>
-                    <Route path={"/nogin/phone"}  component={Phone}></Route>
+                    <Route path={"/nogin"}  component={Phone}></Route>
 
 
                 </Switch>
@@ -70,5 +71,7 @@ export default class App extends React.Component {
                 {/*</Router>*/}
             </div>
         )
+    }
+    componentDidMount(){
     }
 }

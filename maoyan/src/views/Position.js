@@ -90,8 +90,7 @@ class Position extends React.Component {
     }
 
     componentDidMount() {
-    console.log(this.props)
-        // let nm =
+    // console.log(this.props)
     }
 }
 

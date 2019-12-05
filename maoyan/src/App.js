@@ -21,7 +21,7 @@ function App() {
     <div className="App">
         <Switch>
           <Route path={"/preview"} component={Preview}></Route>
-		<Route path={"/positionMap"} component={PositionMap}></Route>
+		      <Route path={"/positionMap"} component={PositionMap}></Route>
           <Route path={"/cinemaList"} component={CinemaList}></Route>
           <Route path={"/nogin"} component={Login}></Route>
           <Route path={"/reg"} component={Register}></Route>

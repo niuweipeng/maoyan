@@ -5,6 +5,9 @@ import "../assets/css/search/search.css"
 import {
     connect
 } from "react-redux"
+import {
+    Link
+} from "react-router-dom";
 class Search extends React.Component {
     constructor(){
         super();
@@ -111,7 +114,8 @@ class Search extends React.Component {
                                 {
                                     this.state.isShow===true?
                                         this.props.cinemas?this.props.cinemas.slice(0,3).map(v=>(
-                                            <div className="search-detail-list" key={v.id}>
+                                            <Link key={v.id+1} to={{pathname:"/detailCinema",state:{id:v.id}}}  style={{textDecoration:"none"}}>
+<div className="search-detail-list" key={v.id}>
                                                 <div className="search-detail-list-mid">
                                                     <p className="search-name">
                                                         <span className="search-three-title">{v.nm}</span>
@@ -119,7 +123,7 @@ class Search extends React.Component {
                                                     </p>
                                                     <div className="search-name-detail">
                                                         <div className="search-name-detail-left">
-                                                            <p className="address">{v.addr}</p>
+                                                            <p className="search-address">{v.addr}</p>
                                                         </div>
                                                         <div className="search-name-detail-right">
                                                             <span className="search-distance">{v.distance}</span>
@@ -147,6 +151,8 @@ class Search extends React.Component {
                                                     </div>
                                                 </div>
                                             </div>
+                                            </Link>
+                                            
                                         )):"":""
 
                                 }

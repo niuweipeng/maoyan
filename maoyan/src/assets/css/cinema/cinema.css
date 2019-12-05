@@ -19,6 +19,7 @@
     display: flex;
     list-style: none;
     box-sizing: border-box;
+    align-items: center;
     padding: 0;
 }
 .cinema .cinemaNav .cinemaNavUl .cinemaNavLi{
@@ -44,6 +45,7 @@
     font-size: 6px;
     color: #777;
     position: absolute;
+    transform: scale(0.5);
 }
 .icon-shangjiantou{
     font-size: 6px;
@@ -65,7 +67,7 @@
     margin-bottom: 50px;
     box-sizing: border-box;
     margin-bottom: 58.8px;
-    margin-top: 94px;
+    margin-top: 40px;
 }
 .cinemaBodyOut{
     width: 100%;
